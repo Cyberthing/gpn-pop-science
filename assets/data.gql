@@ -1,0 +1,198 @@
+# Write your query or mutation here
+query Main{
+  main{
+    data{
+      attributes{
+        config{
+          ...MainConfig
+        }
+        navBar{
+          ...MainNavBar
+        }
+        cover{
+          ...MainCover
+        }
+        articles{
+          ...RefArticle
+        }
+        # footer{
+        #   ...MainFooter
+        # }
+      }
+    }
+  }
+}
+
+
+fragment MainNavBar on ComponentMainNavbar{
+  bandTile{
+    ...Media
+  }
+  bandMark{
+    ...Media
+  }
+  bandPointer{
+    ...Media
+  }
+  indexIcons {
+    data {
+      ...MMedia
+    }
+  }
+}
+
+fragment MainCover on ComponentMainCover{
+  background{
+    ...Media
+  }
+  title
+  lead
+  topLogo{
+    ...Media
+  }
+  topLogoMobile{
+    ...Media
+  }
+}
+
+fragment MainConfig on ComponentMainConfig{
+  iconHeader{
+    ...Media
+  }
+  iconQuote{
+    ...Media
+  }
+  logoWhite{
+    ...Media
+  }
+}
+
+# fragment MainFooter on ComponentMainFooter{
+#   logo{
+#     ...Media
+#   }
+# }
+
+fragment RefArticle on ComponentRefsArticle{
+  ref{
+    data{
+      ...Article
+    }
+  }
+}
+
+fragment Article on ArticleEntity{
+  attributes{
+    # __typename
+    name
+    index
+    years
+    title
+    lead
+    style
+    background{
+      ...Media
+    }
+    backgroundMobile{
+      ...Media
+    }
+    blocks{
+      __typename
+      ...ArticleHeader
+      ...ArticleQuote
+      ...ArticleFacto
+      ...ArticleText
+      ...ArticlePhotoSlide
+      ...RefsVrez
+    }
+  }
+}
+
+fragment RefsVrez on ComponentRefsVrez{
+  ref{
+    data{
+      attributes{
+        # __typename
+        # name
+        blocks{
+          __typename
+          ...ArticleHeader
+          ...ArticleQuote
+          ...ArticleText
+          ...ArticlePhotoRow
+          # ...RefsVrez
+        }        
+      }
+    }
+  }        
+}
+
+fragment ArticleQuote on ComponentArticleQuote{
+  text
+}
+
+fragment ArticleFacto on ComponentArticleFacto{
+  facto
+  desc
+}
+
+fragment ArticleHeader on ComponentArticleHeader{
+  text
+}
+
+fragment ArticleText on ComponentArticleText{
+  text
+  style
+}
+
+fragment ArticlePhotoSlide on ComponentArticlePhotoSlide{
+  media{
+    ...Media
+  }
+  credit
+  creditImg{
+    ...Media
+  }
+  
+}
+
+fragment ArticlePhotoRow on ComponentArticlePhotoRow{
+  slides{
+    ...ArticlePhotoSlide
+  }
+}
+
+# fragment Sprite on ComponentElementSprite{
+#   media{
+#     ...Media
+#   }
+#   x
+#   y
+#   s
+#   r
+# }
+
+
+# fragment Shape on ComponentElementShape{
+#   shape
+#   fill
+#   x
+#   y
+#   s
+#   r
+# }
+
+fragment Media on UploadFileEntityResponse {
+  data {
+    ...MMedia
+  }
+}
+
+fragment MMedia on UploadFileEntity {
+  attributes {
+    mime
+    url
+    width
+    height
+  }
+}

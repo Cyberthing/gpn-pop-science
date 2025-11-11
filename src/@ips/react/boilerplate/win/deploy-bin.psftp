@@ -1,0 +1,3 @@
+cd /www/data/ips/<%PROJECT_NAME%>/
+mput -r build/*.*
+chmod 664 *.*

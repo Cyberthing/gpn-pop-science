@@ -1,0 +1,71 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ips/app@latest",
+        "scope": "@ips",
+        "escapedName": "@ips%2fapp",
+        "name": "@ips/app",
+        "rawSpec": "latest",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "S:\\ozk_grain"
+    ],
+    [
+      {
+        "raw": "@ips/app@^1.0.1",
+        "scope": "@ips",
+        "escapedName": "@ips%2fapp",
+        "name": "@ips/app",
+        "rawSpec": "^1.0.1",
+        "spec": ">=1.0.1 <2.0.0",
+        "type": "range"
+      },
+      "S:\\Kurchatov4"
+    ]
+  ],
+  "_from": "@ips/app@^1.0.1",
+  "_id": "@ips/app@1.0.2",
+  "_inCache": true,
+  "_location": "/@ips/app",
+  "_nodeVersion": "6.9.4",
+  "_npmUser": {},
+  "_npmVersion": "4.0.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@ips/app@^1.0.1",
+    "scope": "@ips",
+    "escapedName": "@ips%2fapp",
+    "name": "@ips/app",
+    "rawSpec": "^1.0.1",
+    "spec": ">=1.0.1 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://localhost:4873/@ips%2fapp/-/app-1.0.2.tgz",
+  "_shasum": "f7389f514d57f816f5a0f59afde243834fd27d20",
+  "_shrinkwrap": null,
+  "_spec": "@ips/app@^1.0.1",
+  "_where": "S:\\Kurchatov4",
+  "author": "",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "dist": {
+    "shasum": "f7389f514d57f816f5a0f59afde243834fd27d20",
+    "tarball": "http://localhost:4873/@ips%2fapp/-/app-1.0.2.tgz"
+  },
+  "license": "ISC",
+  "type":"module",
+  "main": "app.js",
+  "name": "@ips/app",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.2.0"
+}

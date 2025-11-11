@@ -1,0 +1,25 @@
+@import "@ips/app/sizer.styl"
+
+degradingFontSizeDiscreteAuto(s, exp)
+    font-size s * 1px
+    @media (max-width: screenSizeXL)
+        font-size: (s/exp)*1px
+    @media (max-width: screenSizeR)
+        font-size: (s/(exp*exp))*1px
+    @media (max-width: screenSizeS)
+        font-size: (s/(exp*exp*exp))*1px
+    @media (max-width: screenSizeMS)
+        font-size: "calc(%s * 1vw)"%(100/screenSizeMSn*s/(exp*exp*exp))
+
+// degradingFontSizeDiscrete(xl, l, r, s, m)
+degradingFontSizeDiscreteManual(l, r, s, m)
+    // font-size xl
+    // @media (max-width: screenSizeXL)
+    font-size: l
+    @media (max-width: screenSizeXL)
+        font-size: r
+    @media (max-width: screenSizeR)
+        font-size: s
+    @media (max-width: screenSizeS)
+        font-size: m
+

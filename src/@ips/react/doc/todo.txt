@@ -1,0 +1,104 @@
++ degrading textStyle
++ adapt screen-size-large sizer calc to 1440 limitation
++ programmable textStyle on dynamic CSS
+  <TextStyle name="default" font="Roboto" fontSize="24" degradeExp="1.2" color="white"/>
+  <TextStyle name="lead" font="Roboto" fontSize="24" degradeExp="1.2"/>
+  <Text textStyle="lead" text="ADFSDOEHAO"/>
++ <Scroll> ... </Scroll> concept component (a scrollable container)
+    + automatically add webkit-touch css 
+
+
+- programmable CSS KeyFrames
+  <KeyFrames name="WhaleAnim">{something parameric}</KeyFrames>
+
+
+- Overlay mode shortcuts: props "img", "background"
+- Overlay: add column props sucha as align, valign, width in units etc
+- Column w100 h100 shortcuts
+
+- HUD layout components
+- optional discrete behavior/ kinda no-large
+- figure with caption
+    <fig outer>
+        <pic src=""/>
+        <cap inner left top>
+            xxx
+        </cap>
+    </fig>
+
+- editable over basic components
+
+Needed components:
+- Button ( Clickable )
+- Abstract text (2change from the outside) - Use any Text component for a counter
+- Ticker component
+    Generates periodic events with incrementing counter
+
+Expr:
+  - Format function (use js template)
+      format(event(way, 'point','index')*10,\${ v%10 }\)
+  - intertial interp/tween
+
+- Add property "top" to Waypoint component. Turn on absolute mode if defined
+- Check expr.pipe: should we make a new closure every time?
+- Revealing textured text with glow on the same background texture
+- Reveal element animation
+
++ Expr.at([array], index)
++ make single pipes and multi pipes. Make all of them basic expressions single. In single pipes connect 'listen' and 'say' directly
+
++ Expr - Context.update(newprops):
+   + Compare props, fire downpipe on change
+   + Return Context on compileExpr
+   + Call e.g. from component.recalc
+
++ Revealing text
+
+- transparent version of ria-topbar and ria-topbar-black (or rather ria-topbar-inv)
+
+
+
+<Text/> component
+    + carryUnions
+  + split by words
+    + split by syllables
+  + treat nbsp as an unbreakable letter of a syllable
+  + calc syllable lengths, also a space and a hyphen
+    - recalc syllable lengths on style change
+  set optimal criteria (e g.   a * avg line length -  b * num of broken syllables)
+  or limit the number of potential hyphens say proportionally to the number of words
+  get size of the container
+    find optimal combo (recalc on container resize)
+    render final text
+
+Set font family / size / weight right in the compo. Easier to process
+
+?Component factory
+
+Font Analyzer
+Font lengths
+Font hinting (scale of optimal sizes, line heights, special browser fixes)
+1. For constant font - precalc font letter lengths globally. I.e. analyze font after loading, store it
+Better by async request + store it in cache
+Text -> await fontAnalyzer.request(font family, font size, font style)
+
+
+2. For arbitrary markup - compute word and syllable lengths, wrapping them into spans
+
+
+//
+
+1st syllable
+2-n-1 syllable
+last syllable
+
+===== use syllabify in narrow containers or mobile mode
+===== rename the compo to TextBlock
+
+
+
+- automatic media resource descriptions
+- add 'crop' attr to containers (overflow hidden)
+- add zIndex attr to containers
+
+- useScene discrete version (w/o width and height)

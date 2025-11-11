@@ -1,0 +1,16 @@
+{
+  "name": "@ips/strapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.7.15",
+    "graphql": "^16.6.0",
+    "isomorphic-fetch": "^3.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

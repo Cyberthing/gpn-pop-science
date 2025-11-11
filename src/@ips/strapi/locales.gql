@@ -1,0 +1,1 @@
+query { i18NLocales(pagination:{limit:100}) { data { id, attributes { name, code } } } }

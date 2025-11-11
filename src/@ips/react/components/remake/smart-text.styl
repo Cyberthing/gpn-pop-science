@@ -1,0 +1,18 @@
+// .text
+//  padding-left 16px
+//  padding-right 16px
+    
+.smart-text > div
+    margin-bottom -1em !important
+    
+.smart-text > div:after
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height 0px
+
+.smart-text.text_syl.text_justify >div:not(:last-child)
+    text-align justify
+
+.smart-text:not(.text_syl).text_justify
+    text-align justify

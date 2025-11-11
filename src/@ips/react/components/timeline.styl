@@ -1,0 +1,57 @@
+.timeline
+    transition transform 1s ease-in-out
+    width 100%
+    height 100%
+
+.timeline_fade
+    > *
+        animation-duration .15s
+        animation-fill-mode both
+        animation-timing-function linear
+        // transition opacity .3s, visibility 3s
+
+.timeline_instant
+    .timeline__layer
+        visibility hidden
+    .timeline__layer-current
+        visibility visible
+
+@keyframes TlFadeIn
+    0%
+        visibility hidden
+        opacity 0
+    0%
+        visibility visible
+    100%
+        visibility visible
+        opacity 1
+
+@keyframes TlFadeOut
+    0%
+        visibility visible
+        opacity 1
+    100%
+        visibility visible
+        opacity 0
+    100%
+        visibility hidden
+
+
+.timeline_fade
+    .timeline__layer
+        visibility hidden
+
+    .timeline__layer-current
+        // opacity 1
+        // visibility visible
+        animation-name TlFadeIn
+
+    .timeline__layer-hidden
+        // opacity 0
+        // visibility hidden
+        animation-name TlFadeOut
+
+.timeline_fadeshift
+    .timeline__layer-hidden
+        animation-delay .15s
+

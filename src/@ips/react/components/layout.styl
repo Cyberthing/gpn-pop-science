@@ -1,0 +1,357 @@
+@import "~@ips/app/sizer.styl"
+
+BlockSizeXL = 120px
+BlockSizeL = 96px
+BlockSizeR = 80px
+BlockSizeS = 64px
+// Perunit = 100%/12
+
+// column width in % for the default grid (12)
+colUnit = 100/12
+
+
+genBaseGridRules()
+    .slice__container
+    .column
+        &.width-0
+            width 0
+        &.left-0
+            margin-left 0
+        &.right-0
+            margin-right 0
+    .slice__pad
+        width 100%
+        padding 0 gridPadding() 0 gridPadding()
+    .slice__container
+        max-width maxWidth()
+        
+genGridRules(cname, sn, bss)
+    {cname}
+        colUnit = 100/sn
+        .slice__container.{'width-'+sn}
+            width rvw(colUnit*sn)
+            .column
+                for n in (1..sn)
+                    &.{'width-'+n}
+                        width rvw(colUnit*n)
+
+                for n in (1..sn)
+                    &.{'left-'+n}
+                        margin-left rvw(colUnit*n)
+
+                for n in (1..sn)
+                    &.{'right-'+n}
+                        margin-right rvw(colUnit*n)
+
+            // @media screen and (min-width: blockSize(sn))
+            //     width blockSize(sn)
+            //     .column
+            //         for n in (1..sn)
+            //             &.{'width-'+n}
+            //                 width blockSize(n)
+
+            //         for n in (1..sn)
+            //             &.{'left-'+n}
+            //                 margin-left blockSize(n)
+
+            //         for n in (1..sn)
+            //             &.{'right-'+n}
+            //                 margin-right blockSize(n)
+
+.grid-gutter
+    padding 0 gutter() 0 gutter()
+    
+.slice
+.slice__pad
+.slice__container
+.column
+    display flex
+    box-sizing border-box
+    // align-self center
+
+.slice
+    position relative
+.slice__pad
+    position relative
+    flex-direction column
+    align-items flex-start
+
+.slice__container
+    position relative
+    flex-direction row
+    flex-wrap wrap
+    width 100%
+    align-self center
+    // margin 0 auto
+
+.slice:not(.slice_v2)
+    .slice__container
+        max-width 1440px
+
+.column
+    position relative
+    display flex
+    flex-direction column
+
+.slice__pad
+.slice__container
+.column
+    &.height-screen
+    &.height-screen-ria
+        height: 100vh
+        
+    &.height-h100
+        height: 100%
+    &.height-vh100
+        height: 100vh
+    &.width-w100
+        width: 100%
+    &.width-vw100
+        width: 100vw
+        
+    &.min-height-screen
+        min-height: 100vh
+    &.dir-column
+        flex-direction column
+    &.dir-row
+        flex-direction row
+    &.dir-wrap
+        flex-wrap wrap
+    &.dir-column.dir-reverse
+        flex-direction column-reverse
+    &.dir-row.dir-reverse
+        flex-direction row-reverse        
+    &.dir-row.align-left
+        justify-content flex-start
+    &.dir-column.align-left
+        align-items flex-start
+    &.dir-row.align-center
+        justify-content center
+    &.dir-row.align-stretch
+        > *
+            flex-grow 1
+    &.dir-column.align-center
+        align-items center
+    &.dir-row.align-right
+        justify-content flex-end        
+    &.dir-row.align-space-between
+        justify-content space-between
+    &.dir-row.align-space-around
+        justify-content space-around
+    &.dir-column.align-right
+        align-items flex-end
+    &.dir-column.valign-stretch
+        > *
+            flex-grow 1
+    &.dir-row.valign-top
+        align-items flex-start
+    &.dir-column.valign-top
+        justify-content flex-start
+    &.dir-column.valign-space-between
+        justify-content space-between
+    &.dir-column.valign-space-around
+        justify-content space-around
+    &.dir-row.valign-center
+        align-items center
+    &.dir-column.valign-center
+        justify-content center
+    &.dir-row.valign-bottom
+        align-items flex-end
+    &.dir-column.valign-bottom
+        justify-content flex-end
+    &.align-self-left
+        align-self flex-start
+    &.align-self-center
+        align-self center
+    &.align-self-right
+        align-self flex-end
+    &.pos-overlay
+        position absolute
+        left 0px
+        top 0px
+    &.size-cover
+        width 100%
+        height 100%
+
+.slice__container.dir-column
+    flex-wrap nowrap
+
+.slice__container
+.column
+    for n in (0..12)
+        &.{'width-'+n}
+            width rvw(colUnit*n)
+
+    for n in (0..12)
+        &.{'left-'+n}
+            margin-left rvw(colUnit*n)
+
+    for n in (0..12)
+        &.{'right-'+n}
+            margin-right rvw(colUnit*n)
+
+/* autogen */
+genBaseGridRules()
+for n in (1..15)
+    genGridRules('.slice.slice_v2', n, BlockSizeXL)
+// genGridRules(12)
+// genGridRules(10)
+// genGridRules(8)
+// genGridRules(6)
+
+// // discrete adaptive rules
+// .slice__container.adapt-discrete
+// .slice__container.adapt-discrete .column
+//     for n in (0..12)
+//         &.{'width-'+n}
+//             width BlockSizeXL*n
+
+//     for n in (0..12)
+//         &.{'left-'+n}
+//             margin-left BlockSizeXL*n
+
+//     for n in (0..12)
+//         &.{'right-'+n}
+//             margin-right BlockSizeXL*n
+
+.inline-ria.ria-width-1440
+    .height-screen-ria
+        height: calc(100vh - 120px)
+    .min-height-screen
+        min-height: calc(100vh - 120px)
+.inline-ria.ria-width-max
+    .height-screen-ria
+        height: calc(100vh - 120px)
+    .min-height-screen
+        min-height: calc(100vh - 80px)
+
+// .screen-size-extralarge
+//     .slice__container.adapt-discrete
+//         max-width 1440px
+// .screen-size-large
+//     .slice__container.adapt-discrete
+//         max-width 1344px
+// .screen-size-regular
+//     .slice__container.adapt-discrete
+//         max-width 960px
+// .screen-size-small
+//     .slice__container.adapt-discrete
+//         max-width 768px
+// .screen-size-mobile
+//     .slice__container.adapt-discrete
+//         max-width 100%
+
+.screen-size-mobile
+    .column
+    .slice__container
+        &.mobdir-row
+            flex-direction row
+
+
+// .screen-size-mobile
+//     .slice__container
+//         display block
+// .slice__container.width-12
+//     //
+//     width rvw(100/12*n)
+
+// .slice__container.maxw-1440
+// .slice__container.maxw-1440 .column
+//     for n in (0..12)
+//         &.{'width-'+n}
+//             width BlockSizeXL*n
+
+//     for n in (0..12)
+//         &.{'left-'+n}
+//             margin-left BlockSizeXL*n
+
+//     for n in (0..12)
+//         &.{'right-'+n}
+//             margin-right BlockSizeXL*n
+
+// .slice__container.maxw-1152
+// .slice__container.maxw-1152 .column
+//     for n in (0..12)
+//         &.{'width-'+n}
+//             width BlockSizeL*n
+
+//     for n in (0..12)
+//         &.{'left-'+n}
+//             margin-left BlockSizeL*n
+
+//     for n in (0..12)
+//         &.{'right-'+n}
+//             margin-right BlockSizeL*n
+
+.slice__container.maxw-960
+    max-width 960px
+
+.screen-minw-960
+.screen-minw-1152
+.screen-minw-1440
+    .slice__container.maxw-960
+        .column
+            for n in (0..12)
+                &.{'width-'+n}
+                    max-width BlockSizeR*n
+
+            for n in (0..12)
+                &.{'left-'+n}
+                    margin-left BlockSizeR*n
+
+            for n in (0..12)
+                &.{'right-'+n}
+                    margin-right BlockSizeR*n
+
+// .slice__container.maxw-768
+// .slice__container.maxw-768 .column
+//     for n in (0..12)
+//         &.{'width-'+n}
+//             width BlockSizeS*n
+
+//     for n in (0..12)
+//         &.{'left-'+n}
+//             margin-left BlockSizeS*n
+
+//     for n in (0..12)
+//         &.{'right-'+n}
+//             margin-right BlockSizeS*n
+
+.browser-ie
+
+    .slice__container
+    .column
+        for n in (0..12)
+            &.{'width-'+n}
+                // width Perunit*n
+                width (1/12*n)*100vw
+
+        for n in (0..12)
+            &.{'left-'+n}
+                // margin-left Perunit*n
+                margin-left (1/12*n)*100vw
+
+        for n in (0..12)
+            &.{'right-'+n}
+                // margin-right Perunit*n
+                margin-right (1/12*n)*100vw
+
+    // &.ria-width-1440
+    &.screen-size-large
+    &.screen-minw-1440
+
+        .slice__container
+        .column
+            for n in (0..12)
+                &.{'width-'+n}
+                    // width Perunit*n
+                    width (1/12*n)*1440px
+
+            for n in (0..12)
+                &.{'left-'+n}
+                    // margin-left Perunit*n
+                    margin-left (1/12*n)*1440px
+            for n in (0..12)
+                &.{'right-'+n}
+                    // margin-right Perunit*n
+                    margin-right (1/12*n)*1440px

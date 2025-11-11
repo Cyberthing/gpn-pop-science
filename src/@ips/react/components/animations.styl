@@ -1,0 +1,144 @@
+@keyframes FadeIn
+    0%
+        visibility hidden
+        opacity 0
+    0%        
+        visibility visible
+    100%
+        opacity 1
+        visibility visible
+
+@keyframes FadeOut
+    0%
+        visibility visible
+        opacity 1
+    100%
+        visibility visible
+    100%
+        visibility hidden
+        opacity 0
+        
+
+@keyframes SlideInLeft
+    0%
+        transform translateX(-100%)
+        visibility hidden
+    0%
+        visibility visible
+    100%
+        transform none
+        visibility visible
+
+@keyframes SlideOutLeft
+    0%
+        transform none
+        visibility visible
+    0%
+        visibility visible
+    100%
+        transform translateX(-100%)
+        visibility hidden
+
+@keyframes SlideInRight
+    0%
+        transform translateX(100%)
+    100%
+        transform none
+
+@keyframes SlideOutRight
+    0%
+        transform none
+    100%
+        transform translateX(100%)
+        
+        
+
+@keyframes SlideInUp
+    0%
+        transform translateY(100%)
+    100%
+        transform none
+
+@keyframes SlideOutUp
+    0%
+        transform none
+    100%
+        transform translateY(-100%)
+        
+
+@keyframes SlideInDown
+    0%
+        transform translateY(-100%)
+    100%
+        transform none
+
+@keyframes SlideOutDown
+    0%
+        transform none
+    100%
+        transform translateY(100%)
+        
+
+
+@keyframes PageSlideInUp
+    0%
+        transform translateY(100vh)
+        visibility hidden
+    0%
+        visibility visible
+    100%
+        visibility visible
+        transform none
+
+@keyframes PageSlideOutUp
+    0%
+        transform none
+        visibility visible
+    100%
+        visibility visible
+    100%
+        visibility hidden
+        transform translateY(-100vh)
+        
+
+@keyframes PageSlideInDown
+    0%
+        transform translateY(-100vh)
+    100%
+        transform none
+
+@keyframes PageSlideOutDown
+    0%
+        transform none
+    100%
+        transform translateY(100vh)
+        
+@keyframes BlurOut
+    0%
+        opacity 1
+        filter blur(0px)
+        visibility visible
+    50%
+        opacity 1
+        filter blur(10px)
+    100%
+        visibility visible
+    100%
+        visibility hidden
+        opacity 0
+        filter blur(20px)
+
+@keyframes BlurIn
+    0%
+        visibility hidden
+        opacity 0
+        filter blur(20px)
+    0%
+        visibility visible
+    50%
+        opacity 1
+        filter blur(10px)
+    100%
+        opacity 1
+        filter blur(0px)
+        visibility visible

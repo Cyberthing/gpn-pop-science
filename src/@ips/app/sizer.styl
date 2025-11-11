@@ -1,0 +1,33 @@
+// screenSizeXL = 1440px
+// screenSizeL = 1344px
+// screenSizeR = 1024px
+// screenSizeS = 768px
+// screenSizeMS = 350px
+
+screenSizeXL = 1457px
+screenSizeL = 1361px
+screenSizeR = 1041px
+screenSizeS = 785px
+screenSizeMS = 350px
+screenSizeMSn = 350
+
+// a shortcut for calc(var(--rvw, 1vw) * n)
+rvw(n=1)
+    s('calc(var(--rvw, 1vw) * %s)', n)
+blockSize(n=1)
+    s('calc(var(--grid-bs, 120px) * %s)', n)
+maxWidth()
+    s('var(--grid-max-width, 1440px)')
+gutter()
+    s('var(--grid-gutter, 16px)')
+gridPadding()
+    s('var(--grid-padding, 0px)')
+
+increasingMaxWidthDiscreteAuto(s, exp)
+    max-width s * 1%
+    @media (max-width: 1440px)
+          max-width: (s*exp)*1%
+    @media (max-width: 1024px)
+          max-width: (s*(exp*exp))*1%
+    @media (max-width: 768px)
+          max-width: (s*(exp*exp*exp))*1%

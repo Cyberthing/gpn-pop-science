@@ -1,0 +1,3 @@
+cd /www/data/ips/gpn-permafrost/
+mput -r build/*.*
+chmod 664 *.*

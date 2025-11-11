@@ -1,0 +1,530 @@
+@import './vars.styl'
+@import '@ips/app/sizer.styl'
+@import '@ips/app/font-utils.styl'
+
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap');
+
+colorBlue = #0173BD
+colorLightBlue = #D9F6F8
+
+@keyframes fadeIn
+	0%
+		opacity 0
+	100%
+		opacity 1
+		
+@keyframes scaleBackground
+	0%
+		background-size: 100%;
+		background-position: 50% 60%;
+	100%
+		background-size: 120%;
+		background-position: 00% 60%;
+
+@keyframes scaleBackgroundVert
+	0%
+		background-size: center 100%;
+		background-position: 50% 60%;
+	100%
+		background-size: center 120%;
+		background-position: 00% 60%;
+		
+
+		
+backEasing = cubic-bezier(0.257, 0.006, 0.738, 1)
+		 
+html.noscroll
+body.noscroll
+	position: fixed; 
+	overflow-y: scroll;
+	width: 100%;
+
+body:not(.m-ria)
+	background-color grey
+	
+.ips-app-container
+	max-width 1440px
+	margin 0 auto
+	
+.scroll-fixed
+	position sticky
+	position -webkit-sticky
+	// top 0px
+	
+@keyframes FadeIn
+	0%
+		opacity 0
+	100%
+		opacity 1
+
+@keyframes SlideUp
+	0%
+		transform translateY(50vh)
+	100%
+		transform translateY(0vh)
+		
+@keyframes slideInLeft
+	0%
+		transform translateX(-70%)
+		opacity 0
+	100%
+		transform translateX(0)
+		opacity 1
+		
+@keyframes slideInRight
+	0%
+		transform translateX(70%)
+		opacity 0
+	100%
+		transform translateX(0)
+		opacity 1
+	
+
+@keyframes flicker {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+@keyframes flickerI {
+	0% {
+		opacity: 0.4;
+	}
+	5% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.6;
+	}
+	15% {
+		opacity: 0.85;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0.85;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flickerLG {
+	0% {
+		opacity: 0.19;
+	}
+	5% {
+		opacity: 0.2;
+	}
+	10% {
+		opacity: 0.25;
+	}
+	15% {
+		opacity: 0.35;
+	}
+	25% {
+		opacity: 0.2;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.2;
+	}
+	60% {
+		opacity: 0.4;
+	}
+	70% {
+		opacity: 0.35;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
+
+.gpn-permafrost
+	*
+		box-sizing border-box
+	img
+		line-height:  0
+		display: block
+
+	background-color: white
+
+	img.overlay
+		line-height: 0
+
+	// .nod3
+	// 	span:nth-child(1){
+	// 		color red;
+	// 		animation: flickerI 1s linear infinite
+	// 	}
+	// 	span:nth-child(2){
+	// 		color brown;
+	// 		animation: flickerLG 1s linear infinite
+	// 	}
+	// 	span:nth-child(3){
+	// 		color brown;
+	// 		animation: flickerLG 1s linear infinite
+	// 	}
+
+	//
+	.text
+		p
+			margin 0
+		p + p
+			margin-top 1em
+
+	.coverPage
+		max-height 900px
+	.coverCont
+		min-height: 100vh
+		// justify-content space-between
+		// gap 120px
+		gap 10vh
+		padding 100px 0 160px 0
+	
+	.quizQuestion
+		margin-top 30px
+
+	.quizAnswerCont
+		background-color colorBlue
+		border-radius: 20px
+		padding: 23px 30px
+	// .quizAnswerCont+.quizAnswerCont
+	// 	margin-top: 20px
+
+	.quizAnsertBtnCont
+		display: flex
+		justify-content: center
+
+	.quizBtns
+		margin-top 40px
+		display: flex
+		flex-direction: column
+		gap: 20px;
+		
+	.quizAnswerBtn
+		background-color white
+		border-radius: 20px
+		padding: 23px 30px
+		width fit-content
+
+	.undergroundPage2
+		.text
+			color var(--textColor, black)
+
+	.leadPage
+		&.wBackPlate
+			// padding 50px 60px
+		// background-color: white;
+	.mapPage
+		margin: 50px 0;
+
+	.leadPage
+		margin: 50px 0;
+		&.undergroundPage1
+			margin: 50px 0 0;
+		&.undergroundPage2
+			margin: 0 0 50px;
+
+	.backPlate
+		left 0
+		right 0
+		top 0
+		bottom 0
+		width auto
+		height auto
+		// padding 0 50px;
+		border-radius 60px
+		overflow hidden
+		background-color: var(--backgroundColor)
+
+	// .backPlateInner
+	// 	width 100%
+	// 	height 100%
+	// 	position relative
+	// 	border-radius 60px
+	// 	overflow hidden
+
+	.backPlatedCon
+		position relative
+		width 100%
+		display flex
+		padding 50px
+		box-sizing border-box
+	
+	.slice__container.dir-column
+		.backPlatedCon
+			flex-direction: column
+
+	.earthContent
+		height: calc(var(--sy, 100vh) * 1px)
+	.earthVideo
+		width 100%
+		opacity: 0
+		&.visible
+			opacity:  1
+	.mapCon
+		// img
+		// 	width 100%;
+		// height: calc(var(--sy, 100vh) * 1px)
+		border-radius 60px
+		overflow: hidden
+
+	.factosCon
+		row-gap 50px
+
+	.facto
+		display flex
+		flex-direction column
+		flex 0 0 50%
+		gap 30px
+
+		img
+			border-radius: 20px
+			max-width 530px
+
+	.cardsTopCon
+		justify-content: space-between
+
+	.cardsMidCon
+		justify-content: space-between
+		align-items: center
+
+	.cardBtn
+		width 190px
+		height 190px
+		background-color white
+		border-radius: 50%
+		.pic
+			position absolute
+			width 38px
+
+
+	.card
+		padding 32px
+		background-color: white
+		border-radius: 40px
+		width 368px
+		height 500px
+
+		box-shadow: 0 0 30px 9px rgba(black, 0.1)
+
+		// position absolute
+
+		transition transform .3s
+
+		&.state0
+			z-index 2
+			position relative
+		&.state1
+			position absolute
+			top 0
+			transform: translateX(10%) scale(0.9)
+			z-index 1
+		&.state-1
+			position absolute
+			top 0
+			transform: translateX(-10%) scale(0.9)
+			z-index 1
+		&.state2
+			position absolute
+			top 0
+			transform: translateX(20%) scale(0.8)
+			z-index 0
+		&.state-2
+			position absolute
+			top 0
+			transform: translateX(-20%) scale(0.8)
+			z-index 0
+
+
+		.cardImg img
+			border-radius: 20px
+
+		.cardTitle
+			margin-top: 30px
+		.cardDesc
+			margin-top: 15px
+
+
+
+	.scroll-fixed.navBarCont
+		pointer-events none
+		transition opacity .3s ease-in-out, visibility .3s ease-in-out
+		opacity 1
+		visibility visible
+		&.isCover
+			opacity 0
+			visibility hidden
+			
+	.tooltippedInline
+		position relative
+		display inline-flex
+		white-space initial
+		text-decoration underline
+		cursor help
+		.tooltip-content
+			position absolute
+			opacity 0
+			pointer-events none
+			transition opacity .3s
+			bottom calc(100% + 10px)
+			left 50%
+			transform translateX(-50%)
+			min-width 200px
+			max-width 350px
+			font-size 12px
+			background-color colorShit
+			padding 5px 10px
+			
+		&:hover
+			.tooltip-content
+				opacity 1
+			
+.screen-size-regular, .screen-size-small, .screen-size-small, .screen-size-mobile
+	// 
+
+.browser-ie
+	// 
+
+.topline-ria
+	// 
+		
+.scene-mobile
+	.gpn-permafrost
+		.coverPage .slice__container
+			//
+		
+.inline-ria.scene-desktop
+//html:not(.inline-ria)
+	.hh-rating
+		.frame
+			padding-top 56px
+			
+		.sticky-frame
+			.scroll-fixed
+				top 56px
+				height calc(var(--height, 100vh))
+

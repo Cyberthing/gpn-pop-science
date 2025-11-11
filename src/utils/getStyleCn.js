@@ -1,0 +1,2 @@
+export const getStyleCn = (s)=>'style'+(s?s[0].toUpperCase()+s.slice(1):'')
+export default getStyleCn

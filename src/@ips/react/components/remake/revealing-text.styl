@@ -1,0 +1,43 @@
+@keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+@keyframes slideUp
+  0%
+    opacity 0
+    transform translateY(100%)
+  100%
+    opacity 1
+    transform translateY(0%)
+
+@keyframes slideDown
+  0%
+    opacity 0
+    transform translateY(-100%)
+  100%
+    opacity 1
+    transform translateY(0%)
+
+@keyframes rollInLeft
+  0%
+    opacity 0
+    transform rotate(60deg) translateY(30%)
+  100%
+    opacity 1
+    transform rotate(0deg)
+
+@keyframes rollInRight
+  0%
+    opacity 0
+    transform rotate(-60deg) translateY(-30%)
+  100%
+    opacity 1
+    transform rotate(0deg)
+
+.revealing-text
+    position relative
+
+    span
+        display inline-block

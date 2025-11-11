@@ -1,0 +1,67 @@
+// @keyframes LBFadeIn
+//     0%
+//         visibility hidden
+//         opacity 0
+//     0%
+//         visibility visible
+//     100%
+//         visibility visible
+//         opacity 1
+    
+// @keyframes LBFadeOut
+//     0%
+//         visibility visible
+//         opacity 1
+//     100%
+//         opacity 0
+//     100%
+//         visibility hidden
+//         opacity 0
+
+.fixed.lightbox
+    // width 100vw
+    // height 100%
+    width 100%
+    // visibility hidden
+    // opacity 0
+    // transition opacity .3s
+    // animation LBFadeOut .5s linear both
+    
+.lightbox__container
+    height 100%
+    width 100%
+    overflow-y auto
+    -webkit-overflow-scrolling touch
+    
+// .lightbox.lightbox_visible
+//     animation LBFadeIn .3s linear both
+    
+.lightbox__btn-close
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    
+.no-platform-macos
+    .lightbox__btn-close
+        right 49px
+
+.lightbox__btn-close:hover
+    opacity: 1;
+
+.lightbox__btn-close:before, .lightbox__btn-close:after
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #FFF;
+
+.lightbox__btn-close:before
+    transform: rotate(45deg);
+
+.lightbox__btn-close:after
+    transform: rotate(-45deg);
+

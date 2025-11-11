@@ -1,0 +1,2256 @@
+{
+ "main": {
+  "__typename": "Main",
+  "config": {
+   "__typename": "ComponentMainConfig",
+   "iconHeader": {
+    "__typename": "UploadFile",
+    "mime": "image/svg+xml",
+    "url": "icon_Header_09c17bb4e0.svg",
+    "width": 20,
+    "height": 27,
+    "serverUrl": "/uploads/icon_Header_09c17bb4e0.svg",
+    "basename": "icon_Header_09c17bb4e0"
+   },
+   "iconQuote": {
+    "__typename": "UploadFile",
+    "mime": "image/svg+xml",
+    "url": "icon_Quote_9632867a5f.svg",
+    "width": 87,
+    "height": 62,
+    "serverUrl": "/uploads/icon_Quote_9632867a5f.svg",
+    "basename": "icon_Quote_9632867a5f"
+   },
+   "logoWhite": {
+    "__typename": "UploadFile",
+    "mime": "image/png",
+    "url": "top_Logo_White_fcbcc046d3.png",
+    "width": 556,
+    "height": 120,
+    "serverUrl": "/uploads/top_Logo_White_fcbcc046d3.png",
+    "basename": "top_Logo_White_fcbcc046d3"
+   }
+  },
+  "navBar": {
+   "__typename": "ComponentMainNavbar",
+   "bandTile": {
+    "__typename": "UploadFile",
+    "mime": "image/svg+xml",
+    "url": "band_Tile_e752ec274a.svg",
+    "width": 2,
+    "height": 32,
+    "serverUrl": "/uploads/band_Tile_e752ec274a.svg",
+    "basename": "band_Tile_e752ec274a"
+   },
+   "bandMark": {
+    "__typename": "UploadFile",
+    "mime": "image/svg+xml",
+    "url": "band_Mark_e201e044cb.svg",
+    "width": 16,
+    "height": 2,
+    "serverUrl": "/uploads/band_Mark_e201e044cb.svg",
+    "basename": "band_Mark_e201e044cb"
+   },
+   "bandPointer": {
+    "__typename": "UploadFile",
+    "mime": "image/svg+xml",
+    "url": "band_Pointer_a36918ed32.svg",
+    "width": 50,
+    "height": 3,
+    "serverUrl": "/uploads/band_Pointer_a36918ed32.svg",
+    "basename": "band_Pointer_a36918ed32"
+   },
+   "indexIcons": [
+    {
+     "__typename": "UploadFile",
+     "mime": "image/svg+xml",
+     "url": "bar_Icon1_e0cf4e03f6.svg",
+     "width": 41,
+     "height": 42,
+     "serverUrl": "/uploads/bar_Icon1_e0cf4e03f6.svg",
+     "basename": "bar_Icon1_e0cf4e03f6"
+    },
+    {
+     "__typename": "UploadFile",
+     "mime": "image/svg+xml",
+     "url": "bar_Icon2_61cfdbd3d8.svg",
+     "width": 41,
+     "height": 42,
+     "serverUrl": "/uploads/bar_Icon2_61cfdbd3d8.svg",
+     "basename": "bar_Icon2_61cfdbd3d8"
+    },
+    {
+     "__typename": "UploadFile",
+     "mime": "image/svg+xml",
+     "url": "bar_Icon3_efd9c71a3f.svg",
+     "width": 41,
+     "height": 42,
+     "serverUrl": "/uploads/bar_Icon3_efd9c71a3f.svg",
+     "basename": "bar_Icon3_efd9c71a3f"
+    },
+    {
+     "__typename": "UploadFile",
+     "mime": "image/svg+xml",
+     "url": "bar_Icon4_c83ba30188.svg",
+     "width": 42,
+     "height": 41,
+     "serverUrl": "/uploads/bar_Icon4_c83ba30188.svg",
+     "basename": "bar_Icon4_c83ba30188"
+    }
+   ]
+  },
+  "cover": {
+   "__typename": "ComponentMainCover",
+   "background": {
+    "__typename": "UploadFile",
+    "mime": "video/mp4",
+    "url": "cover_c_058e9c6741.mp4",
+    "width": null,
+    "height": null,
+    "serverUrl": "/uploads/cover_c_058e9c6741.mp4",
+    "basename": "cover_c_058e9c6741"
+   },
+   "title": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\"><strong>строители</strong></span></p><p><span style=\"white-space:pre-wrap;\">победы</span></p>",
+   "lead": "<p>Москва серьёзно пострадала во время Великой Отечественной войны — но город не сдался. Бережно восстанавливать разрушенное, возрождая жизнь среди руин, в столице начали ещё тогда, когда гремели победоносные бои. Полномасштабное же восстановление началось с приходом Победы. Архитектура послевоенной Москвы заговорила на языке торжества: широкие проспекты, устремлённые в будущее, парадные фасады, излучающие свет надежды, скверы и парки, где снова звучал детский смех.</p><p>В спецпроекте РИА Новости, посвящённом 80-летию Победы, расскажем, кто и как менял город после войны, какие истории хранят его восстановленные и построенные заново здания и как сегодня город бережёт память о героическом прошлом тех, кто подарил нам будущее.</p>",
+   "topLogo": {
+    "__typename": "UploadFile",
+    "mime": "image/png",
+    "url": "top_Logo_White_fcbcc046d3.png",
+    "width": 556,
+    "height": 120,
+    "serverUrl": "/uploads/top_Logo_White_fcbcc046d3.png",
+    "basename": "top_Logo_White_fcbcc046d3"
+   },
+   "topLogoMobile": {
+    "__typename": "UploadFile",
+    "mime": "image/png",
+    "url": "Logotip_GSK_1_128f9a352a.png",
+    "width": 556,
+    "height": 120,
+    "serverUrl": "/uploads/Logotip_GSK_1_128f9a352a.png",
+    "basename": "Logotip_GSK_1_128f9a352a"
+   }
+  },
+  "articles": [
+   {
+    "__typename": "Article",
+    "name": "Москва в годы войны",
+    "index": "1",
+    "years": "1941—1943 гг.",
+    "title": "Москва<br>в годы войны",
+    "lead": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Москва во время Великой Отечественной войны, хотя и пострадала меньше, чем некоторые другие города СССР, часть из которых была практически стёрта с лица земли, все&nbsp;же получила немалый урон от налётов немецкой авиации и бомбёжек.</span></p>",
+    "style": null,
+    "background": {
+     "__typename": "UploadFile",
+     "mime": "image/jpeg",
+     "url": "a_Cover1_ca81203899.jpg",
+     "width": 2880,
+     "height": 2048,
+     "serverUrl": "/uploads/a_Cover1_ca81203899.jpg",
+     "basename": "a_Cover1_ca81203899"
+    },
+    "backgroundMobile": {
+     "__typename": "UploadFile",
+     "mime": "image/png",
+     "url": "mc1_869f7c723f.png",
+     "width": 1347,
+     "height": 718,
+     "serverUrl": "/uploads/mc1_869f7c723f.png",
+     "basename": "mc1_869f7c723f"
+    },
+    "blocks": [
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "a1_1_0d25107b35.jpg",
+       "width": 2886,
+       "height": 2048,
+       "serverUrl": "/uploads/a1_1_0d25107b35.jpg",
+       "basename": "a1_1_0d25107b35"
+      },
+      "credit": "Советские зенитчики на крыше  гостиницы «Москва» в 1941 году",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Миллиардный ущерб"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Налёты на Москву начались в июле 1941 года, ровно через месяц после начала войны. Самые интенсивные бомбардировки пришлись на октябрь–ноябрь 1941 года, а к 1943 году все атаки на город уже прекратились, рассказывает искусствовед, замдиректора Музея архитектуры имени&nbsp;А.&nbsp;В.&nbsp;Щусева по просветительской деятельности Ксения Смирнова.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>Немцы кидали на город либо фугасные, заряженные аммоналом, либо&nbsp;зажигательные бомбы. «Зажигалки» при ударе по&nbsp;какой-то тяжёлой, твёрдой поверхности загораются, как гигантский факел, объясняет начальник отдела «История Москвы» Музея Москвы Ирина Карпачева.</p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Всего на Москву, по её данным, было сброшено более 100 тысяч зажигательных и около 1,6 тысячи фугасных авиационных бомб, воздушная тревога за время войны объявлялась 141&nbsp;раз. Большой проблемой для города было то, что в Москве к началу войны было много деревянных домов, которым из-за опасности возникновения пожара были особенно страшны зажигательные бомбы.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "a1_2_5954317714.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/a1_2_5954317714.jpg",
+       "basename": "a1_2_5954317714"
+      },
+      "credit": "Боец войск ПВО ведёт наблюдение на крыше гостиницы «Москва» в 1941 году",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleFacto",
+      "facto": "6,4",
+      "desc": "тысячи зданий было  разрушено"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>К концу войны, по данным, которые приводит в своей кандидатской диссертации главный архитектор Москвы Сергей Кузнецов, срочного ремонта требовали почти 90% системы центрального отопления, а также половина водопровода, канализации, электрооборудования и газоснабжения столицы.</p><p>Всего в Москве было разрушено 6,4 тысячи зданий. Эта цифра включала в себя не только жилые и административные здания, заводские корпуса, но и складские помещения, а также временные постройки. После войны нуждались в ремонте и более 70% московских крыш, так как они были повреждены в результате обстрелов города.</p><p>Ущерб от бомбардировок, причинённый городу налётами, согласно данным специальной комиссии, составил 4,3 миллиарда рублей.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Пострадавшее наследие"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>От фашистских налётов пострадало немало известных зданий и сооружений столицы. Так, например, фугасная бомба попала в здание Большого театра. В результате этого попадания была уничтожена лепнина в вестибюле, выбиты окна, обрушилась стена главного фасада театра, рассказывает москвовед Александр Васькин.</p><p>Также был повреждён Государственный музей изобразительных искусств имени А. С. Пушкина на Волхонке, полностью уничтожен Государственный Академический Театр имени Евгения Вахтангова на Арбате, сильно пострадал Белорусский вокзал, даже Кремль подвергся бомбардировке, перечисляет он.<br>В Большом Кремлёвском дворце фугасная бомба пробила крышу и упала в Георгиевский зал, но, к счастью, не сработала, отмечает Карпачева. В Лаврушинском переулке сильно пострадала Третьяковская галерея — на здание были сброшены две фугасные бомбы, рухнуло межэтажное перекрытие.</p><p>Во время войны бомба попала в тоннель между «Арбатской» и «Смоленской» станциями метро, пострадал и Белорусский вокзал. Дважды попадали бомбы также в Московский зоопарк, рассказывает историк Москвы Филипп Смирнов.<br>Бомба повредила и здание Московского университета на Моховой улице. Взрывной волной там были разрушены многие интерьеры.</p><p>Одной из самых трагичных потерь, по словам Смирновой, был уничтоженный дом Гагарина на Новинском бульваре, который представлял из себя уникальный памятник деревянного московского ампира. От попадания бомбы дом выгорел, и сегодня от него сохранились только белокаменные сфинксы, которые хранятся в Музее архитектуры.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "a1_3_9c978f1aaa.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/a1_3_9c978f1aaa.jpg",
+       "basename": "a1_3_9c978f1aaa"
+      },
+      "credit": "Улица Горького (ныне Тверская) в Москве в 1941 году",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>Кроме того, немцы сбросили фугасную бомбу на дом по адресу: Моховая улица, 10, строения 1 и&nbsp;2. В результате был уничтожен один из подъездов. Этот дом сохранился и сейчас, но теперь он состоит из двух отдельных зданий, добавляет Васькин.</p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Сильно пострадала и одна из центральных улиц столицы&nbsp;— улица Тверская.<br>Также были налёты на Пятницкую улицу, говорит Смирнов&nbsp;— во время одного из налётов туда упал фугасный заряд. В результате бомбардировки фугасный снаряд упал в здание райкома на улице Большая Полянка, дом&nbsp;50. Из-за прямого попадания бомбы был полностью уничтожен Арбатский рынок.</p><p>Из крупных заводов в Москве пострадал Завод имени Сталина (ЗИЛ)&nbsp;— частично там были разрушены цеха, которые не эвакуировали из города, рассказывает Карпачева. Кроме того, немцы били по&nbsp;большим городским овощебазам, складам и другим объектам.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Спасти и уберечь"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Чтобы уберечь стратегические и знаковые здания и сооружения центра Москвы от бомбардировок, было решено маскировать их.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">У немцев в период войны были очень точные карты, с воздуха они определяли расположение важных объектов и наносили по ним удары. Нужно было сделать Москву невидимой с воздуха. Маскировка помогла минимизировать ущерб, рассказывает москвовед Васькин.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Разработка проекта маскировки была поручена архитектору Борису Иофану. &nbsp;В специальную службу, по словам главы Союза архитекторов России Николая Шумакова, вошли видные архитекторы и художники: Виктор Андреев, Иосиф Ловейко, Михаил Посохин, Каро Алабян, Николай Колли, Дмитрий Чечулин и многие другие.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "a1_4_8d8a01abdb.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/a1_4_8d8a01abdb.jpg",
+       "basename": "a1_4_8d8a01abdb"
+      },
+      "credit": "Защитная маскировка на здании Большого театра в Москве  в 1942 году",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleFacto",
+      "facto": "4,3",
+      "desc": "млрд рублей составил  ущерб от бомбардировок"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Этот проект включал в себя различные приемы маскировки. В первую очередь плоскостную имитацию, то есть разукрашивание и нанесение рисунков на плоские поверхности, стены домов, на которых рисовали ложные оконные, дверные проёмы, ложные улицы, переулки, объясняет Смирнова.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>Такие&nbsp;же рисунки наносились на крыши сверху, чтобы не были видными для вражеской авиации. На больших площадях и заасфальтированных поверхностях города были сделаны изображения, имитирующие плотную застройку. Таким образом был нарисован целый квартал зданий на нынешней Манежной площади, на Красной площади. Прямо поверх здания Театра Красной армии также был нанесён рисунок. Потом его счищали, снимали краску, объясняет Ксения Смирнова.</p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Помимо таких маскировочных изображений, на особо яркие, видимые издалека объекты, типа позолоченных куполов, в Москве надевались защитные чехлы. Кремлёвские звезды просто погасили.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleFacto",
+      "facto": null,
+      "desc": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "a1_5_2fb66ed884.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/a1_5_2fb66ed884.jpg",
+       "basename": "a1_5_2fb66ed884"
+      },
+      "credit": "Заградительный аэростат противовоздушной обороны перед зданием Большого театра  в Москве в 1941 году",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Создавались также и объёмные имитации, то есть буквально выстраивали бутафорские объекты, домики на площадях, на глади Москвы-реки, а также сооружения вокруг зданий или вокруг частей зданий какие-то ложные объёмы. Например, Мавзолей был целиком обстроен деревянной конструкцией и замаскирован под обычный дом. Вокруг портика Большого театра также были натянуты полотнища, имитирующие маленькие здания, из которых якобы состоит этот объём. Также на крышах зданий выставляли кусты, зелёные насаждения.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>Целью всей этой бутафории была дезориентация немецких лётчиков, чтобы они не могли быстро сориентироваться по явным, легко считывающимся планировкам зданий, таким как Манеж, Кремль, кремлёвские соборы, Театр Красной армии, здание Сената, очерченное чётким треугольником и очень хорошо видное с воздуха, и так далее. Надо было заставить фашистов сбросить бомбы на другие, ложные объекты, объясняет Смирнова.</p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "a1_6_8cf6432c6e.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/a1_6_8cf6432c6e.jpg",
+       "basename": "a1_6_8cf6432c6e"
+      },
+      "credit": "Московский манеж. Фрагмент фасада с нанесённой маскировочной окраской.  1940 год © Государственный музей архитектуры имени  А. В. Щусева",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>На окраинах же города, по её словам, выстраивались целые бутафорские аэродромы, нефтехранилища, военные базы. Всё это вместе с эффективной работой системы ПВО помогло Москве избежать больших потерь.</p><p>Маскировку начали убирать в 1942 году, когда налёты на город прекратились. Но её следы оставались на московских домах вплоть до 50-х годов, вспоминает народный архитектор РФ Андрей Боков.</p><p>Кроме того, после налётов московские архитекторы также активно занимались так называемой инженерной разведкой, обращает внимание главный инженер Института Генплана Москвы Михаил Крестмейн. Они обследовали повреждённые здания и давали заключения, подлежат ли они восстановлению, и если речь шла о жилом здании, то возможно ли в нём дальнейшее проживание людей.</p>",
+      "style": null
+     },
+     {
+      "__typename": "VrezSection",
+      "blocks": [
+       {
+        "__typename": "ComponentArticlePhotoRow",
+        "slides": [
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          },
+          "credit": "Знаковые здания Москвы,  пострадавшие  во время войны",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_42_02f70ab142.jpg",
+           "width": 636,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_42_02f70ab142.jpg",
+           "basename": "Rectangle_42_02f70ab142"
+          },
+          "credit": "Большой театр",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_43_2fd15bc354.jpg",
+           "width": 636,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_43_2fd15bc354.jpg",
+           "basename": "Rectangle_43_2fd15bc354"
+          },
+          "credit": "Третьяковская галерея в Лаврушинском пер.",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_45_7294bf6c64.jpg",
+           "width": 636,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_45_7294bf6c64.jpg",
+           "basename": "Rectangle_45_7294bf6c64"
+          },
+          "credit": "Главное здание ГМИИ имени А. С. Пушкина",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_44_44a4f66c57.jpg",
+           "width": 636,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_44_44a4f66c57.jpg",
+           "basename": "Rectangle_44_44a4f66c57"
+          },
+          "credit": "Большой Кремлевский дворец",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_46_673dcd3dde.jpg",
+           "width": 636,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_46_673dcd3dde.jpg",
+           "basename": "Rectangle_46_673dcd3dde"
+          },
+          "credit": "Здание Белорусского вокзала",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_47_db51f36fd0.jpg",
+           "width": 636,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_47_db51f36fd0.jpg",
+           "basename": "Rectangle_47_db51f36fd0"
+          },
+          "credit": "Главное здание Московского зоопарка",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_48_e29090a5a5.jpg",
+           "width": 636,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_48_e29090a5a5.jpg",
+           "basename": "Rectangle_48_e29090a5a5"
+          },
+          "credit": "Здание МГУ им. Ломоносова на Моховой ул.",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Не затягивая дело"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Повреждённые знаковые здания и стратегические объекты Москвы, пострадавшие от обстрелов, старались восстановить максимально быстро.&nbsp;</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>Это делалось в том числе для того, чтобы люди не падали духом. Они видели, как на их глазах восстанавливались важные для сознания советского человека объекты. Это касалось и жилых домов. То, что можно было быстро восстановить, делалось, и делалось с любовью к городу и москвичам, делится своими детскими воспоминаниями о военной Москве депутат Госдумы Владимир Ресин.</p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Например, работы по восстановлению Большого театра начались сразу после бомбёжек. Его реставрация завершилась всего за 240 дней. Этим занимались специальные инженерные службы, которые возглавил архитектор Дмитрий Чечулин.&nbsp;</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>На Тверском бульваре стоит памятник Тимирязеву. Если приглядеться к нему, заметно, что левая нога у памятника чуть отколота. Это следы удара фугасной бомбы в 1941 году, в результате которого памятник был сброшен с постамента, и перед ним образовалась огромная воронка. Городские службы сработали моментально, на следующий день повреждений уже не было, был положен свежий асфальт, и памятник вновь стоял на своём месте, рассказывает Ирина Карпачева.</p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "a1_7_8f84c9e741.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/a1_7_8f84c9e741.jpg",
+       "basename": "a1_7_8f84c9e741"
+      },
+      "credit": "Люди скрываются во время обстрела Москвы в 1941 году  на станции метро «Маяковская»",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Подземный фронт"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Одним из важнейших объектов гражданской обороны, да и в целом повседневной жизни столицы, во время войны был Московский метрополитен. Во время бомбёжек, когда метро использовалось в качестве укрытия, в нём родилось более 200 детей, рассказывает Шумаков. А во время многочасовых воздушных налётов на станции метро «Курская» даже работала публичная библиотека.</p><p>Наряду с другими знаковыми зданиями и сооружениями города подземка тоже пострадала при бомбёжках, рассказывает историк транспорта, москвовед Мария Калиш. Дело в том, что метро в Москве в 30-х годах XX века, хотя и строилось в том числе как бомбоубежище, было неглубокого заложения, в пределах 6–8 метров.</p><p>Заложенная в плане станций система подходных коридоров, по словам москвоведа, предполагалась не только для разведения пассажиропотоков, но и для того, чтобы погасить взрывную волну, проникшую снаружи.&nbsp;</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "a1_8_691d8018ea.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/a1_8_691d8018ea.jpg",
+       "basename": "a1_8_691d8018ea"
+      },
+      "credit": "Строительство метро Арбатско-Покровской линии Московского метрополитена во время войны",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Но выяснилось, что боеприпасы 40-х годов при определенном стечении обстоятельств способны пробить тоннели, продолжает Калиш. Так, в июле 1941 года бомба попала в перегон Арбатского радиуса — между станциями «Арбатской» и «Смоленской» нынешней Филевской линии метро.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>Восстанавливать повреждения начали сразу. В том числе потому, что метро было важнейшим видом транспорта в военном городе. Ведь в этот период наземный транспорт столицы работал очень ограничено. Автобусы были мобилизованы, трамвай и троллейбусы испытывали нехватку водителей и ремонтников, констатирует москвовед Мария Калиш.</p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Затем началось не только восстановление, но и строительство целых линий, и в условиях военного времени это был огромный реальный подвиг метростроевцев. За время войны было построено семь станций Арбатско-Покровской и Горьковско-Замоскворецкой линий московского метрополитена: «Бауманская», «Электрозаводская», «Сталинская» (ныне «Семеновская»), «Измайловский парк культуры и отдыха имени Сталина» (ныне «Партизанская»), а также «Новокузнецкая», «Павелецкая» и «Завод имени Сталина» (ныне «Автозаводская»)<br>&nbsp;</p><p>В вестибюлях и подземных залах этих станций высечено золотом по мрамору «Сооружено в дни Отечественной войны».</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Конечно, строить метро во время войны в условиях нехватки строительных материалов и специалистов было непросто. Но решения были найдены.</p><p>Вместо гравия начали использовать кирпичную крошку. Производство тюбингов перенесли в Москву, говорит Васькин. А для решения проблемы дефицита кадров было разрешено возвращать в тыл людей&nbsp;для строительства метрополитена. Кроме того, люди, занятые в этих работах, получали бронь от мобилизации.</p>",
+      "style": null
+     },
+     {
+      "__typename": "VrezSection",
+      "blocks": [
+       {
+        "__typename": "ComponentArticleText",
+        "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Особенно много историй связано со станцией метро «Новокузнецкая», открытой в ноябре 1943 года.</span></p>",
+        "style": null
+       },
+       {
+        "__typename": "ComponentArticlePhotoRow",
+        "slides": [
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_45_b108589926.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_45_b108589926.jpg",
+           "basename": "Rectangle_45_b108589926"
+          },
+          "credit": "Проект станции метро «Новокузнецкая».  1943 год © Государственный музей архитектуры имени А. В. Щусева",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_44_f7c742c0ca.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_44_f7c742c0ca.jpg",
+           "basename": "Rectangle_44_f7c742c0ca"
+          },
+          "credit": "Станция метро «Новокузнецкая». 1940-е годы © Государственный музей архитектуры имени А. В. Щусева",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         }
+        ]
+       },
+       {
+        "__typename": "ComponentArticleQuote",
+        "text": "<p>Ветераны-метростроевцы рассказывали, что московские художники &nbsp;и архитекторы отказывались покидать город и уезжать в эвакуацию&nbsp;— настолько захватывающим был этот проект. Геральдика, мозаика, инкрустация, медальоны с барельефами, скульптурные группы, люстры&nbsp;— интерьер станции, её художественное оформление тематически олицетворяли борьбу нашего народа против фашизма, стойкую веру в победу, вспоминает Шумаков.</p>"
+       },
+       {
+        "__typename": "ComponentArticlePhotoRow",
+        "slides": [
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          },
+          "credit": "станции метро, построенные во время войны",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_49_15ce796665.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_49_15ce796665.jpg",
+           "basename": "Rectangle_49_15ce796665"
+          },
+          "credit": "Станция «Новокузнецкая»  Замоскворецкой линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_50_60fa75b174.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_50_60fa75b174.jpg",
+           "basename": "Rectangle_50_60fa75b174"
+          },
+          "credit": "Станция «Автозаводская»  Замоскворецкой линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_52_340bf96eb2.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_52_340bf96eb2.jpg",
+           "basename": "Rectangle_52_340bf96eb2"
+          },
+          "credit": "Станция «Партизанская» Арбатско-Покровской линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_54_f34fb15f4e.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_54_f34fb15f4e.jpg",
+           "basename": "Rectangle_54_f34fb15f4e"
+          },
+          "credit": "Станция «Бауманская»  Арбатско-Покровской линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_51_42f6057641.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_51_42f6057641.jpg",
+           "basename": "Rectangle_51_42f6057641"
+          },
+          "credit": "Станция метро «Семеновская»  Арбатско-Покровской линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_53_b93da15c60.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_53_b93da15c60.jpg",
+           "basename": "Rectangle_53_b93da15c60"
+          },
+          "credit": "Станция «Павелецкая»  Замоскворецкой линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_55_d9b8f7c428.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_55_d9b8f7c428.jpg",
+           "basename": "Rectangle_55_d9b8f7c428"
+          },
+          "credit": "Станция «Электрозаводская»  Арбатско-Покровской линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Несмотря на то, что столица, конечно, в полной мере ощутила на себе удар немецкой авиации во время Великой Отечественной войны, город не был сломлен и старался максимально быстро восстановить разрушенные и повреждённые объекты и продолжал строительство такого сложного сооружения, как метрополитен.</p>",
+      "style": null
+     }
+    ]
+   },
+   {
+    "__typename": "Article",
+    "name": "Курс на жизнь",
+    "index": "2",
+    "years": "1944—1950 гг.",
+    "title": "Курс<br>на жизнь",
+    "lead": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Пострадавшая во время Великой Отечественной войны Москва начала залечивать раны ещё до окончания боевых действий, но период наиболее активного её восстановления приходится, конечно, на первые послевоенные годы. Помимо работ по ремонту и реконструкции, в городе велось активное жилое и гражданское строительство и достиг своего расцвета уникальный архитектурный стиль, названный «сталинским ампиром». Кроме того, московские архитекторы, инженеры и строители участвовали в восстановлении и других городов СССР.</span></p>",
+    "style": null,
+    "background": {
+     "__typename": "UploadFile",
+     "mime": "image/jpeg",
+     "url": "a_Cover2_9c65b143bb.jpg",
+     "width": 2880,
+     "height": 2048,
+     "serverUrl": "/uploads/a_Cover2_9c65b143bb.jpg",
+     "basename": "a_Cover2_9c65b143bb"
+    },
+    "backgroundMobile": {
+     "__typename": "UploadFile",
+     "mime": "image/png",
+     "url": "mc2_7f9957ca9b.png",
+     "width": 1308,
+     "height": 716,
+     "serverUrl": "/uploads/mc2_7f9957ca9b.png",
+     "basename": "mc2_7f9957ca9b"
+    },
+    "blocks": [
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "1_4cbf6f4dea.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/1_4cbf6f4dea.jpg",
+       "basename": "1_4cbf6f4dea"
+      },
+      "credit": "Улица Горького (ныне Тверская)  в Москве. 1948 год.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Восстановить или воссоздать"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">После окончания войны были восстановлены те знаковые здания и сооружения Москвы, которые не удалось полностью привести в порядок до 1945 года.</span></p><p><span style=\"white-space:pre-wrap;\">Так, например, масштабная реставрация Кремля началась уже после войны, делится воспоминаниями из детства депутат Госдумы Владимир Ресин. В 1946 году вышло постановление о восстановлении башен и стен. Закончили все работы только в середине 1950 года.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Работы шли масштабно: ремонтировали Арсенал, приводили в порядок могилы у Кремлёвской стены. Позднее мне тоже довелось руководить и реставрацией ряда зданий в Кремле. Не было дня, когда&nbsp;бы я не вспоминал те военные и послевоенные дни, когда московские строители в сложное для страны время делали всё возможное, рассказывает Ресин.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Улицы Москвы, особенно центральные, тоже преображались. Например, улицу Горького (сейчас Тверская) достраивали и реконструировали, чтобы она соответствовала новому облику столицы.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_32_79b0ff5aea.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_32_79b0ff5aea.jpg",
+       "basename": "Group_32_79b0ff5aea"
+      },
+      "credit": "Новогодняя ярмарка на Пушкинской площади. Москва, 1947 год.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">«Восстановление шло везде: на заводах, в жилых кварталах, на вокзалах. Люди работали не покладая&nbsp;рук. Москва залечивала раны, и каждый отремонтированный дом, каждый восстановленный памятник становился маленькой победой над тяготами войны»,&nbsp;— повествует о происходившем в те дни Ресин.</span></p><p><span style=\"white-space:pre-wrap;\">В целом&nbsp;же все знаковые здания и сооружения Москвы были отремонтированы к 800-летию Москвы в 1948 году.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>К этому празднику была подготовлена потрясающая иллюминация, хотя в повседневной жизни город был достаточно тёмный. Еще на 800-летие Москвы был огромный аэростат, к нему был прикреплен не менее огромный портрет Сталина. И все прожектора сконцентрировались на этой картине. Ещё был фантастический салют», — вспоминает народный архитектор РФ Александр Кудрявцев.</p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_33_2fddee4578.jpg",
+       "width": 2880,
+       "height": 2040,
+       "serverUrl": "/uploads/Group_33_2fddee4578.jpg",
+       "basename": "Group_33_2fddee4578"
+      },
+      "credit": "Вид на гостиницу «Москва» и улицу Охотный Ряд в Москве. 1950 год.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Жильё людям"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>И всё же главная задача в послевоенный период состояла в том, что дать людям жилье, говорит первый заместитель директора Института Генплана Москвы Игорь Бахирев. По его словам, когда многие москвичи вернулись из эвакуации, то обнаружили, что их комнаты заняты другими людьми. Кто-то был вынужден жить в бараках, кто-то в подвалах.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>Что такое Москва к 50-му году? Это город, который избавился от бараков, но заселил все подвалы домов. Кто туда заселялся? Люди, которые приехали в Москву после войны, которые работали дворниками, милиционерами, метростроителями. В послевоенный период все подвальные помещения сталинских домов были переоборудованы под квартиры. Жилищное строительство не успевало за притоком населения, обрисовывает сложившуюся тогда ситуацию главный инженер Института Генплана Москвы Михаил Крестмейн.</p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Именно поэтому всё было посвящено тому, чтобы максимально быстро дать москвичам более или менее комфортные жилищные условия.</span></p><p><span style=\"white-space:pre-wrap;\">«Архитекторов бросили на обследование всех зданий. По его итогам они должны были решить, какой дом можно восстановить, а какой придётся снести. Толковые архитекторы того времени с оглядкой на перспективу решали, а стоит&nbsp;ли восстанавливать конкретные здания или, может, надо будет потом эту улицу расширять»,&nbsp;— делает экскурс в прошлое Крестмейн.</span></p><p><span style=\"white-space:pre-wrap;\">В некоторых дворах еще в 50-е годы стояли жилые здания, изрешечённые осколками, вспоминает Ресин. Их восстанавливали постепенно, и это, по его словам, было символом возрождения города.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_34_4296804378.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_34_4296804378.jpg",
+       "basename": "Group_34_4296804378"
+      },
+      "credit": "Ленинградское шоссе в Москве.  1955 год",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleFacto",
+      "facto": "3",
+      "desc": "миллиона квадратных метров жилья планировали построить в 1946–1950 годах"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">В 1946 году был принят пятилетний план восстановления и развития городского хозяйства Москвы. Основной его задачей была ликвидация последствий войны, а также восстановление и дальнейшее развитие народного хозяйства столицы. Только в 1945 году на капитальное строительство было выделено около 2 миллионов рублей, в первую очередь на восстановление промышленных предприятий, приводит данные в своей диссертации главный архитектор Москвы Сергей Кузнецов.</span></p><p><span style=\"white-space:pre-wrap;\">Согласно этому документу, в 1946–1950 годах в Москве должны были построить 3 миллиона квадратных метров жилья, при этом только в первый послевоенный год (1946-й)&nbsp;— 65 тысяч квадратных метров. Ведь численность населения столицы к тому времени достигла 5 миллионов, а обеспеченность жильём снизилась по сравнению с довоенной до 4,1 квадратного метра на человека.&nbsp;</span><meta charset=\"utf-8\"></p><p><span style=\"white-space:pre-wrap;\">Около 75% запланированного жилья должно было прийтись на так называемое ведомственное строительство. Объекты распределялись между министерствами и ведомствами различных отраслей промышленности, которые, в свою очередь, делили его между организациями и предприятиями.</span></p><p><span style=\"white-space:pre-wrap;\">При этом вопрос о том, каким должно быть это жильё, был предметом дискуссии. Так, председатель архсовета Комитета по делам архитектуры при Совмине СССР Григорий Симонов полагал, что основным видом строительства в Москве в 1946–1950 годах должно стать возведение малоэтажных домов в два-четыре этажа, для строительства которых следует использовать местные материалы&nbsp;— кирпич и шлакобетон.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Вместе с тем Сталин, который хотел видеть в Москве монументальное строительство, говорил следующее: «Мы не можем строить в Москве несуразные, дешёвые вещи, ибо то, что мы строим в Москве, это на века, на поколения… дело в том, чтобы создать настоящий памятник эпохи, чтобы будущие поколения чувствовали в каждом построенном доме, в каждом построенном здании дыхание эпохи коммунизма».</span></p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_35_40fcfa2bb2.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_35_40fcfa2bb2.jpg",
+       "basename": "Group_35_40fcfa2bb2"
+      },
+      "credit": "Дома на Песчаной улице в Москве.  1959 год",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Глава СССР настаивал, чтобы в столице возводились высотные (для того времени) дома в 10, 12, 14 этажей.</span></p><p><span style=\"white-space:pre-wrap;\">В результате в Москве довольно быстро сложилась практика, по которой министерства и ведомства получали несколько участков в центре под многоквартирные дома, а остальные&nbsp;— на окраинах под барачную застройку.</span></p><p><span style=\"white-space:pre-wrap;\">Так, например, Министерство пищевой промышленности вело застройку бараками в Измайлове, Коломенском и на Остаповском шоссе, а также получило на пятилетку три участка для строительства многоэтажных домов: на Садовой-Сухаревской улице, Ленинградском шоссе и Большой Калужской улице.</span></p><p><span style=\"white-space:pre-wrap;\">Но на отдельных окраинах города — в таких районах, как Измайлово, Щукино — появлялось и качественное жильё, говорит историк архитектуры, научный сотрудник Музея Москвы Денис Ромодин. Это были благоустроенные кварталы с симпатичными фасадами.</span></p><p><span style=\"white-space:pre-wrap;\">Еще один важный проект того времени — &nbsp;застройка в районе Песчаных улиц на севере Москвы четырех-, шести- и восьмиэтажными домами высокого качества, добавляет главный архитектор проектной компании Blank Надежда Колганова. Территория складывалась из небольших кварталов, разделённых на группы домов, которые образовывали замкнутые дворы.</span></p><p><span style=\"white-space:pre-wrap;\">Реализация проекта на Песчаных улицах длилась целое десятилетие — с конца 40-х годов и до конца 50-х, а сам район стал одним из первых районов массового жилищного строительства в Москве.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_36_6e6d814f2e.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_36_6e6d814f2e.jpg",
+       "basename": "Group_36_6e6d814f2e"
+      },
+      "credit": "Ленинградский проспект в районе стадиона «Динамо». 1949 год.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">К строительству жилья в Москве в некоторых случаях привлекались пленные немцы, рассказывает Карпачева. Ярким примером их работы является так называемая Немецкая слобода на улице Маршала Бирюзова.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Это четырех-пятиэтажные дома, городок очень своеобразный, это как будто город в городе, ни на что не похожий, говорит Карпачева.&nbsp;</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">По данным, которые приводит Кузнецов в своей диссертации, в 1949 году в Москве было введено в строй 405,7 тысячи квадратных метров жилья, из них 258 тысяч&nbsp;— в одно-, двух-, трёхэтажных домах на окраинах города. На главных магистралях и набережных в 1949 году шло строительство 114 многоэтажных домов.</span></p><p><span style=\"white-space:pre-wrap;\">Вместе с тем проблема массового жилищного строительства за четыре послевоенных года так и не решилась полностью, указывает Кузнецов в диссертации. За период 1946–1949 годов было введено в эксплуатацию только 850,6 тысячи квадратных метров жилой площади, или 28,3% от заданий. Барачное строительство продолжалось, и многие люди не могли улучшить свои жилищные условия.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleFacto",
+      "facto": null,
+      "desc": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_37_cd03890c5b.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_37_cd03890c5b.jpg",
+       "basename": "Group_37_cd03890c5b"
+      },
+      "credit": "Кутузовский проспект в Москве.  1960 год",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Газификация и ливнёвки"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>После войны активно восстанавливалось и развивалось городское хозяйство. Так, в 1946 году началась массовая газификация Москвы. Это было необходимо, так как многие дровяные сараи во дворах сгорели во время войны вместе с дровами.</p><p>Тогда же началась реконструкция городских магистралей и выездных шоссе, начала развиваться ливневая система стоков и канализации, добавляет главный архитектор проектной компании Blank Надежда Колганова.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Вылетные магистрали&nbsp;— проспект Мира, Ленинградский, Минское шоссе, Кутузовский проспект&nbsp;— создали градостроительный скелет, определённый корсет Москвы, отмечает Кудрявцев, указывая на позитивную роль этой идеи в градостроительной политике властей города.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Кроме того, после войны массово проводились работы и по озеленению Москвы.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_38_5831a00afa.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_38_5831a00afa.jpg",
+       "basename": "Group_38_5831a00afa"
+      },
+      "credit": "Вид на Бородинский мост.  1950 год.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Курс на расширение"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">В послевоенное время Москва взяла курс на расширение территорий, говорят историки и москвоведы. Хотя, конечно, более активный прирост площади пришёлся уже на 60-е годы.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Довоенный город находился в основном в пределах Садового кольца. В 40–50-е годы он вышел за его границы, а дальше в его состав начали входить большие посёлки. И к началу 60-х годов речь идёт уже, к примеру, о Кузьминках, о Профсоюзной улице,&nbsp;говорит о размерах территории города в те годы Карпачева.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>В послевоенные сталинские годы началось активное развитие Москвы на юго-западе, которое было запланировано ещё до начала Великой Отечественной войны.</p><p>«В июне 1948 года на архитектурном совете был рассмотрен проект планировки Юго-Западного района, строительство которого было одним из главных положений генерального плана 1935 года, но до войны его проектирование было только намечено. Он предполагал создание нескольких лучей, центральным из которых был луч, связывающий Московский университет и Дворец Советов» (так и не был достроен – ред.),&nbsp;— приводит факты в своей диссертации Кузнецов.</p><p>По словам Карпачевой, за период 40–50-х годов территория Москвы увеличилась практически в два раза.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_39_198269478b.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_39_198269478b.jpg",
+       "basename": "Group_39_198269478b"
+      },
+      "credit": "Макет Дворца Советов в Москве",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Новый архитектурный стиль"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Архитектурный стиль, который особенно ярко проявил себя в послевоенное время, получил название «сталинский ампир». Это эклектичный стиль с заимствованиями из архитектуры прошлых эпох.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Вообще, ампир как архитектурный стиль пришёл к нам из Франции первой трети XIX века и отличался высокими зданиями с большим количеством колонн и строгой композицией, напоминавшими постройки Древней Греции и Римской империи,&nbsp;рассказывает Колганова.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_40_8236765867.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_40_8236765867.jpg",
+       "basename": "Group_40_8236765867"
+      },
+      "credit": "Дом 9 на Тверской улице построен архитектором А.Д. Жуковым  в 1949 году.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Главная особенность сталинского ампира&nbsp;— его торжественность  и триумфальность, описывает основные черты этого архитектурного стиля Васькин. На зданиях преобладает лепнина, различные украшения, победная тематика  со звёздами и гербами.</span></p><p><span style=\"white-space:pre-wrap;\">Кульминацией этого стиля мог&nbsp;бы стать Дворец Советов, решение  о строительстве которого было принято ещё в 1931 году, но который так и не был возведен ни до войны, ни после. По словам Колгановой, это должно было быть ступенчатое 415-метровое здание для заседаний Верховного Совета с 80-метровой фигурой Ленина. Построить его должны были на месте храма Христа Спасителя.  Но в конечном итоге проект не был реализован, и в 1960 году здесь открыли бассейн «Москва».</span></p><p><span style=\"white-space:pre-wrap;\">Зато после войны появились некоторые дома в этом стиле на улице Горького, на Кутузовском проспекте, на проспекте Мира и на Ленинградском проспекте. Так, например, одним из ярких проектов таких зданий стал дом 9 на нынешней Тверской улице, возведённый по проекту архитектора Александра Жукова. Его нижний цокольный уровень был оформлен тёмно-красным, бордовым гранитом, который стал трофеем советских войск.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "VrezSection",
+      "blocks": [
+       {
+        "__typename": "ComponentArticlePhotoRow",
+        "slides": [
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          },
+          "credit": "московские зданиЯ в стиле сталинский ампир",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_56_f50771378a.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_56_f50771378a.jpg",
+           "basename": "Rectangle_56_f50771378a"
+          },
+          "credit": "Дом на Ленинском проспекте, 11",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_57_7ada63623e.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_57_7ada63623e.jpg",
+           "basename": "Rectangle_57_7ada63623e"
+          },
+          "credit": "Дом на Земляном валу, 46",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_58_8803de8b37.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_58_8803de8b37.jpg",
+           "basename": "Rectangle_58_8803de8b37"
+          },
+          "credit": "Дома на площади Гагарина",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_59_69c25d783f.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_59_69c25d783f.jpg",
+           "basename": "Rectangle_59_69c25d783f"
+          },
+          "credit": "Дом на Фрунзенской набережной, 24",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_41_417a36a954.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_41_417a36a954.jpg",
+       "basename": "Group_41_417a36a954"
+      },
+      "credit": "Строительство высотного здания на Котельнической набережной. 1948 год.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "«Семь сестёр»"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Апофеозом архитектуры послевоенного времени в Москве стали знаменитые сталинские высотки: главное здание МГУ на Воробьёвых горах, гостиница «Ленинградская», гостиница «Украина», высотка на Котельнической набережной, здание Министерства иностранных дел, дом на Кудринской площади, высотка у Красных ворот.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Я хорошо помню, как начиналось это строительство. Это было что-то невероятное! Семь величественных зданий, которые позже назвали «семью сёстрами», стали символами новой послевоенной Москвы. Их начали строить одновременно в 1947 году, в честь 800-летия столицы. Каждая высотка была уникальной&nbsp;— с роскошными фасадами, мраморными лестницами, золотыми деталями. Эти здания до сих пор остаются визитной карточкой Москвы, говорит о своих впечатлениях от событий тех лет Ресин.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_42_d9d7c46453.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_42_d9d7c46453.jpg",
+       "basename": "Group_42_d9d7c46453"
+      },
+      "credit": "Строительство МГУ на Воробьёвых горах",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Знаменитые московские высотные здания близки к образам американских небоскрёбов, например, в Чикаго. При этом в них можно увидеть и мотивы башен Московского Кремля, обращает внимание Ромодин. А в здании гостиницы «Ленинградская» присутствуют элементы нарышкинского барокко, как и на доме преподавателей МГУ на Ломоносовском проспекте.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Что касается самих высоток, в задании, которое было подписано, по-моему, Сталиным, было написано, что они не должны быть похожи на американские небоскрёбы. В техническом задании как раз сказано, что надо ориентироваться на кремлёвские ярусные башни,&nbsp;обращает внимание Кудрявцев, чей дед Сергей Чернышев был автором проекта Главного здания&nbsp;МГУ.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_43_aec65399d7.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_43_aec65399d7.jpg",
+       "basename": "Group_43_aec65399d7"
+      },
+      "credit": "Холл в подъезде высотки на Кудринской набережной в Москве",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Сталинский ампир ярко проявляется и в интерьерах зданий высоток. Характерной чертой дизайна, выполненного в этом стиле, являлись колонны, мозаичные панно, высокие потолки с лепниной, а также тяжёлые парадные люстры из бронзы и хрусталя.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Если мы зайдём, например, внутрь главного здания Московского университета на Ленинских горах, то мы как раз попадём в триумфальные интерьеры: с тосканскими колоннами, с фризами, в которых можно разглядеть государскую символику, серп и молот, Орден Победы, отмечает Смирнова.</span></p>"
+     },
+     {
+      "__typename": "VrezSection",
+      "blocks": [
+       {
+        "__typename": "ComponentArticlePhotoRow",
+        "slides": [
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          },
+          "credit": "Сталинские высотки в наше время",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_60_52aca8a0c0.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_60_52aca8a0c0.jpg",
+           "basename": "Rectangle_60_52aca8a0c0"
+          },
+          "credit": "Главное здание МГУ на Воробьевых горах",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_61_2b5d3ddc86.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_61_2b5d3ddc86.jpg",
+           "basename": "Rectangle_61_2b5d3ddc86"
+          },
+          "credit": "Здание Министерства иностранных дел",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_63_4809b13425.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_63_4809b13425.jpg",
+           "basename": "Rectangle_63_4809b13425"
+          },
+          "credit": "Здание гостиницы «Украина»",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_65_ed711c086d.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_65_ed711c086d.jpg",
+           "basename": "Rectangle_65_ed711c086d"
+          },
+          "credit": "Высотка на Кудринской площади",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_62_919e1a5635.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_62_919e1a5635.jpg",
+           "basename": "Rectangle_62_919e1a5635"
+          },
+          "credit": "Высотка на Красных воротах",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_64_435d7bf756.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_64_435d7bf756.jpg",
+           "basename": "Rectangle_64_435d7bf756"
+          },
+          "credit": "Гостиница «Ленинградская»",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_66_eb90d86d87.jpg",
+           "width": 638,
+           "height": 418,
+           "serverUrl": "/uploads/Rectangle_66_eb90d86d87.jpg",
+           "basename": "Rectangle_66_eb90d86d87"
+          },
+          "credit": "Высотка на Котельнической набережной",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_44_ba847f5286.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_44_ba847f5286.jpg",
+       "basename": "Group_44_ba847f5286"
+      },
+      "credit": "Подземный вестибюль станции метро «Комсомольская» (Кольцевая линия). 1960 год.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Метро закольцевалось"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">После Победы началось строительство Кольцевой линии московского метро, хотя различные её трассировки рассматривались ещё до войны. Разные варианты предполагались в зависимости от потребностей города и строительства новых промышленных предприятий и жилых районов.</span></p><p><span style=\"white-space:pre-wrap;\">«Но война обострила момент с расшивкой центральных пересадочных узлов. Сверхперегруженными оказались пересадки на станциях „Охотный ряд“, „Площадь Свердлова“ („Театральная“), „Площадь Революции“. В результате была выбрана трассировка, которую мы знаем и поныне. Линия прошла, практически полностью совпадая с трассой Садового кольца с отклонением к вокзалам»,&nbsp;— объясняет москвовед Калиш.</span></p><p><span style=\"white-space:pre-wrap;\">Строительство кольца производилось в три этапа. К 1949 году был готов первый участок&nbsp;— от «Парка Культуры» до «Курской». Вторым был построен участок «Курская&nbsp;— Белорусская». А к 1954 году Кольцевая линия была завершена окончательно. При строительстве линии решили делать станции глубокого заложения, во-первых, исходя из опыта повреждения туннеля в1941 году. А во-вторых, в этот момент уже возникла угроза ядерной войны.</span></p><p><span style=\"white-space:pre-wrap;\">Большая часть станций Кольцевой линии была построена в стиле сталинского ампира, рассказывает Смирнова. Наверное, главным таким объектом из них является станция «Комсомольская», созданная Алексеем Щусевым.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Очень просторная, самая большая на момент открытия станция московского метро. Широкий, высокий свод украшен золотой мозаикой с такими богатыми, мощными люстрами, которые спускаются со свода сверху. И также там можно увидеть мозаичное панно, иллюстрирующее как раз страницы из военной истории нашей страны. Там и Александр Невский, и Дмитрий Донской, и Кутузов, и, конечно&nbsp;же, парад на Красной площади в 1945 году, отмечает Смирнова.&nbsp;</span></p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_45_e6754aadea.jpg",
+       "width": 2880,
+       "height": 2046,
+       "serverUrl": "/uploads/Group_45_e6754aadea.jpg",
+       "basename": "Group_45_e6754aadea"
+      },
+      "credit": "Станция метро «Таганская»  Кольцевой линии",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Ещё один пример сталинского ампира в московском метро&nbsp;— станция «Таганская» с героями-красноармейцами различных родов войск Красной армии.</span></p><p><span style=\"white-space:pre-wrap;\">Стилистика сталинского ампира отражается и в наземных павильонах станций метро, оформленных в виде триумфальной арки.</span></p><p><span style=\"white-space:pre-wrap;\">«Когда мы попадаем внутрь, например, станции „Парк культуры“, мы оказываемся в просторном зале, перекрытом куполом. И если мы поднимем голову вверх, то мы увидим, что внутренняя поверхность купола украшена кессонами, такими квадратными заглублениями, тоже берущими своё начало в архитектуре Древнего Рима»,&nbsp;— рассказывает Смирнова.</span></p><p><span style=\"white-space:pre-wrap;\">Часто в зените сводов можно увидеть Орден Победы, главную награду за выдающиеся подвиги в годы Великой Отечественной войны, добавляет&nbsp;она.</span></p><p><span style=\"white-space:pre-wrap;\">Параллельно со строительством Кольцевой линии, по словам Калиш, было решено переложить участок Арбатского радиуса, построенного в 1935 году, в глубокое заложение (станции «Арбатская», «Смоленская», «Киевская»).</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_46_43d17157c4.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_46_43d17157c4.jpg",
+       "basename": "Group_46_43d17157c4"
+      },
+      "credit": "Центральная улица Великого Новгорода, 1958 год",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Помощь другим городам"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Активно работая в Москве, столичные архитекторы и строители помогали восстанавливать и другие пострадавшие во время войны города СССР.</span></p><p><span style=\"white-space:pre-wrap;\">Например, Алексей Щусев получил задание разработать проект восстановления Великого Новгорода, рассказывает Смирнова.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Новгород был долгое время на линии боевых действий. Там была уничтожена большая часть жилых зданий. И были повреждены древние храмы, памятники архитектуры. Конечно, нужен был какой-то один человек, который комплексно подойдёт к этой задаче и разработает проект новой жилой застройки для центра, которая была уничтожена, и впишет в эту новую застройку старые ценные сооружения, отмечает Смирнова.&nbsp;</span></p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_47_330470cf4b.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_47_330470cf4b.jpg",
+       "basename": "Group_47_330470cf4b"
+      },
+      "credit": "Центральная набережная в Волгограде",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Московские строители и инженеры также принимали активное участие в восстановлении Сталинграда, Киева, Минска, добавляет Васькин. Они приезжали в эти города, делились опытом, консультировали по вопросам сноса, восстановления и реконструкции пострадавших во время войны зданий.</span></p><p><span style=\"white-space:pre-wrap;\">Восстановлением Сталинграда, по словам Кудрявцева, занимались Каро Алабян и&nbsp;Василий Симбирцев, авторы проекта Дворца Советов и Центрального театра Красной армии в Москве.</span></p><p><span style=\"white-space:pre-wrap;\">«Вот эти вот красивые пропелеи (ред. —&nbsp;парадный проход, образованный портиками и колоннами) на набережной, которые на&nbsp;сегодня являются символом Сталинграда, были созданы именно тогда, в&nbsp;конце 40-х&nbsp;— 50-х годов»,&nbsp;— акцентирует внимание&nbsp;он.</span></p><p><span style=\"white-space:pre-wrap;\">Уже в первые годы после окончания войны вернувшиеся с фронта люди, соскучившись по мирной жизни, смогли не только ликвидировать разрушения в городе, но и начали строить новое жильё, которого так не хватало москвичам. Они также смогли создать в Москве величественные и монументальные здания и возвести новые станции метро.</span></p>",
+      "style": null
+     }
+    ]
+   },
+   {
+    "__typename": "Article",
+    "name": "Романтика работы",
+    "index": "3",
+    "years": "1950-е гг.",
+    "title": "Романтика<br>работы",
+    "lead": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">После окончания Великой Отечественной войны люди, стремясь поскорее восстановить разрушенное в ходе боевых действий и сделать Москву столицей, достойной страны-победителя, работали, не жалея сил и с огромным энтузиазмом. Престиж профессий архитектора, инженера и строителя, окружённых особым флёром романтики, в те годы сильно вырос.</span></p>",
+    "style": null,
+    "background": {
+     "__typename": "UploadFile",
+     "mime": "image/jpeg",
+     "url": "a_Cover3_93231eaf73.jpg",
+     "width": 2880,
+     "height": 2048,
+     "serverUrl": "/uploads/a_Cover3_93231eaf73.jpg",
+     "basename": "a_Cover3_93231eaf73"
+    },
+    "backgroundMobile": {
+     "__typename": "UploadFile",
+     "mime": "image/png",
+     "url": "mc3_34f29f55c2.png",
+     "width": 1250,
+     "height": 682,
+     "serverUrl": "/uploads/mc3_34f29f55c2.png",
+     "basename": "mc3_34f29f55c2"
+    },
+    "blocks": [
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_48_4fbcd72499.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_48_4fbcd72499.jpg",
+       "basename": "Group_48_4fbcd72499"
+      },
+      "credit": "Рабочие на стройке жилого дома на юго-западе Москвы. 1955 год",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Энтузиазм и энергия"
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>После войны все, от мала до велика, стремились вернуться к мирной жизни. Это было время, когда люди, несмотря на усталость и потери, работали с невероятной энергией. Все хотели восстановить разрушенное, создать новое и оставить ужасы войны позади, описывает настроения тех лет Ресин.&nbsp;</p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Строили, по его словам, быстро, с невероятным энтузиазмом: люди работали, не жалея себя. Ведь они не просто строили здания, а создавали новый облик города, который стал символом возрождения и надежды.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>Как пример такого энтузиазма — мой дед (ред. — Сергей Чернышев — автор Генерального плана реконструкции Москвы), который просто всё время проектировал. Каждый день он уходил рано, а возвращался поздно, вспоминает народный архитектор РФ Александр Кудрявцев.</p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_49_774f04b6ef.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_49_774f04b6ef.jpg",
+       "basename": "Group_49_774f04b6ef"
+      },
+      "credit": "Строители московского метро.  1953 год.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Почёт и уважение"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">После войны к строителям и архитекторам относились с великим почтением, констатирует Боков. Ведь эти специалисты, по его словам, не только восстанавливали страну после войны, но и создавали её новый облик.</span></p><p><span style=\"white-space:pre-wrap;\">Обычные москвичи, замечает Ресин, воспринимали все новые проекты&nbsp;— будь то обычные жилые дома, высотки или, например, новые станции метро&nbsp;— с огромным воодушевлением.</span></p><p><span style=\"white-space:pre-wrap;\">Люди понимали, что это не просто строительство, это символ возрождения, символ новой жизни, делится он воспоминаниями о тех временах. Это было время, когда все чувствовали, что вместе создают что-то великое.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">То&nbsp;же здание МГУ&nbsp;— это ведь образ невероятный. Даже сегодня в Москве это, наверное, один из основных символов города после Кремля, Красной площади и храма Василия Блаженного,&nbsp;полагает урбанист, основатель CM&nbsp;International, правнук автора проекта МГУ Сергея Чернышёва Петр Кудрявцев.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_50_8de8ff8ab1.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_50_8de8ff8ab1.jpg",
+       "basename": "Group_50_8de8ff8ab1"
+      },
+      "credit": "Рабочие на строительстве  Красноярской ГЭС",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p>Сами строители и архитекторы при этом особенно не обращали внимания на восторженное отношение к их работе, добавляет глава Союза архитекторов России Николай Шумаков. Их гораздо больше волновало качество работы, точность линий и выразительность форм.</p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Тогда люди прекрасно понимали огромную созидательную роль строительства, но при этом и чётко осознавали тот факт, что на них лежит большая доля ответственности, вспоминает рассказы о тех временах, председатель совета директоров группы компаний «ФСК» Владимир Воронин, чей дед пришёл в стройку в 1920-х и позднее был начальником Главного управления капитального строительства Министерства строительства РСФСР.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_51_70b8ec59c9.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_51_70b8ec59c9.jpg",
+       "basename": "Group_51_70b8ec59c9"
+      },
+      "credit": "Бетонщица на строительстве  Братской ГЭС",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Поддержка сверху"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Государство, по словам Ресина, делало всё возможное, чтобы поддерживать строителей. С 1956 года в СССР появился официальный праздник — День строителя, который до сих пор отмечается каждое второе воскресенье августа.</span></p><p><span style=\"white-space:pre-wrap;\">Кроме того, строители получали стабильную и солидную зарплату, что тоже привлекало людей в эту сферу, добавляет он.</span></p><p><span style=\"white-space:pre-wrap;\">Для подготовки квалифицированных кадров развивалась сеть профессионально-технических училищ (ПТУ) и школ строительного ученичества. Молодёжь активно привлекали через комсомольские путёвки и студенческие строительные отряды.</span></p><p><span style=\"white-space:pre-wrap;\">«Советское телевидение и газеты активно поддерживали образ строителя как героя. Снимались фильмы, например, „Высота“ с Николаем Рыбниковым, где показывали, как важно и достойно работать на стройке»,&nbsp;— рассказывает о той эпохе Ресин.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_52_80e43ec6f4.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_52_80e43ec6f4.jpg",
+       "basename": "Group_52_80e43ec6f4"
+      },
+      "credit": "На перроне Ярославского вокзала москвичи провожают комсомольцев Москвы на ударную комсомольскую стройку — строительство Западно-Сибирского металлургического завода.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "По всему СССР"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Молодёжь, вдохновлённая романтическим образом строителя, ехала на стройки всей страны, чтобы внести свой вклад в общее дело. Без специалистов из Москвы не обходились крупнейшие стройки по всему СССР. Среди них, например, строительство Братской и Красноярской ГЭС, которые строили москвичи, атомных электростанций, первых очередей ряда заводов&nbsp;— в частности, Западно-Сибирского металлургического завода.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_53_3d71e0d431.jpg",
+       "width": 2880,
+       "height": 2044,
+       "serverUrl": "/uploads/Group_53_3d71e0d431.jpg",
+       "basename": "Group_53_3d71e0d431"
+      },
+      "credit": "Строительство Западно-Сибирского металлургического завода. 1967 год.",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Работа на стройках, особенно в тяжёлых условиях Крайнего Севера, требовала не только энтузиазма, но и огромной выдержки, акцентирует внимание Ресин. Но для большинства людей тяжёлые условия были нормой, и каждый понимал, что его труд&nbsp;— это вклад в будущее.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Совершенно уверенно можно говорить об особом духе строительства того времени. Это был дух созидания, надежды и веры в будущее. Люди шли на стройки не только ради заработка, но и ради того, чтобы оставить свой след в истории, говорит Владимир Ресин.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Основная роль в восстановлении Москвы и возведении новых знаковых зданий и сооружений не только в столице, но и по всей стране, принадлежит, конечно&nbsp;же, людям. Профессия архитектора, инженера, строителя в те времена была окружена особой романтикой и по праву пользовалась огромным почётом.</span></p>",
+      "style": null
+     }
+    ]
+   },
+   {
+    "__typename": "Article",
+    "name": "Связь поколений",
+    "index": "4",
+    "years": "1945–2025 гг.",
+    "title": "Связь<br>поколений",
+    "lead": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Идеи создания памятных мест, которые увековечили&nbsp;бы подвиг советского народа во время войны, стали появляться ещё до её окончания. Но, конечно, основная часть задуманного была реализована несколько позже, уже во времена Хрущёва и Брежнева, а также в 90-е годы и в начале XXI века. Эта работа продолжается и в наши дни: в Москве появляются новые мемориалы и монументы, призванные сохранить память о Победе.</span></p>",
+    "style": null,
+    "background": {
+     "__typename": "UploadFile",
+     "mime": "image/jpeg",
+     "url": "a_Cover4_17f9284669.jpg",
+     "width": 2880,
+     "height": 2048,
+     "serverUrl": "/uploads/a_Cover4_17f9284669.jpg",
+     "basename": "a_Cover4_17f9284669"
+    },
+    "backgroundMobile": {
+     "__typename": "UploadFile",
+     "mime": "image/png",
+     "url": "mc4_36310d9caf.png",
+     "width": 1250,
+     "height": 662,
+     "serverUrl": "/uploads/mc4_36310d9caf.png",
+     "basename": "mc4_36310d9caf"
+    },
+    "blocks": [
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_54_b8107bfc5e.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_54_b8107bfc5e.jpg",
+       "basename": "Group_54_b8107bfc5e"
+      },
+      "credit": "Мост Победы на Ленинградском шоссе в Москве. 1945 год. © Государственный музей архитектуры им. А.В. Щусева",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Подвиги строителей и архитекторов в годы Великой Отечественной войны и в послевоенное время сложно переоценить. В эти тяжелейшие для страны и Москвы годы они бросили все силы на сохранение и восстановление жилых домов и социальных объектов, не прекращалось и строительство новых станций метро. Сегодня спасённые, отреставрированные и построенные ими с нуля здания являются неотъемлемой частью городского ландшафта столицы, а многие из них стали её визитными карточками. Градостроительный комплекс Москвы продолжает непрерывно работать над развитием столицы&nbsp;— каждый год строятся новые дороги, станции метро, жилые дома и социальные объекты, в том числе по программам реновации и комплексного развития территорий, создаются комфортные городские пространства, комментирует заммэра Москвы по вопросам градостроительной политики и строительства Владимир Ефимов.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Очень важно хранить память о героях военных лет и укреплять связь поколений, органично вписывая новые объекты в архитектурный облик города, добавляет он.&nbsp;</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Ещё до Победы"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Из возведенного еще во время войны стоит отметить монументальный мост Победы через железнодорожные пути на Ленинградском шоссе, говорит Карпачева. Он был построен в 1943 году по проекту архитектора Дмитрия Чечулина и скульптора Николая Томского.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Облик этого моста напоминает аллею славы с аллегорическими фигурами воина-мужчины и воина-женщины в развевающихся плащ-палатках. Вдоль линии дороги выстроились&nbsp;вазоны-факелы, готовые принять любое триумфальное шествие, говорит Карпачева.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Именно к тому месту, где сейчас находится мост, в 1941 году смогли доехать патрули вермахта, объясняет Смирнов. Для людей было важно отметить ту точку, дальше которой враг так и не смог прорваться. Этот мост и сегодня является знаковым местом, символом памяти и уважения к участникам военных действий.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Раньше ветераны часто проходили через этот мост от «Войковской» до «Сокола». Несколько раз и мы с моим дедушкой и с советом ветеранов проходили по этому мосту и отдавали дань памяти погибшим в Великой Отечественной войне,&nbsp;вспоминает москвовед.</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Сразу после Победы"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Сразу&nbsp;же после окончания Великой Отечественной войны в Москве не стали создавать много мемориалов. В то время средства нужны были для восстановления страны, для строительства зданий и городской инфраструктуры, поэтому знаковых памятников построено не было, констатирует москвовед Александр Васькин.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Тогда привычные памятники недавним событиям не были особенно популярны. Памятниками Победы в большей степени стали восстановленные города и ансамбли, высотные дома Москвы, новые станции московского метро, рассуждает Андрей Боков.&nbsp;</span></p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Несмотря на тяжёлое послевоенное время, такие проекты были нужны не только власти, но и народу, соглашается с ним Колганова. Их облик вдохновлял не только их авторов, но и всех, кто жил в Москве и приезжал в город.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_55_7a98fe158d.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_55_7a98fe158d.jpg",
+       "basename": "Group_55_7a98fe158d"
+      },
+      "credit": "Могила Неизвестного солдата в Александровском саду в Москве",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Сохраняя память"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Активно создавать памятники и мемориалы в СССР начали в 60-е годы XX&nbsp;века. Главным проектом той эпохи, увековечившим память о Великой Победе, по словам Васькина, стала Могила Неизвестного Солдата в Александровском саду, созданная по проекту архитекторов Дмитрия Бурдина, Владимира Климова, Юрия Рабаева и скульптора Николая Томского. В 1967 году здесь зажгли Вечный огонь. Возле него находится ряд гранитных обелисков с названиями городов-героев и городов воинской славы.&nbsp;</span></p><p><span style=\"white-space:pre-wrap;\">К&nbsp;созданию надписи на памятнике были привлечены писатели-фронтовики Сергей&nbsp;Смирнов, Михаил Луконин, Константин Симонов и Сергей Михалков. Предложение Михалкова увековечить слова: «Имя твоё неизвестно, подвиг твой бессмертен»&nbsp;— приняли единогласно.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_56_0f30e12405.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_56_0f30e12405.jpg",
+       "basename": "Group_56_0f30e12405"
+      },
+      "credit": "Обелиск «Москва — город-герой» на площади Дорогомиловская Застава в Москве",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">А в 1977 году на площади Дорогомиловская Застава появился обелиск «Москва&nbsp;— город-герой».</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_57_2e44690a84.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_57_2e44690a84.jpg",
+       "basename": "Group_57_2e44690a84"
+      },
+      "credit": "Монумент Победы на Поклонной горе в Москве",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Настоящее время"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Сегодня в Москве насчитывается более 100 памятников и памятных мест, связанных с Победой в Великой Отечественной войне.&nbsp;</span></p><p><span style=\"white-space:pre-wrap;\">Очень важное место в столице </span><span style=\"font-family:&quot;Times New Roman&quot;,serif;font-size:12.0pt;\">— </span><span style=\"white-space:pre-wrap;\">конечно, монумент Победы на Поклонной горе, открытый в 1995 году, в 50-ю годовщину Победы. Он создан по проекту скульптора Зураба Церетели при содействии архитекторов Леонида Вавакина и Владимира Будаева.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_58_19619ee5e4.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_58_19619ee5e4.jpg",
+       "basename": "Group_58_19619ee5e4"
+      },
+      "credit": "Памятник всем жертвам Великой Отечественной войны «Трагедия народов» скульптора Зураба Церетели в Парке Победы на Поклонной горе в Москве",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">В&nbsp;Парке Победы и на территории всего мемориала установлена целая серия памятников, посвящённых событиям и героям минувшей войны. Дань памяти погибшим отдают в храме Георгия Победоносца, возведённом у Площади Победителей, а также в мемориальной мечети и в мемориальной синагоге.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_59_64e5b3a3a4.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_59_64e5b3a3a4.jpg",
+       "basename": "Group_59_64e5b3a3a4"
+      },
+      "credit": "Развязка на проспекте Маршала Жукова",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "В артериях города"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Сегодня память о Великой Отечественной войне в Москве живёт даже в названиях улиц: более 230 из них, по данным градостроительного комплекса столицы, названы в честь героев и событий войны. Значительная их часть связана с великими личностями, в частности военачальниками. Это бульвар Маршала Рокоссовского, улица Маршала Кутахова, площадь Генерала Жадова, проспект Маршала Жукова и другие. В общей сложности в городе существует более 40 улиц, названных в честь маршалов, и около 20&nbsp;— в честь генералов.</span></p><p><span style=\"white-space:pre-wrap;\">В Филимонковском районе города существует улица Александра Печерского. Он известен тем, что организовал восстание пленных в польском концлагере Собибор. На севере столицы есть улица Зои и Александра Космодемьянских&nbsp;— на ней находится школа, в которой учились легендарная партизанка и её брат-танкист.&nbsp;</span></p><p><span style=\"white-space:pre-wrap;\">Ещё 15 московских улиц посвящены Советской армии&nbsp;— например, улицы Зенитчиков и Подольских курсантов. Ещё столько&nbsp;же названы в честь разведчиков: улицы Кима Филби, Вартаняна, Павла Фитина и другие.&nbsp;</span></p><p><span style=\"white-space:pre-wrap;\">Имена военных лётчиков в столице носят более 40 улиц. В память о командире женского авиаполка Марины Расковой на севере Москвы названы площадь и переулок. В 1942 году вверенные ей эскадрильи бились в небе над Сталинградом. В районе Сокольники находится улица Гастелло&nbsp;— в честь лётчика, уничтожившего колонну техники противника, направив на нее свой горящий самолёт. Такой&nbsp;же подвиг совершил Сергей Милашенков, в память о котором названа улица на северо-востоке города. Также в Москве есть площадь Защитников Неба&nbsp;— в честь лётчиков, отражавших налёты фашистской авиации в период Битвы за Москву.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_60_b7481bcde3.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_60_b7481bcde3.jpg",
+       "basename": "Group_60_b7481bcde3"
+      },
+      "credit": "Развязка на Волгоградском проспекте",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Помимо участников боевых действий, на карте столицы увековечены по меньшей мере 15 деятелей науки и культуры, которые внесли вклад в великую победу. Например, названы улицы в честь известных авиаконструкторов&nbsp;— создателя штурмовиков Ил-2 Сергея Ильюшина, руководителя разработки бомбардировщиков Пе-2 и Пе-8 Владимира Петлякова, изобретателя высотных истребителей Су-1 и Су-3 Павла Сухого. В районе Хамовники расположена улица, носящая имя Николая Бурденко, который в военные годы был главным хирургом Красной армии. А на севере города находится улица Константина Симонова, посвящённая автору романа «Живые и мертвые».</span></p><p><span style=\"white-space:pre-wrap;\">Названия улиц столицы связаны не только с героями и историческими личностями, но и с событиями Великой Отечественной войны. Так, Ельнинская улица получила свое название в честь Ельнинской операции 1941 года, в ходе которой впервые за время войны вражеские войска были вынуждены перейти к обороне.&nbsp;</span></p><p><span style=\"white-space:pre-wrap;\">Кроме того, в столице можно найти улицы, отсылающие к городам-героям. Это Керченская, Одесская и Новороссийская улицы, Севастопольский и Волгоградский проспекты, а также Севастопольская площадь. Ещё несколько улиц названы в честь освобожденных городов: Краснодонская, 1-я и 2-я, Брянская, Воронежская, Ейская и другие.&nbsp;</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_61_28a405f7b5.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_61_28a405f7b5.jpg",
+       "basename": "Group_61_28a405f7b5"
+      },
+      "credit": "Панно, посвященное победе советского народа в Великой Отечественной войне 1941–1945 годов, на станции метро «Парк Победы». Художник Зураб Церетели",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Памятная подземка "
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Воспоминания о Великой Отечественной войне хранятся и в названиях станций московского метрополитена. Так, например, станция «Парк Победы» Арбатско-Покровской и Солнцевской линий названа в честь Парка Победы на Поклонной горе.</span></p><p><span style=\"white-space:pre-wrap;\">А вот «Алма-Атинская» на Замоскворецкой линии получила имя в ознаменование дружбы между Россией и Казахстаном и в память о подвиге легендарной Панфиловской дивизии, сформированной в Алма-Ате в 1941 году.&nbsp;</span></p><p><span style=\"white-space:pre-wrap;\">Станция метро «Генерала Тюленева» Троицкой линии названа так в честь советского военачальника, Героя Советского Союза генерала Ивана Тюленева, который проявил себя в битве за Кавказ 1942–1943 годов.</span></p><p><span style=\"white-space:pre-wrap;\">В честь старшего лейтенанта Бориса Дмитриевского, Героя Советского Союза, удостоенного этого звания за свои действия во время Великой Отечественной войны, дали имя станции метро «Улица Дмитриевского» Некрасовской линии. Помимо этого, в настоящий момент идет строительство станции метро «Бульвар Генерала Карбышева» Рублево-Архангельской линии. Она получила такое название в честь легендарного военачальника.&nbsp;</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "VrezSection",
+      "blocks": [
+       {
+        "__typename": "ComponentArticlePhotoRow",
+        "slides": [
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          },
+          "credit": "станции метро, названные  в честь событий  и героев ВОВ",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_68_17bc6acff5.jpg",
+           "width": 638,
+           "height": 420,
+           "serverUrl": "/uploads/Rectangle_68_17bc6acff5.jpg",
+           "basename": "Rectangle_68_17bc6acff5"
+          },
+          "credit": "«Парк Победы» Арбатско-Покровской линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_69_bd96c4df3e.jpg",
+           "width": 638,
+           "height": 420,
+           "serverUrl": "/uploads/Rectangle_69_bd96c4df3e.jpg",
+           "basename": "Rectangle_69_bd96c4df3e"
+          },
+          "credit": "«Алма-Атинская» Замоскворецкой линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_70_3cc6838da9.jpg",
+           "width": 638,
+           "height": 420,
+           "serverUrl": "/uploads/Rectangle_70_3cc6838da9.jpg",
+           "basename": "Rectangle_70_3cc6838da9"
+          },
+          "credit": "«Генерала Тюленева» Троицкой линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_71_23c35e8079.jpg",
+           "width": 638,
+           "height": 420,
+           "serverUrl": "/uploads/Rectangle_71_23c35e8079.jpg",
+           "basename": "Rectangle_71_23c35e8079"
+          },
+          "credit": "«Улица Дмитриевского» Некрасовской линии",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_62_d6d40745d5.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_62_d6d40745d5.jpg",
+       "basename": "Group_62_d6d40745d5"
+      },
+      "credit": "Памятник четырем дивизиям московского народного ополчения © Градостроительный комплекс Москвы",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleHeader",
+      "text": "Благодарность потомков"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">В Москве и сегодня продолжают появляться новые объекты, созданные уже современными строителями, архитекторами и скульпторами, призванные быть напоминанием о той войне.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticleQuote",
+      "text": "<p>Правильно не только помнить и чтить память о тех событиях, но и предложить молодым осмыслить эту вечную тему подвига, который подарил всем нам жизнь, отмечает глава Союза архитекторов России Николай Шумаков.</p>"
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Так, в 2022 году в Тёплом Стане был открыт памятник, посвящённый подвигу дивизий Московского народного ополчения. Памятный знак представляет собой скульптурную композицию из 12 фигур, выполненную из бронзы, вместе с гранитной стелой&nbsp;— олицетворением боевого знамени. На памятнике также изображены столичные улицы в дни войны.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "ComponentArticlePhotoSlide",
+      "media": {
+       "__typename": "UploadFile",
+       "mime": "image/jpeg",
+       "url": "Group_63_45cdacac7f.jpg",
+       "width": 2880,
+       "height": 2048,
+       "serverUrl": "/uploads/Group_63_45cdacac7f.jpg",
+       "basename": "Group_63_45cdacac7f"
+      },
+      "credit": "Храмовый комплекс в Москве © Пресс-служба депутата Госдумы Владимира Ресина",
+      "creditImg": {
+       "__typename": "UploadFileEntityResponse",
+       "data": null
+      }
+     },
+     {
+      "__typename": "ComponentArticleText",
+      "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">А на Братиславской улице на юго-востоке Москвы, в свою очередь, строится мемориальный храмовый комплекс в память воинов, павших в годы Великой Отечественной войны, с храмом-часовней в память погибших военных корреспондентов.</span></p>",
+      "style": null
+     },
+     {
+      "__typename": "VrezSection",
+      "blocks": [
+       {
+        "__typename": "ComponentArticlePhotoRow",
+        "slides": [
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_55_09b13b4ec0.jpg",
+           "width": 638,
+           "height": 420,
+           "serverUrl": "/uploads/Rectangle_55_09b13b4ec0.jpg",
+           "basename": "Rectangle_55_09b13b4ec0"
+          },
+          "credit": "Церемония открытия памятника морякам, погибшим в битве под Москвой, на территории Музея Победы в Москве",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_75_0aa2e6c011.jpg",
+           "width": 638,
+           "height": 420,
+           "serverUrl": "/uploads/Rectangle_75_0aa2e6c011.jpg",
+           "basename": "Rectangle_75_0aa2e6c011"
+          },
+          "credit": "Дети возлагают цветы к Могиле Неизвестного солдата в Александровском саду в Москве",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_76_c6b0039f65.jpg",
+           "width": 638,
+           "height": 420,
+           "serverUrl": "/uploads/Rectangle_76_c6b0039f65.jpg",
+           "basename": "Rectangle_76_c6b0039f65"
+          },
+          "credit": "Дети проводят уборку у Памятника погибшим в Великую Отечественную на Донском кладбище в Москве",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_77_624435b9ae.jpg",
+           "width": 638,
+           "height": 420,
+           "serverUrl": "/uploads/Rectangle_77_624435b9ae.jpg",
+           "basename": "Rectangle_77_624435b9ae"
+          },
+          "credit": "Дети возлагают цветы к мемориалу в Парке Победы на Поклонной горе в Москве во время празднования Дня Победы",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         },
+         {
+          "__typename": "ComponentArticlePhotoSlide",
+          "media": {
+           "__typename": "UploadFile",
+           "mime": "image/jpeg",
+           "url": "Rectangle_78_05cf4a6898.jpg",
+           "width": 638,
+           "height": 420,
+           "serverUrl": "/uploads/Rectangle_78_05cf4a6898.jpg",
+           "basename": "Rectangle_78_05cf4a6898"
+          },
+          "credit": "Монумент «Фронтовая медсестра» в честь женщин-медиков, принимавших участие в боевых действиях во время войны, у главного входа в Поликлинику №109 в Москве",
+          "creditImg": {
+           "__typename": "UploadFileEntityResponse",
+           "data": null
+          }
+         }
+        ]
+       },
+       {
+        "__typename": "ComponentArticleText",
+        "text": "<p><meta charset=\"utf-8\"><span style=\"white-space:pre-wrap;\">Несмотря на то, что в Москве в настоящий момент уже насчитывается немалое количество различных объектов, призванных увековечить подвиг советских людей в годы Великой Отечественной войны, столица продолжает бережно хранить и воссоздавать память о войне для новых поколений. И очень важно, чтобы памятники органично вплетались в городскую ткань, превращаясь в неотъемлемую часть современной жизни москвичей.</span></p>",
+        "style": "bigend"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

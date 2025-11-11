@@ -1,0 +1,15 @@
+{
+  "ru":{
+      "name": "<%PROJECT_NAME%>",
+      "title": "<%PROJECT_TITLE%>",
+      "description": "<%PROJECT_DESCRIPTION%>",
+      "image":"https://ria.ru/ips/<%PROJECT_NAME%>/social.jpg",
+      "riaImage":"https://ria.ru/ips/<%PROJECT_NAME%>/widget.jpg",
+      "riaImage1x1":"https://ria.ru/ips/<%PROJECT_NAME%>/widget1x1.jpg",
+      "url":"https://ria.ru/ips/<%PROJECT_NAME%>/",
+      "widgetButton":"Читать"
+  },
+  "en":{
+
+  }
+}

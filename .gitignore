@@ -1,0 +1,11 @@
+.DS_Store
+npm-debug.log
+node_modules/
+build/
+build-en/
+dist/
+tmp/
+-/
+package-lock.json
+yarn.lock
+*.sublime-workspace

@@ -1,0 +1,38 @@
+.fixed
+    position fixed
+    top 0px
+    left 0px
+
+    &.ghost
+        pointer-events none
+        
+    // > *
+    //     pointer-events initial
+    
+    &.fixed_cover
+        width 100vw
+        height 100vh
+    
+        // right 0px
+        // bottom 0px
+    
+    &.fixed_h100
+        height 100%
+    
+    &.fixed_w100
+        width 100%
+
+.topline-ria
+    .fixed
+        top 40px
+
+        &.fixed_h100
+            height calc(100vh - 40px)
+
+.inline-ria
+    body:not(.m-width-max)
+        .fixed
+            // max-width 1440px
+            &.fixed_h100
+            &.fixed_cover
+                height: calc(100vh - 140px)
