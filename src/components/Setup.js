@@ -19,32 +19,46 @@ const Setup = () => {
       />
 
       <TextStyle
-        name='coverTitle'
-        fontFamily='Finlandica'
+        name='coverUptitle'
+        fontFamily='PTRootUI'
         fontFamilyDefault='sans-serif'
-        fontSize='100'
-        lineHeight='1.0'
+        fontSize='30'
+        lineHeight='1.2'
         mobile={{ fontSize:'52px' }}
-        fontWeight='500'
-        letterSpacing='1.01px'
+        fontWeight='400'
+        letterSpacing='0.16em'
         fontStyle='normal'
         color="white"
         textTransform="uppercase"
+        textAlign="center"
+      />
+
+      <TextStyle
+        name='coverTitle'
+        fontFamily='Geologica'
+        fontFamilyDefault='sans-serif'
+        fontSize='75'
+        lineHeight='0.8'
+        mobile={{ fontSize:'52px' }}
+        fontWeight='700'
+        letterSpacing='1.01px'
+        fontStyle='normal'
+        color={colors.green}
         // textAlign="center"
       />
 
       <TextStyle
         name='coverLead'
-        fontFamily='Finlandica'
+        fontFamily='PTRootUI'
         fontFamilyDefault='sans-serif'
-        fontSize='28'
-        lineHeight='1.25'
+        fontSize='18'
+        lineHeight='1.38'
         mobile={{ fontSize:'52px' }}
         fontWeight='400'
         letterSpacing='1.01px'
         fontStyle='normal'
-        color="black"
-        // textAlign="center"
+        color="white"
+        textAlign="center"
       />
 
       <TextStyle

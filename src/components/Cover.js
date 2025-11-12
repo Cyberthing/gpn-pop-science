@@ -10,29 +10,22 @@ import AText from './AText'
 import Media from '@/components/Media'
 import MediaBack from '@/components/MediaBack'
 
-export const Cover = ({ background, backgroundMobile, underover, title, lead }) => {
+export const Cover = ({ uptitle, title, lead }) => {
 	const scene = useScene()
 
 	const r = (
 		<Slice 
 			className={'coverPage'}
-			back={<>
-				<MediaBack className="coverVideo" media={{
-							url: background
-						}}/>
-				<Overlay style={{
-					top: 'auto',
-					bottom: 0
-				}} w100 mode="img" src={underover}/>
-			</>}
 		>
-			<Slice.LeftSlot
-				width="8"
+			<Column
+				width="10"
+				left="1"
 				className="coverCont"
 			>
+				<AText style="coverUptitle" text={uptitle}/>
 				<AText style="coverTitle" text={title}/>
 				<AText noGutter={false} style="coverLead" text={lead}/>
-			</Slice.LeftSlot>
+			</Column>
 		</Slice>
 	)
 	return r

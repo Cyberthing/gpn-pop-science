@@ -1,31 +1,13 @@
+changing background video
 cover
-	ice/scroll
 
-lead1
+winamp
+	- layout
+	- video
+	- tracks
+	- equalizer
+	- progress/time
 
-test1
-
-earth
-
-test2
-
-map
-
-factos
-
-test3
-
-lead2
-
-cards
-
-lead3
-
-underground
-
-iceFactos
-
-ender
-
-footer
-
+chapter
+	layout
+	round video

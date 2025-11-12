@@ -8,35 +8,7 @@ import cx from '@ips/app/classnamex'
 import StickyFrame from '@/components/StickyFrame';
 import FadeDrop from '@/components/FadeDrop';
 import { Column, Row } from '@ips/react/components/layout';
-import Slice from '@/components/Slice';
-import AText from '@/components/AText'
 import { useConfig } from '@/hooks/useConfig'
-
-//const Credit = (b)=>(
-//	<Slice align="right" padding="70px 0 0 0" height="100%">
-//		<Column width="3" h100 valign="bottom">
-//			<AText style="backCredit" text={b.credit}/>
-//		</Column>
-//	</Slice>
-//
-//)
-
-const Credit = ({ fade, ...b })=>{
-
-  	const scene = useScene()
-	const config = useConfig()
-
-	return (
-		<Slice align={scene.mobile?null:"right"} padding="70px 0 0 0" className="faderCredit">
-			<Column width={scene.mobile?null:"3"} h100 valign="space-between">
-				{ (!scene.mobile&&config.logoWhite.url) ? <Media media={config.logoWhite}/> : null }
-				{ b.credit ? <AText className={cx(fade&&'onfade')} style="backCredit" text={
-					scene.mobile ? `<mark>${b.credit}</mark>` : b.credit
-				}/> : null }
-			</Column>
-		</Slice>
-	)
-}
 
 export const BackgroundFader = ({ backs, fade, current })=>{
   	const scene = useScene()
@@ -46,7 +18,7 @@ export const BackgroundFader = ({ backs, fade, current })=>{
 	//	<Credit {...b}/>
 	//</>)),[backs, scene.height/scene.width])
 
-	//trace('BackgroundFader', current)
+	trace('BackgroundFader', backs, current)
 
 	const b = backs[current]
 
@@ -54,8 +26,7 @@ export const BackgroundFader = ({ backs, fade, current })=>{
     	<StickyFrame>
     		<FadeDrop slide={
 				<>
-					<MediaBack media={b.media} className={cx("back", b.style, b.style !="nofade" && fade && "backGrad", (scene.height/scene.width) > (0.7111111111111) && "vert")}/>
-					<Credit {...b} fade={fade}/>
+					<MediaBack autoPlay loop muted media={b.media} className={cx("backfader-back", b.style, b.style !="nofade" && fade && "backGrad", (scene.height/scene.width) > (0.7111111111111) && "vert")}/>
 				</>    			
     			// rBacks[current]
     		} 

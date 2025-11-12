@@ -1,8 +1,8 @@
 {
-  "name": "gpn-permafrost",
+  "name": "gpn-pop-science",
   "version": "1.0.0",
   "description": "",
-  "devPort": "5730",
+  "devPort": "5732",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -4,9 +4,8 @@ export default (cwd)=>{
  	const fontStyle = createStyle('fnt')
  	fontStyle.addRaw(`
  @font-face {
- 	font-family: 'South';
- 	src: url('${cwd}/fonts/South.woff2') format('woff2'),
- 		 url('${cwd}/fonts/South.woff') format('woff');
+ 	font-family: 'PTRootUI';
+ 	src: url('${cwd}/fonts/PT-Root-UI_VF.ttf') format('ttf');
  	font-weight: normal;
  	font-style: normal;
  }

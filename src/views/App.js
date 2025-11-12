@@ -16,22 +16,6 @@ import Emergent from '@ips/react/components/emergent'
 import Pic from '@ips/react/components/pic'
 import { AnalyticsAnchor } from '@ips/react/components/analytics-anchor';
 
-//import Board from '@/components/Board'
-import Cover from '@/components/Cover'
-import Lead from '@/components/Lead'
-// import Lead from '@/components/Lead'
-import Quiz from '@/components/Quiz'
-import Earth from '@/components/Earth'
-import Map from '@/components/Map'
-import Factos from '@/components/Factos'
-import Cards from '@/components/Cards'
-import Underground from '@/components/Underground'
-import IceFactos from '@/components/IceFactos'
-import Ender from '@/components/Ender'
-import Footer from '@/components/Footer'
-//import StickyFrame from '@/components/StickyFrame'
-//import ModalOverlay from '@/components/ModalOverlay'
-
 //import Background from '@/components/Background'
 import AText from '@/components/AText'
 import { withConfig } from '@/hooks/useConfig';
@@ -41,7 +25,7 @@ import Waypoint from '@ips/react/components/waypoint'
 
 // import Burger from '@/components/Burger'
 
- import { getFullOffsetTop } from '@ips/app/dom-utils'
+import { getFullOffsetTop } from '@ips/app/dom-utils'
 import { Column, Row } from '@ips/react/components/layout';
 import Slice from '@/components/Slice';
 import prepareData from '../utils/prepareData'
@@ -49,13 +33,11 @@ import Media from '@/components/Media';
 import MediaBack from '@/components/MediaBack';
 import { useConfig } from '@/hooks/useConfig'
 import { useScrollTracker } from '@/hooks/useScrollTracker'
-import { HeroMobile } from '@/components/Test';
-import BackgroundFader from '@/components/BackgroundFader';
-import NavBar from '@/components/NavBar';
-import FadeDrop from '@/components/FadeDrop';
-import PhotoLightbox from '@/components/PhotoLightbox'
 
-import content from '@/content'
+import BackgroundFader from '@/components/BackgroundFader';
+import Cover from '@/components/Cover';
+
+// import content from '@/content'
 
 // import Test from '@/test/App'
 
@@ -82,7 +64,7 @@ export function App({ project, data }) {
 
   const refRoot = useRef()
 
-  const { main = {} } = data
+  const { main = {} } = useMemo(()=>prepareData(data), [data])
   const { articles = [], cover, footer } = data?.main
 
   const [navRefs] = useState(()=>articles.map(createRef))
@@ -129,23 +111,14 @@ export function App({ project, data }) {
     <Way name="factos"/>
     <AnalyticsAnchor id="anchor-01"/>
     <Setup/>
-    {/* <BackgroundFader backs={main.backs} current={(curBack/2)|0} fade={curBack%2}/> */}
-    <Cover {...main.cover}/>
-    <Lead {...main.lead1}/>
-    <Quiz {...main.quiz1}/>
 
-    <Earth {...main.earth}/>
-    <Quiz {...main.quiz2}/>
-    <Map {...main.map}/>
-    <Factos {...main.factos}/>
-    <Quiz {...main.quiz3}/>
-    <Lead {...main.lead2}/>
-    <Cards {...main.cards}/>
-    { main.lead3.map((l, i)=><Lead key={i} {...l}/>) }     
-    <Underground {...main.underground}/>
-    <IceFactos {...main.iceFactos}/>
-    <Ender {...main.ender}/>
-    <Footer {...main.footer}/>
+    <BackgroundFader
+      backs={main.backs} 
+      current={curBack||0} 
+      fade={curBack%2}
+    />
+    <Cover {...main.cover}/>
+    {/* <Lead {...main.lead1}/> */}
   </div>))
 }
 
