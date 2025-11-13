@@ -1,6 +1,6 @@
-rm /www/data/ips/gpn-permafrost/
-mkdir /www/data/ips/gpn-permafrost/
-cd /www/data/ips/gpn-permafrost/
+rm /www/data/ips/gpn-pop-science/
+mkdir /www/data/ips/gpn-pop-science/
+cd /www/data/ips/gpn-pop-science/
 mput -r build/*.*
 mput -r assets/*.*
 chmod 775 media img

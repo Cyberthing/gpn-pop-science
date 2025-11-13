@@ -1,3 +1,3 @@
-cd /www/data/ips/gpn-permafrost/
+cd /www/data/ips/gpn-pop-science/
 mput -r build/*.*
 chmod 664 *.*
