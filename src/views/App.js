@@ -36,6 +36,8 @@ import { useScrollTracker } from '@/hooks/useScrollTracker'
 
 import BackgroundFader from '@/components/BackgroundFader';
 import Cover from '@/components/Cover';
+import Article from '@/components/Article';
+import Player from '@/components/Player';
 
 // import content from '@/content'
 
@@ -108,7 +110,6 @@ export function App({ project, data }) {
     >
     <Way name="backs"/>
     <Way name="nav"/>
-    <Way name="factos"/>
     <AnalyticsAnchor id="anchor-01"/>
     <Setup/>
 
@@ -118,7 +119,10 @@ export function App({ project, data }) {
       fade={curBack%2}
     />
     <Cover {...main.cover}/>
-    {/* <Lead {...main.lead1}/> */}
+    <Column w100>
+      { articles.map((a, i)=><Article key={i} {...a}/>) }
+      <Player {...main.player}/>
+    </Column>
   </div>))
 }
 

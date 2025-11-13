@@ -18,7 +18,7 @@ export const Cover = ({ uptitle, title, lead }) => {
 			className={'coverPage'}
 		>
 			<Column
-				width="10"
+				width="8"
 				left="1"
 				className="coverCont"
 			>

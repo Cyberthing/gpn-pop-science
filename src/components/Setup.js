@@ -10,8 +10,8 @@ const Setup = () => {
 
   return (
     <>
-      <GridStyle gutter='10' gutterMobile='16' 
-        maxWidth={1180}
+      <GridStyle gutter='36' gutterMobile='16' 
+        // maxWidth={1180}
         // padding={"85"}
         padding={scene.mobile?"":"20"}
         columns="15"
@@ -24,7 +24,7 @@ const Setup = () => {
         fontFamilyDefault='sans-serif'
         fontSize='30'
         lineHeight='1.2'
-        mobile={{ fontSize:'52px' }}
+        mobile={{ fontSize:'22px' }}
         fontWeight='400'
         letterSpacing='0.16em'
         fontStyle='normal'
@@ -39,7 +39,7 @@ const Setup = () => {
         fontFamilyDefault='sans-serif'
         fontSize='75'
         lineHeight='0.8'
-        mobile={{ fontSize:'52px' }}
+        mobile={{ fontSize:'40px' }}
         fontWeight='700'
         letterSpacing='1.01px'
         fontStyle='normal'
@@ -53,203 +53,40 @@ const Setup = () => {
         fontFamilyDefault='sans-serif'
         fontSize='18'
         lineHeight='1.38'
-        mobile={{ fontSize:'52px' }}
+        mobile={{ fontSize:'16px' }}
         fontWeight='400'
         letterSpacing='1.01px'
         fontStyle='normal'
         color="white"
         textAlign="center"
       />
+      <TextStyle
+        name='articleTitle'
+        fontFamily='PT Mono'
+        fontFamilyDefault='sans-serif'
+        fontSize='40'
+        lineHeight='1.2'
+        mobile={{ fontSize:'32px' }}
+        fontWeight='700'
+        letterSpacing='1.01px'
+        fontStyle='normal'
+        color={colors.green}
+        // textAlign="center"
+      />
 
       <TextStyle
-        name='leadTitle'
-        fontFamily='Finlandica'
+        name='articleBody'
+        fontFamily='PTRootUI'
         fontFamilyDefault='sans-serif'
-        fontSize='60'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
+        fontSize='18'
+        lineHeight='1.38'
+        mobile={{ fontSize:'16px' }}
         fontWeight='400'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        textTransform="uppercase"
-        // textAlign="center"
-      />
-
-      <TextStyle
-        name='leadHeader'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='36'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='400'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        textTransform="uppercase"
-        // textAlign="center"
-      />
-
-      <TextStyle
-        name='leadText'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='22'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='400'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        // textAlign="center"
-      />
-      <TextStyle
-        name='quizTitle'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='36'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='500'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        // textTransform="uppercase"
-        // textAlign="center"
-      />
-
-      <TextStyle
-        name='quizQuestion'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='22'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='400'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        // textTransform="uppercase"
-        // textAlign="center"
-      />
-
-      <TextStyle
-        name='quizAnswer'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='20'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='500'
         letterSpacing='1.01px'
         fontStyle='normal'
         color="white"
         // textAlign="center"
-      />
-
-      <TextStyle
-        name='quizAnswerBtn'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='20'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='500'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        // textAlign="center"
-      />
-
-      <TextStyle
-        name='iceFacto'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='80'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='400'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color={colors.blue}
-        // textAlign="center"
-      />
-
-      <TextStyle
-        name='iceText'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='20'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='500'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        // textAlign="center"
-      />
-
-      <TextStyle
-        name='cardsTitle'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='36'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='400'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        // textTransform="uppercase"
-        // textAlign="center"
       />      
-
-      <TextStyle
-        name='cardsDesc'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='22'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='400'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        // textTransform="uppercase"
-        // textAlign="center"
-      />
-
-
-      <TextStyle
-        name='cardTitle'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='20'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='500'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        // textTransform="uppercase"
-        // textAlign="center"
-      />      
-
-      <TextStyle
-        name='cardDesc'
-        fontFamily='Finlandica'
-        fontFamilyDefault='sans-serif'
-        fontSize='18'
-        lineHeight='1.3'
-        mobile={{ fontSize:'52px' }}
-        fontWeight='400'
-        letterSpacing='1.01px'
-        fontStyle='normal'
-        color="black"
-        // textTransform="uppercase"
-        // textAlign="center"
-      />
 
     </>
   );

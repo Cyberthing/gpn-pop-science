@@ -5,12 +5,13 @@ import cx from '@ips/app/classnamex'
 export const Slice = forwardRef(({className, backPlate, ...p}, ref)=>(
     <LayoutSlice
         ref={ref}
+        width="10"
         className={cx('slice_v2', className)}
         {...p}
     />))
 Slice.displayName = 'Slice'
 
-export const LeftSlot = (p)=><Column width="6" {...p}/>
+export const LeftSlot = (p)=><Column width="4" {...p}/>
 export const RightSlot = (p)=><Column width="6" {...p}/>
 
 Slice.LeftSlot = LeftSlot

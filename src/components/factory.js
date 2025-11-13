@@ -11,7 +11,7 @@ export const createFactory = ()=>{
 			return dict[t]
 		},
 		create(p, i){
-			const C = dict[p.__typename]
+			const C = dict[p.type]
 			if(!C)
 				return null
 			return <C key={i} index={i} {...p}/>
