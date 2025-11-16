@@ -1,13 +1,15 @@
-changing background video
-cover
++ changing background video
++ cover
 
-winamp
-	- layout
-	- video
-	- tracks
-	- equalizer
-	- progress/time
+winamp - layout
+winamp - video
+winamp - tracks
+winamp - equalizer
+winamp - progress
+winamp - time
 
-chapter
-	layout
-	round video
+chapter - layout
+chapter - round video
+
+обложка - размер лида
+мобила
