@@ -29,7 +29,39 @@ import MediaBack from '@/components/MediaBack';
 import * as analytics from '@/analytics'
 import { factory } from '@/components/factory';
 
+const Quote = ({ text, desc, ava})=><Row 
+        className="quoteCont"
+        useGutter
+        style={{
+            gap: '27px',
+        }}
+    >
+    <Column>
+        <Media className="quoteAva" media={{url: ava }}/>
+    </Column>
+    <Column>
+        <AText style="quoteDesc" noGutter text={desc}/>
+        <AText style="quoteText" noGutter text={text}/>
+    </Column>
+</Row>
+
+const Illustration = ({ image, desc, style })=><Row 
+        className={cx("illCont", style)}
+        useGutter
+    >
+    <Column className="ill">
+        <Media media={{url: image }}/>
+    </Column>
+    <Column>
+        <AText style="illDesc" noGutter text={desc}/>
+    </Column>
+</Row>
+
 factory.register('text', (p)=><AText style="articleBody" {...p}/>)
+factory.register('quote', Quote)
+factory.register('illustration', Illustration)
+
+
 
 export const Article = ({ title, blocks, ...p })=>{
     // trace('Article', blocks)
@@ -38,8 +70,10 @@ export const Article = ({ title, blocks, ...p })=>{
         <Slice.LeftSlot>
         </Slice.LeftSlot>
         <Slice.RightSlot className="articlePlate">
-            <AText style="articleTitle" text={title}/>
-            { blocks.map(factory.create) }
+            <Column>
+                <AText style="articleTitle" text={title}/>
+                { blocks.map(factory.create) }
+            </Column>
         </Slice.RightSlot>
     </Slice>
 }

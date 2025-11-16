@@ -102,8 +102,40 @@ body:not(.m-ria)
 		span:nth-child(3)
 			align-self: flex-end
 
+	.player
+		pointer-events: none
+
 	.articlePlate
-		background-color: rgba(#0F0F0F, 0.4)
+		&:before
+			content ''
+			position absolute
+			left 15px
+			width calc(100% - 30px)
+			top 0
+			height: 100%
+			background-color: rgba(#0F0F0F, 0.4)
+
+	.quoteCont
+		padding-top 100px
+		padding-bottom 100px
+	.quoteAva 
+		padding-right 0
+		min-width 130px
+		width 20%
+		img
+			border-radius: 50%
+
+	.illCont
+		gap 30px
+		margin-bottom 64px
+		.ill
+			flex 0 0 66%
+			// width 50%
+		&.big
+			flex-direction: column
+			.ill
+				// flex 0 0 100%
+				width 100%
 
 .screen-size-regular, .screen-size-small, .screen-size-small, .screen-size-mobile
 	// 

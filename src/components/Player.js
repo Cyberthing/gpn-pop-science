@@ -30,7 +30,7 @@ import Sticky from '@ips/react/components/sticky'
 
 export const Player = ({ image, ...p })=>{
     // trace('Article', blocks)
-    return <Overlay cover>
+    return <Overlay cover ghost>
         <Sticky>
             <Slice>
                 <Slice.LeftSlot>

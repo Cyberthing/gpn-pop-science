@@ -78,7 +78,7 @@ const Setup = () => {
         name='articleBody'
         fontFamily='PTRootUI'
         fontFamilyDefault='sans-serif'
-        fontSize='18'
+        fontSize='17'
         lineHeight='1.38'
         mobile={{ fontSize:'16px' }}
         fontWeight='400'
@@ -86,7 +86,50 @@ const Setup = () => {
         fontStyle='normal'
         color="white"
         // textAlign="center"
-      />      
+      />
+
+      <TextStyle
+        name='quoteDesc'
+        fontFamily='PTRootUI'
+        fontFamilyDefault='sans-serif'
+        fontSize='17'
+        lineHeight='1.38'
+        mobile={{ fontSize:'16px' }}
+        fontWeight='400'
+        letterSpacing='1.01px'
+        fontStyle='normal'
+        color="white"
+        // textAlign="center"
+      />            
+
+      <TextStyle
+        name='quoteText'
+        fontFamily='PT Mono'
+        fontFamilyDefault='sans-serif'
+        fontSize='20'
+        lineHeight='1.3'
+        mobile={{ fontSize:'16px' }}
+        fontWeight='400'
+        letterSpacing='1.01px'
+        fontStyle='normal'
+        color="white"
+        // textAlign="center"
+      />
+
+      <TextStyle
+        name='illDesc'
+        fontFamily='PT Mono'
+        fontFamilyDefault='sans-serif'
+        fontSize='13'
+        lineHeight='1.23'
+        mobile={{ fontSize:'16px' }}
+        fontWeight='400'
+        letterSpacing='1.01px'
+        fontStyle='normal'
+        color={colors.green}
+        // textAlign="center"
+      />            
+
 
     </>
   );

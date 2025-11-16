@@ -61,15 +61,17 @@ const WrMain = (p) => {
     )
   );
 
-  return withResourceProvider(
-    {
-      requestUrl:
-        mode == 'local'
-          ? requestUrl
-          : (url, type, opts) => `${resourceURI}${url}`,
-    },
-    withLoadingQueue(lq, withScene(scene, <Main {...p} />))
-  );
+  return withLoadingQueue(lq, withScene(scene, <Main {...p} />))
+
+  // return withResourceProvider(
+  //   {
+  //     requestUrl:
+  //       mode == 'local'
+  //         ? requestUrl
+  //         : (url, type, opts) => `${resourceURI}${url}`,
+  //   },
+  //   withLoadingQueue(lq, withScene(scene, <Main {...p} />))
+  // );
 };
 
 export default WrMain;
