@@ -28,17 +28,31 @@ import MediaBack from '@/components/MediaBack';
 // import { useScrollTracker } from '@/hooks/useScrollTracker'
 import Sticky from '@ips/react/components/sticky'
 
+const Play = ()=>(null)
+const Pause = ()=>(null)
+const Stop = ()=>(null)
+const Prev = ()=>(null)
+const Next = ()=>(null)
+const Equalizer = ()=>(null)
+const Volume = ()=>(null)
+const Time = ()=>(null)
+const Progress = ()=>(null)
+const TrackList = ({ tracks, current })=>(null)
+const CurrentTrack = ({ track })=>(null)
+
 export const Player = ({ image, ...p })=>{
     // trace('Article', blocks)
-    return <Overlay cover ghost>
-        <Sticky>
-            <Slice>
-                <Slice.LeftSlot>
-                    <Media media={{ url: image }}/>
-                </Slice.LeftSlot>
-            </Slice>
-        </Sticky>
-    </Overlay>
+    return (
+        <Overlay cover ghost>
+            <Sticky>
+                <Slice>
+                    <Slice.LeftSlot>
+                        <Media media={{ url: image }}/>
+                    </Slice.LeftSlot>
+                </Slice>
+            </Sticky>
+        </Overlay>
+    )
 }
 
 export default Player
