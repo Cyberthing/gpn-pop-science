@@ -28,11 +28,31 @@ import MediaBack from '@/components/MediaBack';
 // import { useScrollTracker } from '@/hooks/useScrollTracker'
 import Sticky from '@ips/react/components/sticky'
 
-const Play = ()=>(null)
-const Pause = ()=>(null)
-const Stop = ()=>(null)
-const Prev = ()=>(null)
-const Next = ()=>(null)
+import { useConfig } from '@/hooks/useConfig'
+
+const Button = ({icon, ...p})=>{
+
+    const [pressed, setPressed] = useState(false)
+    const { icons=[] } = useConfig()
+
+    // trace('icons', icons)
+    
+    return (<div 
+        className={cx('playerBtn', pressed&&'pressed')} {...p}
+        onPointerDown={()=>setPressed(true)}
+        onPointerUp={()=>setPressed(false)}
+        >
+        <Pic src={icons.base} noGutter/>
+        {/* <Pic src={icons.base} noGutter/> */}
+        <Pic src={icons[icon]} noGutter/>
+    </div>)
+}
+
+const Play = ()=>(<Button icon={'play'} style={{ left: '10%', top: '10%' }}/>)
+const Pause = ()=>(<Button icon={'pause'} style={{ left: '10%', top: '20%' }}/>)
+const Stop = ()=>(<Button icon={'stop'} style={{ left: '10%', top: '30%' }}/>)
+const Prev = ()=>(<Button icon={'prev'} style={{ left: '10%', top: '40%' }}/>)
+const Next = ()=>(<Button icon={'next'} style={{ left: '10%', top: '50%' }}/>)
 const Equalizer = ()=>(null)
 const Volume = ()=>(null)
 const Time = ()=>(null)
@@ -48,6 +68,11 @@ export const Player = ({ image, ...p })=>{
                 <Slice>
                     <Slice.LeftSlot>
                         <Media media={{ url: image }}/>
+                        <Play/>
+                        <Pause/>
+                        <Stop/>
+                        <Prev/>
+                        <Next/>
                     </Slice.LeftSlot>
                 </Slice>
             </Sticky>

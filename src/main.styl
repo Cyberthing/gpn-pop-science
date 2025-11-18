@@ -105,6 +105,20 @@ body:not(.m-ria)
 	.player
 		pointer-events: none
 
+	.playerBtn
+		pointer-events: auto
+		position absolute
+		top 0
+		left 0
+		width 40px
+		> .pic
+			position absolute
+			top 0
+			left 0
+		&.pressed
+			> .pic:first-child
+				transform rotate(1/2turn)
+
 	.articlePlate
 		&:before
 			content ''

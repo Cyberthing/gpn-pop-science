@@ -1,1 +1,9 @@
 mode: yml
+icons:
+  base: base.svg
+  next: next.svg
+  pause: pause.svg
+  play: play.svg
+  prev: prev.svg
+  stop: stop.svg
+# btnPressed: 2.svg
