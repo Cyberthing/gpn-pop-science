@@ -26,7 +26,17 @@ export const BackgroundFader = ({ backs, fade, current })=>{
     	<StickyFrame>
     		<FadeDrop slide={
 				<>
-					<MediaBack autoPlay loop muted media={b.media} className={cx("backfader-back", b.style, b.style !="nofade" && fade && "backGrad", (scene.height/scene.width) > (0.7111111111111) && "vert")}/>
+					<MediaBack 
+						autoPlay 
+						loop 
+						muted 
+						media={b.media} 
+						className={cx(
+							"backfader-back", 
+							b.style, 
+							// b.style !="nofade" && fade && "backGrad", 
+							//(scene.height/scene.width) > (0.7111111111111) && "vert"
+						)}/>
 				</>    			
     			// rBacks[current]
     		} 

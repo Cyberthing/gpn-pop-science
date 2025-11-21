@@ -69,8 +69,14 @@ body:not(.m-ria)
 	img.overlay
 		line-height: 0
 
+	.size-cover
+		width 100%
+		height 100%
+	.absolute
+		position absolute
+
 	.backfader-back
-		height: var(--sy, 100vh)
+		// height: var(--sy, 100vh)
 		&:after
 			content: ''
 			position absolute
@@ -82,6 +88,10 @@ body:not(.m-ria)
 			margin 0
 		p + p
 			margin-top 1em
+
+	.sticky-frame
+		.scroll-fixed
+			height calc(var(--sy) * 1px)
 
 	.coverPage
 		max-height 900px
@@ -101,6 +111,9 @@ body:not(.m-ria)
 			align-self: center
 		span:nth-child(3)
 			align-self: flex-end
+
+	.articlePlate
+		padding 32px 16px 64px 16px
 
 	.player
 		pointer-events: none
@@ -125,11 +138,17 @@ body:not(.m-ria)
 		&:before
 			content ''
 			position absolute
-			left 15px
-			width calc(100% - 30px)
+			left 16px
+			width calc(100% - 32px)
 			top 0
 			height: 100%
 			background-color: rgba(#0F0F0F, 0.4)
+
+	.articleTitle
+		margin-bottom 48px
+
+	.articlePage + .articlePage
+		margin-top 100px
 
 	.quoteCont
 		padding-top 100px
@@ -145,7 +164,7 @@ body:not(.m-ria)
 		gap 30px
 		margin-bottom 64px
 		.ill
-			flex 0 0 66%
+			flex 0 0 60%
 			// width 50%
 		&.big
 			flex-direction: column

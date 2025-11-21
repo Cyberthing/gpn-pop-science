@@ -65,8 +65,8 @@ factory.register('illustration', Illustration)
 
 export const Article = ({ title, blocks, ...p })=>{
     // trace('Article', blocks)
-    return <Slice>
-        <Waypoint way="backs"/>
+    return <Slice className="articlePage">
+        <Waypoint way="backs" edge="-50vh"/>
         <Slice.LeftSlot>
         </Slice.LeftSlot>
         <Slice.RightSlot className="articlePlate">
