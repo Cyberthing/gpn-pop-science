@@ -6,4 +6,5 @@ icons:
   play: play.svg
   prev: prev.svg
   stop: stop.svg
+  eject: eject.svg
 # btnPressed: 2.svg

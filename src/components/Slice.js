@@ -11,8 +11,8 @@ export const Slice = forwardRef(({className, backPlate, ...p}, ref)=>(
     />))
 Slice.displayName = 'Slice'
 
-export const LeftSlot = (p)=><Column width="4" {...p}/>
-export const RightSlot = (p)=><Column width="6" {...p}/>
+export const LeftSlot = forwardRef((p, ref)=><Column ref={ref} width="4" {...p}/>)
+export const RightSlot = forwardRef((p, ref)=><Column ref={ref} width="6" {...p}/>)
 
 Slice.LeftSlot = LeftSlot
 Slice.RightSlot = RightSlot

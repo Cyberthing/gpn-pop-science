@@ -27,8 +27,35 @@ import Media from '@/components/Media';
 import MediaBack from '@/components/MediaBack';
 // import { useScrollTracker } from '@/hooks/useScrollTracker'
 import Sticky from '@ips/react/components/sticky'
+import FadeDrop from '@/components/FadeDrop';
 
 import { useConfig } from '@/hooks/useConfig'
+// import { useResize } from '@ips/react/components/utils/use-resize.js';
+import createStaticEventTargetHook from '@/utils/eventTargetHook';
+
+const useWindow = createStaticEventTargetHook(window);
+
+const Visualizer = ({ medias, current=0 })=>{
+
+   	trace('Visualizer', medias, current)
+	const b = medias[current]
+
+    return (
+            <FadeDrop slide={
+                <MediaBack 
+                    autoPlay 
+                    loop 
+                    muted 
+                    media={{ url: b }} 
+                    className={cx(
+                        "backfader-back", 
+                        b.style, 
+                    )}/>
+            } 
+            id={current}
+        />    
+    )
+}
 
 const Button = ({icon, ...p})=>{
 
@@ -41,18 +68,19 @@ const Button = ({icon, ...p})=>{
         className={cx('playerBtn', pressed&&'pressed')} {...p}
         onPointerDown={()=>setPressed(true)}
         onPointerUp={()=>setPressed(false)}
-        >
+    >
         <Pic src={icons.base} noGutter/>
         {/* <Pic src={icons.base} noGutter/> */}
         <Pic src={icons[icon]} noGutter/>
     </div>)
 }
 
-const Play = ()=>(<Button icon={'play'} style={{ left: '10%', top: '10%' }}/>)
-const Pause = ()=>(<Button icon={'pause'} style={{ left: '10%', top: '20%' }}/>)
-const Stop = ()=>(<Button icon={'stop'} style={{ left: '10%', top: '30%' }}/>)
-const Prev = ()=>(<Button icon={'prev'} style={{ left: '10%', top: '40%' }}/>)
-const Next = ()=>(<Button icon={'next'} style={{ left: '10%', top: '50%' }}/>)
+const Play = ()=>(<Button icon={'play'} />)
+const Pause = ()=>(<Button icon={'pause'} />)
+const Stop = ()=>(<Button icon={'stop'} />)
+const Prev = ()=>(<Button icon={'prev'} />)
+const Next = ()=>(<Button icon={'next'} />)
+const Eject = ()=>(<Button icon={'eject'} />)
 const Equalizer = ()=>(null)
 const Volume = ()=>(null)
 const Time = ()=>(null)
@@ -60,19 +88,41 @@ const Progress = ()=>(null)
 const TrackList = ({ tracks, current })=>(null)
 const CurrentTrack = ({ track })=>(null)
 
-export const Player = ({ image, ...p })=>{
+
+export const Player = ({ image, medias, current, ...p })=>{
     // trace('Article', blocks)
+    const [w, setW] = useState(0)
+    const ref = useRef()
+
+    useWindow('resize', ()=>{
+        // setW(ref.current.offsetWidth)
+        // trace('useResize', ref.current.offsetWidth)
+        ref.current.style.setProperty('--playerw', ""+ref.current.offsetWidth)
+    },null, [])
     return (
         <Overlay cover ghost>
             <Sticky>
                 <Slice>
-                    <Slice.LeftSlot>
+                    <Slice.LeftSlot ref={ref}>
                         <Media media={{ url: image }}/>
-                        <Play/>
-                        <Pause/>
-                        <Stop/>
-                        <Prev/>
-                        <Next/>
+                        <Overlay left="1.5%" width="97%" top="4.2%" height="51.5%">
+                            <Visualizer
+                                medias={medias}
+                                current={current}
+                            />
+                        </Overlay>
+                        <Overlay ly="0.743" w100>
+                            <Row align="space-between" padding="0 3.5%">
+                                <Row className="btnCont">
+                                    <Prev/>
+                                    <Play/>
+                                    <Pause/>
+                                    <Stop/>
+                                    <Next/>
+                                </Row>
+                                <Eject/>
+                            </Row>
+                        </Overlay>
                     </Slice.LeftSlot>
                 </Slice>
             </Sticky>

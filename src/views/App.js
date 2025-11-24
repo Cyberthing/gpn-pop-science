@@ -121,7 +121,7 @@ export function App({ project, data }) {
     <Cover {...main.cover}/>
     <Column w100>
       { articles.map((a, i)=><Article key={i} {...a}/>) }
-      <Player {...main.player}/>
+      <Player {...main.player} current={curBack}/>
     </Column>
   </div>))
 }

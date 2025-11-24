@@ -1,1 +1,7 @@
 image: Player.svg
+medias:
+  - 1sm.mp4
+  - 2sm.mp4
+  - 3sm.mp4
+  - 4sm.mp4
+  - 5sm.mp4

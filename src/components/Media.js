@@ -22,7 +22,7 @@ export const Media = forwardRef(({
     contain ? 'contain' : ''
   }`;
 
-  trace('media', url, mime, mt)
+  // trace('media', url, mime, mt)
 
   return mt == 'image' ? (
     <Pic
