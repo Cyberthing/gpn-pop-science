@@ -175,11 +175,19 @@ body:not(.m-ria)
 		.ill
 			flex 0 0 60%
 			// width 50%
+			video
+				width: 100%;
 		&.big
 			flex-direction: column
 			.ill
 				// flex 0 0 100%
 				width 100%
+		&.round
+			.ill
+				border-radius: 50%
+				overflow: hidden
+				video
+					transform translate(-0.4%, 0.9%) scale(1.07)
 
 .screen-size-regular, .screen-size-small, .screen-size-small, .screen-size-mobile
 	// 

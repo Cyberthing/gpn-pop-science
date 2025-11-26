@@ -33,7 +33,8 @@ blocks:
       Clorella - 4 ml<br/>
       water - 8 ml<br/>
       90 Hz – 180 Hz<br/>
-    image: ill3_3.png
+    image: ill3_3.mp4
+    style: round
   - type: quote
     desc: >-
       Алексей Видлер, биолог
