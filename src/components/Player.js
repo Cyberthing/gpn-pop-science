@@ -48,7 +48,7 @@ const Visualizer = ({ medias, current=0 })=>{
                     muted 
                     media={{ url: b }} 
                     className={cx(
-                        "backfader-back", 
+                        // "backfader-back", 
                         b.style, 
                     )}/>
             } 

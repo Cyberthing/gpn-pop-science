@@ -10,7 +10,7 @@ import AText from './AText'
 import Media from '@/components/Media'
 import MediaBack from '@/components/MediaBack'
 
-export const Cover = ({ uptitle, title, lead }) => {
+export const Cover = ({ uptitle, title, titleImage, lead }) => {
 	const scene = useScene()
 
 	const r = (
@@ -18,13 +18,16 @@ export const Cover = ({ uptitle, title, lead }) => {
 			className={'coverPage'}
 		>
 			<Column
-				width="8"
-				left="1"
 				className="coverCont"
+				align="center"
+				w100
 			>
 				<AText style="coverUptitle" text={uptitle}/>
-				<AText style="coverTitle" text={title}/>
-				<AText noGutter={false} style="coverLead" text={lead}/>
+				<Media media={{ url: titleImage }} width="70%"/>
+				{/* <AText style="coverTitle" text={title}/> */}
+				<Column width="6">
+					<AText noGutter={false} style="coverLead" text={lead}/>
+				</Column>
 			</Column>
 		</Slice>
 	)
