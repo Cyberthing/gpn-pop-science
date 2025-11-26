@@ -4,7 +4,7 @@ import cx from '@ips/app/classnamex'
 
 export const AText = memo(({ text, style, noGutter, className, ...p })=>(
     <Text 
-        yo 
+        yo={false}
         noGutter={noGutter} 
         className={cx('atext', className, style)} 
         textStyle={style} 
