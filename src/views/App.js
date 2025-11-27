@@ -40,6 +40,7 @@ import BackgroundFader from '@/components/BackgroundFader';
 import Cover from '@/components/Cover';
 import Article from '@/components/Article';
 import {Player, PlayerContext, usePlayer} from '@/components/Player';
+import debounce from 'lodash/debounce'
 
 // import content from '@/content'
 
@@ -63,8 +64,20 @@ export function App({ project, data }) {
 
   const player = usePlayer()
 
-  const [curBack, setCurBack] = useState(0)
-  useRegistryEvent('backs', 'point', point=>setCurBack(Math.max(0, point.index)))
+  const debouncePlay = useMemo(()=>debounce((i)=>{
+    trace('playing', i)
+    if(i < 0 || i > articles.length-1)
+      player.stop()
+    else
+      player.play(i)
+  },500),[player])
+
+  const [curBack, _setCurBack] = useState(-1)
+  const setCurBack = (cback)=>{
+    _setCurBack(cback)
+    debouncePlay(cback)
+  }
+  useRegistryEvent('backs', 'point', point=>setCurBack(point.index))
 
   useEffect(()=>{
     const nsw = Math.min(720, scene.width)
@@ -72,9 +85,13 @@ export function App({ project, data }) {
       setSw(nsw)
   },[scene.width])
 
-  useEffect(()=>{
-    // player.play(curBack)
-  },[curBack])
+  // useEffect(()=>{
+  //   trace('playing curba', curBack)
+  //   if(curBack < 0 || curBack > articles.length-1)
+  //     player.stop()
+  //   else
+  //     player.play(curBack)
+  // },[curBack])
 
   const refRoot = useRef()
 
@@ -89,6 +106,9 @@ export function App({ project, data }) {
       setTimeout(()=>{
         trace('navigateTo', i, index)
         analytics.innerLink?.(i)
+
+        if(i == -1)
+          smoothScrollTo(refRoot.current)
 
         if(!navRefs[i].current)
           return
@@ -136,12 +156,13 @@ export function App({ project, data }) {
 
     <BackgroundFader
       backs={main.backs} 
-      current={curBack||0} 
-      fade={curBack%2}
+      current={Math.max(0, curBack)||0} 
+      fade={Math.max(0, curBack)%2}
     />
     <Cover {...main.cover}/>
     <Column w100>
       { articles.map((a, i)=><Article key={i} ref={navRefs[i]} {...a}/>) }
+      <Waypoint way="backs" edge="0vh"/>
       <Player 
         {...main.player} 
         current={curBack}
@@ -155,11 +176,29 @@ export function App({ project, data }) {
 
 export default (p)=>{
   // trace('p', p)
-  const [player] = useState(()=>createPlayer(p.data.main.articles.map(a=>a.audio)))
-  useEffect(()=>{
-    // player.play(0)
-  },[])
-  return <PlayerContext.Provider value={player}>
+  const [_player] = useState(()=>createPlayer(p.data.main.articles.map(a=>a.audio)))
+  const [isPlaying, setIsPlaying] = useState()
+  const playerCtx ={
+    play(i){
+      _player.play(i)
+      setIsPlaying(true)
+    },
+    continueOrPlay: (i)=>{
+      _player.continueOrPlay(i)
+      setIsPlaying(true)
+    },
+    pause(){
+      _player.pause()
+      setIsPlaying(false)
+    },
+    stop(){
+      _player.stop()
+      setIsPlaying(false)
+    },
+    isPlaying,
+  }
+
+  return <PlayerContext.Provider value={playerCtx}>
     <App {...p}/>
   </PlayerContext.Provider>
 }

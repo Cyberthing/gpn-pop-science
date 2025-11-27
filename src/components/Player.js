@@ -38,15 +38,15 @@ export const usePlayer = ()=>useContext(PlayerContext)
 
 const useWindow = createStaticEventTargetHook(window);
 
-const Visualizer = ({ medias, current=0 })=>{
+const Visualizer = ({ medias, current=0, isPlaying })=>{
 
    	trace('Visualizer', medias, current)
-	const b = medias[current]
+	const b = medias[Math.max(0, Math.min(medias.length - 1, current))]
 
     return (
             <FadeDrop slide={
                 <MediaBack 
-                    autoPlay 
+                    autoPlay={isPlaying}
                     loop 
                     muted 
                     media={{ url: b }} 
@@ -62,20 +62,26 @@ const Visualizer = ({ medias, current=0 })=>{
 
 const Button = ({icon, onClick, ...p})=>{
 
+    const ref = useRef()
     const [pressed, setPressed] = useState(false)
     const { icons=[] } = useConfig()
+
+    useWindow('pointerup', (event)=>{
+        // trace('pointerup', event)
+        if(!pressed)
+            return
+        setPressed(false)
+        if(!ref.current.contains(event.target))
+            return
+        onClick?.()
+    }, null, [pressed, onClick])
 
     // trace('icons', icons)
     
     return (<div 
+        ref={ref}
         className={cx('playerBtn', pressed&&'pressed')} {...p}
         onPointerDown={()=>setPressed(true)}
-        onPointerUp={()=>{
-            trace('click', onClick)
-            setPressed(false)
-            onClick?.()
-        }}
-        // onClick={onClick}
     >
         <Pic src={icons.base} noGutter/>
         {/* <Pic src={icons.base} noGutter/> */}
@@ -125,19 +131,20 @@ export const Player = ({
                         <Overlay left="1.5%" width="97%" top="4.2%" height="51.5%">
                             <Visualizer
                                 medias={medias}
-                                current={current}
+                                current={Math.max(0, current)}
+                                isPlaying={player.isPlaying}
                             />
                         </Overlay>
                         <Overlay ly="0.743" w100>
                             <Row align="space-between" padding="0 3.5%">
                                 <Row className="btnCont">
                                     <Prev onClick={navigatePrev}/>
-                                    <Play/>
-                                    <Pause/>
-                                    <Stop/>
+                                    <Play onClick={()=>player.continueOrPlay(current)}/>
+                                    <Pause onClick={()=>player.pause()}/>
+                                    <Stop onClick={()=>player.stop()}/>
                                     <Next onClick={navigateNext}/>
                                 </Row>
-                                <Eject/>
+                                <Eject  onClick={()=>navigateTo(-1)}/>
                             </Row>
                         </Overlay>
                     </Slice.LeftSlot>
