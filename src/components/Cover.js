@@ -10,7 +10,7 @@ import AText from './AText'
 import Media from '@/components/Media'
 import MediaBack from '@/components/MediaBack'
 
-export const Cover = ({ uptitle, title, titleImage, lead }) => {
+export const Cover = ({ uptitle, title, titleImage, lead, msgAudio }) => {
 	const scene = useScene()
 
 	const r = (
@@ -28,6 +28,7 @@ export const Cover = ({ uptitle, title, titleImage, lead }) => {
 				<Column width="6">
 					<AText noGutter={false} style="coverLead" text={lead}/>
 				</Column>
+				<Media className="msgAudio" media={{ url: msgAudio }}/>
 			</Column>
 		</Slice>
 	)
