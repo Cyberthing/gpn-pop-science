@@ -1,4 +1,7 @@
 background: 2bg.mp4
+audio: 2.mp3
+audioTitle: Микрокапли - Павел Зун
+audioLength: 10:14
 title: Инфохимик Павел Зун и музыка микрокапель
 blocks:
   - type: text

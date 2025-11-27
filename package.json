@@ -48,6 +48,7 @@
     "async": "^3.2.3",
     "core-js": "^3.20.2",
     "css-scroll-snap-polyfill": "^0.1.2",
+    "howler": "^2.2.4",
     "motion": "^12.7.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

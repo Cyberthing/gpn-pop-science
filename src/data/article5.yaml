@@ -1,4 +1,7 @@
 background: 5bg.mp4
+audio: 5.mp3
+audioTitle: Звезды - Николай Кардашев
+audioLength: 3:36
 title: Астрофизик Николай Кардашев и музыка звёзд
 blocks:
   - type: text

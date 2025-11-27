@@ -1,4 +1,4 @@
-import React,  { Fragment, forwardRef, createRef, useRef, useState, useEffect, useCallback, useMemo, memo } from 'react';
+import React,  { Fragment, forwardRef, createRef, useRef, useState, useEffect, useCallback, useMemo, memo, createContext, useContext } from 'react';
 import cx from '@ips/app/classnamex'
 // import { times } from '@ips/app/hidash'
 
@@ -33,6 +33,9 @@ import { useConfig } from '@/hooks/useConfig'
 // import { useResize } from '@ips/react/components/utils/use-resize.js';
 import createStaticEventTargetHook from '@/utils/eventTargetHook';
 
+export const PlayerContext = createContext()
+export const usePlayer = ()=>useContext(PlayerContext)
+
 const useWindow = createStaticEventTargetHook(window);
 
 const Visualizer = ({ medias, current=0 })=>{
@@ -57,7 +60,7 @@ const Visualizer = ({ medias, current=0 })=>{
     )
 }
 
-const Button = ({icon, ...p})=>{
+const Button = ({icon, onClick, ...p})=>{
 
     const [pressed, setPressed] = useState(false)
     const { icons=[] } = useConfig()
@@ -67,7 +70,12 @@ const Button = ({icon, ...p})=>{
     return (<div 
         className={cx('playerBtn', pressed&&'pressed')} {...p}
         onPointerDown={()=>setPressed(true)}
-        onPointerUp={()=>setPressed(false)}
+        onPointerUp={()=>{
+            trace('click', onClick)
+            setPressed(false)
+            onClick?.()
+        }}
+        // onClick={onClick}
     >
         <Pic src={icons.base} noGutter/>
         {/* <Pic src={icons.base} noGutter/> */}
@@ -75,12 +83,12 @@ const Button = ({icon, ...p})=>{
     </div>)
 }
 
-const Play = ()=>(<Button icon={'play'} />)
-const Pause = ()=>(<Button icon={'pause'} />)
-const Stop = ()=>(<Button icon={'stop'} />)
-const Prev = ()=>(<Button icon={'prev'} />)
-const Next = ()=>(<Button icon={'next'} />)
-const Eject = ()=>(<Button icon={'eject'} />)
+const Play = (p)=>(<Button icon={'play'} {...p}/>)
+const Pause = (p)=>(<Button icon={'pause'} {...p}/>)
+const Stop = (p)=>(<Button icon={'stop'} {...p}/>)
+const Prev = (p)=>(<Button icon={'prev'} {...p}/>)
+const Next = (p)=>(<Button icon={'next'} {...p}/>)
+const Eject = (p)=>(<Button icon={'eject'} {...p}/>)
 const Equalizer = ()=>(null)
 const Volume = ()=>(null)
 const Time = ()=>(null)
@@ -89,10 +97,19 @@ const TrackList = ({ tracks, current })=>(null)
 const CurrentTrack = ({ track })=>(null)
 
 
-export const Player = ({ image, medias, current, ...p })=>{
+export const Player = ({ 
+    image, 
+    medias, 
+    current, 
+    navigatePrev,
+    navigateTo,
+    navigateNext,
+    ...p })=>{
     // trace('Article', blocks)
     const [w, setW] = useState(0)
     const ref = useRef()
+
+    const player = usePlayer()
 
     useWindow('resize', ()=>{
         // setW(ref.current.offsetWidth)
@@ -114,11 +131,11 @@ export const Player = ({ image, medias, current, ...p })=>{
                         <Overlay ly="0.743" w100>
                             <Row align="space-between" padding="0 3.5%">
                                 <Row className="btnCont">
-                                    <Prev/>
+                                    <Prev onClick={navigatePrev}/>
                                     <Play/>
                                     <Pause/>
                                     <Stop/>
-                                    <Next/>
+                                    <Next onClick={navigateNext}/>
                                 </Row>
                                 <Eject/>
                             </Row>

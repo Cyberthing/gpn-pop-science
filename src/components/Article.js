@@ -63,9 +63,9 @@ factory.register('illustration', Illustration)
 
 
 
-export const Article = ({ title, blocks, ...p })=>{
+export const Article = forwardRef(({ title, blocks, ...p }, ref)=>{
     // trace('Article', blocks)
-    return <Slice className="articlePage">
+    return <Slice ref={ref} className="articlePage">
         <Waypoint way="backs" edge="-50vh"/>
         <Slice.LeftSlot>
         </Slice.LeftSlot>
@@ -76,6 +76,7 @@ export const Article = ({ title, blocks, ...p })=>{
             </Column>
         </Slice.RightSlot>
     </Slice>
-}
+})
+Article.displayName="Article"
 
 export default Article

@@ -1,4 +1,4 @@
-import React,  { Fragment, forwardRef, createRef, useRef, useState, useEffect, useCallback, useMemo, memo } from 'react';
+import React,  { Fragment, forwardRef, createRef, useRef, useState, useEffect, useCallback, useMemo, memo, createContext, useContext } from 'react';
 import scrollSnapPolyfill from 'css-scroll-snap-polyfill'
 import cx from '@ips/app/classnamex'
 import { times } from '@ips/app/hidash'
@@ -34,10 +34,12 @@ import MediaBack from '@/components/MediaBack';
 import { useConfig } from '@/hooks/useConfig'
 import { useScrollTracker } from '@/hooks/useScrollTracker'
 
+import {createPlayer} from '@/utils/player'
+
 import BackgroundFader from '@/components/BackgroundFader';
 import Cover from '@/components/Cover';
 import Article from '@/components/Article';
-import Player from '@/components/Player';
+import {Player, PlayerContext, usePlayer} from '@/components/Player';
 
 // import content from '@/content'
 
@@ -49,11 +51,17 @@ import * as analytics from '@/analytics'
    document.documentElement.scrollTop = ofs
  }
 
+ const smoothScrollTo = ($el)=>{
+    $el.scrollIntoView({ behavior: 'smooth' })
+ }
+
 let renderCounter = 0
 
 export function App({ project, data }) {
   const scene = useScene()
   const [sw, setSw] = useState(1)
+
+  const player = usePlayer()
 
   const [curBack, setCurBack] = useState(0)
   useRegistryEvent('backs', 'point', point=>setCurBack(Math.max(0, point.index)))
@@ -63,6 +71,10 @@ export function App({ project, data }) {
     if(nsw != sw)
       setSw(nsw)
   },[scene.width])
+
+  useEffect(()=>{
+    // player.play(curBack)
+  },[curBack])
 
   const refRoot = useRef()
 
@@ -84,11 +96,20 @@ export function App({ project, data }) {
         const el = !index ? navRefs[i].current : navRefs[i].current.querySelector(`[data-index="${index}"]`)
         if(!el)
           return
+
+        smoothScrollTo(el)
         
-        const ofs = getFullOffsetTop(el)
-        instantScrollTo(ofs + (scene.mobile?(-100):(scene.height/2)))
+        // const ofs = getFullOffsetTop(el)
+        // instantScrollTo(ofs + (scene.mobile?(-100):(scene.height/2)))
       },100)
   },[scene.height, scene.mobile])
+
+  const navigatePrev = ()=>{
+    navigateTo(Math.max(0, curBack-1))
+  }
+  const navigateNext = ()=>{
+    navigateTo(Math.min(4, curBack+1))
+  }
 
   // const scrollPos = useScrollTracker(refRoot)
   //trace('scrollPos', scrollPos)
@@ -120,10 +141,25 @@ export function App({ project, data }) {
     />
     <Cover {...main.cover}/>
     <Column w100>
-      { articles.map((a, i)=><Article key={i} {...a}/>) }
-      <Player {...main.player} current={curBack}/>
+      { articles.map((a, i)=><Article key={i} ref={navRefs[i]} {...a}/>) }
+      <Player 
+        {...main.player} 
+        current={curBack}
+        navigatePrev={navigatePrev}
+        navigateTo={navigateTo}
+        navigateNext={navigateNext}
+      />
     </Column>
   </div>))
 }
 
-export default App;
+export default (p)=>{
+  // trace('p', p)
+  const [player] = useState(()=>createPlayer(p.data.main.articles.map(a=>a.audio)))
+  useEffect(()=>{
+    // player.play(0)
+  },[])
+  return <PlayerContext.Provider value={player}>
+    <App {...p}/>
+  </PlayerContext.Provider>
+}

@@ -1,4 +1,7 @@
 background: 1bg.mp4
+audio: 1.mp3
+audioTitle: Земля - Александр Буторин
+audioLength: 10:06
 title: Геофизик Александр Буторин и музыка Земли
 blocks:
   - type: text
