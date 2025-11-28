@@ -100,15 +100,23 @@ const Volume = ()=>(null)
 const Time = ()=>(null)
 const Progress = ()=>(null)
 
-const Track = ({ index, current, title, duration })=>(
-    <div className={cx('trackCont', current&&'current')}>
+const Track = ({ index, current, title, duration, onSelect })=>(
+    <div className={cx('trackCont', current&&'current')}
+    onDoubleClick={onSelect}
+    >
         <AText noParagraph noGutter style="track" text={`${index > 0 ? index : ''} ${title}`}/>
         <AText noParagraph noGutter style="track" text={duration}/>
     </div>
 )
-const TrackList = ({ tracks = [], current })=>(
+const TrackList = ({ tracks = [], current, navigateTo })=>(
     <div className='tracklist'>
-        { tracks.map((t, i)=><Track key={i} current={i==current} index={i+1} {...t}/>) }
+        { tracks.map((t, i)=><Track 
+            key={i} 
+            current={i==current} 
+            index={i+1} 
+            onSelect={()=>navigateTo(i)}
+            {...t}
+        />) }
     </div>
 )
 const CurrentTrack = (p)=>(<Track {...p} current={false}/>)
@@ -165,7 +173,11 @@ export const Player = ({
                         </Overlay>
                         
                         <Overlay ly="0.96" w100>
-                            <TrackList tracks={tracks} current={current}/>
+                            <TrackList 
+                                tracks={tracks} 
+                                current={current}
+                                navigateTo={navigateTo}
+                            />
                         </Overlay>
                     </Slice.LeftSlot>
                 </Slice>
