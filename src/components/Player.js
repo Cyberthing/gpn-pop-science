@@ -51,7 +51,7 @@ const Visualizer = ({ medias, current=0, isPlaying })=>{
                     muted 
                     media={{ url: b }} 
                     className={cx(
-                        // "backfader-back", 
+                        "visualizer", 
                         b.style, 
                     )}/>
             } 
@@ -107,6 +107,7 @@ export const Player = ({
     image, 
     medias, 
     current, 
+    isPlaying,
     navigatePrev,
     navigateTo,
     navigateNext,
@@ -125,7 +126,7 @@ export const Player = ({
     return (
         <Overlay cover ghost>
             <Sticky>
-                <Slice>
+                <Slice className={cx('player', isPlaying&&'playing')}>
                     <Slice.LeftSlot ref={ref}>
                         <Media media={{ url: image }}/>
                         <Overlay left="1.5%" width="97%" top="4.2%" height="51.5%">

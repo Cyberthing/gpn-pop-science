@@ -123,6 +123,17 @@ body:not(.m-ria)
 
 	.player
 		pointer-events: none
+	.player
+		.visualizer:after
+			content ''
+			position: absolute
+			inset 0
+			background-color: rgba(black, 0.8)
+			transition: opacity 1s ease
+			opacity: 1
+	.player.playing 
+		.visualizer:after
+			opacity: 0
 
 	.btnCont
 		display: flex

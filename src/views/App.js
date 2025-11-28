@@ -165,6 +165,7 @@ export function App({ project, data }) {
       <Waypoint way="backs" edge="0vh"/>
       <Player 
         {...main.player} 
+        isPlaying={player.isPlaying}
         current={curBack}
         navigatePrev={navigatePrev}
         navigateTo={navigateTo}
