@@ -100,7 +100,7 @@ const Volume = ()=>(null)
 const Time = ()=>(null)
 const Progress = ()=>(null)
 
-const Track = ({ index, current, title, duration, onSelect })=>(
+const Track = ({ index='', current, title='', duration='', onSelect })=>(
     <div className={cx('trackCont', current&&'current')}
     onDoubleClick={onSelect}
     >
