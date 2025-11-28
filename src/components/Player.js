@@ -99,13 +99,25 @@ const Equalizer = ()=>(null)
 const Volume = ()=>(null)
 const Time = ()=>(null)
 const Progress = ()=>(null)
-const TrackList = ({ tracks, current })=>(null)
-const CurrentTrack = ({ track })=>(null)
+
+const Track = ({ index, current, title, duration })=>(
+    <div className={cx('trackCont', current&&'current')}>
+        <AText noParagraph noGutter style="track" text={`${index > 0 ? index : ''} ${title}`}/>
+        <AText noParagraph noGutter style="track" text={duration}/>
+    </div>
+)
+const TrackList = ({ tracks = [], current })=>(
+    <div className='tracklist'>
+        { tracks.map((t, i)=><Track key={i} current={i==current} index={i+1} {...t}/>) }
+    </div>
+)
+const CurrentTrack = (p)=>(<Track {...p} current={false}/>)
 
 
 export const Player = ({ 
     image, 
     medias, 
+    tracks,
     current, 
     isPlaying,
     navigatePrev,
@@ -147,6 +159,13 @@ export const Player = ({
                                 </Row>
                                 <Eject  onClick={()=>navigateTo(-1)}/>
                             </Row>
+                        </Overlay>
+                        <Overlay ly="0.643" w100>
+                            <CurrentTrack title={tracks[current]?.title} index={-1}/>
+                        </Overlay>
+                        
+                        <Overlay ly="0.96" w100>
+                            <TrackList tracks={tracks} current={current}/>
                         </Overlay>
                     </Slice.LeftSlot>
                 </Slice>

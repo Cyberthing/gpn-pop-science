@@ -130,6 +130,19 @@ const Setup = () => {
         // textAlign="center"
       />            
 
+      <TextStyle
+        name='track'
+        fontFamily='PTRootUI'
+        fontFamilyDefault='sans-serif'
+        fontSize='14'
+        lineHeight='1.215'
+        mobile={{ fontSize:'16px' }}
+        fontWeight='700'
+        letterSpacing='1.01px'
+        fontStyle='normal'
+        color="#37D339"
+        // textAlign="center"
+      />       
 
     </>
   );

@@ -99,6 +99,11 @@ export function App({ project, data }) {
   const { articles = [], cover, footer } = data?.main
 
   const [navRefs] = useState(()=>articles.map(createRef))
+
+  const tracks = useMemo(()=>(articles.map((a, i)=>({
+    title: a.audioTitle,
+    duration: a.audioLength,
+  }))),[articles])
   //const setRef = (i, el)=>navRefs[i].current = el
   trace('App data', data, navRefs)
 
@@ -165,6 +170,7 @@ export function App({ project, data }) {
       <Waypoint way="backs" edge="0vh"/>
       <Player 
         {...main.player} 
+        tracks={tracks}
         isPlaying={player.isPlaying}
         current={curBack}
         navigatePrev={navigatePrev}

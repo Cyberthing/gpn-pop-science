@@ -135,6 +135,22 @@ body:not(.m-ria)
 		.visualizer:after
 			opacity: 0
 
+	.tracklist
+		width 100%
+	.trackCont
+		width 100%
+		display: flex
+		justify-content: space-between
+		
+		.track
+			padding-left 3.5%
+			padding-right 3.5%
+			font-size calc(var(--playerw, 560) / 560 * 14 * 1px)
+		&.current
+			.track
+				color white
+
+
 	.btnCont
 		display: flex
 		// padding: 0 20px
