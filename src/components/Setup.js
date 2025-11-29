@@ -10,12 +10,13 @@ const Setup = () => {
 
   return (
     <>
-      <GridStyle gutter='36' gutterMobile='16' 
-        // maxWidth={1180}
+      <GridStyle 
+        gutter='10' 
+        gutterMobile='16' 
+        maxWidth={1388}
         // padding={"85"}
-        padding={scene.mobile?"":"20"}
-        columns="15"
-        width="15"
+        padding={scene.mobile?"":"26"}
+        columns="9"
       />
 
       <TextStyle
@@ -78,7 +79,7 @@ const Setup = () => {
         name='articleBody'
         fontFamily='PTRootUI'
         fontFamilyDefault='sans-serif'
-        fontSize='17'
+        fontSize='18'
         lineHeight='1.38'
         mobile={{ fontSize:'16px' }}
         fontWeight='400'
@@ -106,7 +107,7 @@ const Setup = () => {
         name='quoteText'
         fontFamily='PT Mono'
         fontFamilyDefault='sans-serif'
-        fontSize='20'
+        fontSize='22'
         lineHeight='1.3'
         mobile={{ fontSize:'16px' }}
         fontWeight='400'

@@ -161,41 +161,43 @@ export const Player = ({
         <Overlay cover ghost>
             <Sticky>
                 <Slice className={cx('player', isPlaying&&'playing')}>
-                    <Slice.LeftSlot ref={ref}>
-                        <Media media={{ url: image }}/>
-                        <Overlay left="1.5%" width="97%" top="4.2%" height="51.5%">
-                            <Visualizer
-                                medias={medias}
-                                current={Math.max(0, current)}
-                                isPlaying={player.isPlaying}
-                            />
-                        </Overlay>
-                        <Overlay ly="0.743" w100>
-                            <Row align="space-between" padding="0 3.5%">
-                                <Row className="btnCont">
-                                    <Prev onClick={navigatePrev}/>
-                                    <Play onClick={()=>player.continueOrPlay(current)}/>
-                                    <Pause onClick={()=>player.pause()}/>
-                                    <Stop onClick={()=>player.stop()}/>
-                                    <Next onClick={navigateNext}/>
+                    <Slice.LeftSlot className="playerCont" ref={ref}>
+                        <div>
+                            <Media media={{ url: image }}/>
+                            <Overlay left="1.5%" width="97%" top="4.2%" height="51.5%">
+                                <Visualizer
+                                    medias={medias}
+                                    current={Math.max(0, current)}
+                                    isPlaying={player.isPlaying}
+                                />
+                            </Overlay>
+                            <Overlay ly="0.743" w100>
+                                <Row align="space-between" padding="0 3.5%">
+                                    <Row className="btnCont">
+                                        <Prev onClick={navigatePrev}/>
+                                        <Play onClick={()=>player.continueOrPlay(current)}/>
+                                        <Pause onClick={()=>player.pause()}/>
+                                        <Stop onClick={()=>player.stop()}/>
+                                        <Next onClick={navigateNext}/>
+                                    </Row>
+                                    <Eject  onClick={()=>navigateTo(-1)}/>
                                 </Row>
-                                <Eject  onClick={()=>navigateTo(-1)}/>
-                            </Row>
-                        </Overlay>
-                        <Overlay ly="0.643" w100>
-                            <CurrentTrack title={tracks[current]?.title} index={-1}/>
-                        </Overlay>
-                        <Overlay ly="0.69" w100>
-                            <Progress progress={progress}/>
-                        </Overlay>
-                        
-                        <Overlay ly="0.96" w100>
-                            <TrackList 
-                                tracks={tracks} 
-                                current={current}
-                                navigateTo={navigateTo}
-                            />
-                        </Overlay>
+                            </Overlay>
+                            <Overlay ly="0.643" w100>
+                                <CurrentTrack title={tracks[current]?.title} index={-1}/>
+                            </Overlay>
+                            <Overlay ly="0.69" w100>
+                                <Progress progress={progress}/>
+                            </Overlay>
+                            
+                            <Overlay ly="0.96" w100>
+                                <TrackList 
+                                    tracks={tracks} 
+                                    current={current}
+                                    navigateTo={navigateTo}
+                                />
+                            </Overlay>
+                        </div>
                     </Slice.LeftSlot>
                 </Slice>
             </Sticky>

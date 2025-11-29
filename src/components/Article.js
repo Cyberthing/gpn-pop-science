@@ -57,7 +57,7 @@ const Illustration = ({ image, desc, style })=><Row
     </Column>
 </Row>
 
-factory.register('text', (p)=><Column width="5"><AText style="articleBody" {...p}/></Column>)
+factory.register('text', (p)=><Column width="4"><AText style="articleBody" {...p}/></Column>)
 factory.register('quote', Quote)
 factory.register('illustration', Illustration)
 

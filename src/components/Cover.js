@@ -23,10 +23,10 @@ export const Cover = ({ uptitle, title, titleImage, lead, msgAudio }) => {
 				w100
 			>
 				<AText style="coverUptitle" text={uptitle}/>
-				<Media media={{ url: titleImage }} width="70%"/>
+				<Media media={{ url: titleImage }} width="85%" maxWidth="830px"/>
 				{/* <AText style="coverTitle" text={title}/> */}
-				<Column width="6">
-					<AText noGutter={false} style="coverLead" text={lead}/>
+				<Column width="75%" maxWidth="610px">
+					<AText noGutter style="coverLead" text={lead}/>
 				</Column>
 				<Media className="msgAudio" media={{ url: msgAudio }}/>
 			</Column>
