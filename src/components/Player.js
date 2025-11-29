@@ -112,9 +112,10 @@ const Progress = ({ progress })=>{
     )
 }
 
-const Track = ({ index='', current, title='', duration='', onSelect })=>(
-    <div className={cx('trackCont', current&&'current')}
-    onDoubleClick={onSelect}
+const Track = ({ index='', current, title='', duration='', onSelect, className })=>(
+    <div 
+        className={cx('trackCont', className, current&&'current')}
+        onDoubleClick={onSelect}
     >
         <AText noParagraph noGutter style="track" text={`${index > 0 ? index : ''} ${title}`}/>
         <AText noParagraph noGutter style="track" text={duration}/>
@@ -131,7 +132,7 @@ const TrackList = ({ tracks = [], current, navigateTo })=>(
         />) }
     </div>
 )
-const CurrentTrack = (p)=>(<Track {...p} current={false}/>)
+const CurrentTrack = (p)=>(<Track {...p} className="curtrack" current={false}/>)
 
 
 export const Player = ({ 
