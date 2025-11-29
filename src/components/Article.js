@@ -64,12 +64,19 @@ factory.register('illustration', Illustration)
 
 
 export const Article = forwardRef(({ title, blocks, ...p }, ref)=>{
+    const scene = useScene()
     // trace('Article', blocks)
-    return <Slice ref={ref} className="articlePage">
+    return <Slice 
+        ref={ref} 
+        className="articlePage"
+        width={!scene.desktop?'5':'9'}
+    >
         <Waypoint way="backs" edge="-50vh"/>
         <Slice.LeftSlot>
         </Slice.LeftSlot>
-        <Slice.RightSlot className="articlePlate">
+        <Slice.RightSlot className="articlePlate" 
+            width={!scene.desktop?'100%':'5'}
+        >
             <Column>
                 <AText style="articleTitle" text={title}/>
                 { blocks.map(factory.create) }

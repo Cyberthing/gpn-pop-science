@@ -127,7 +127,7 @@ const Visualizer = ({ background, medias, current=0, isPlaying })=>{
     )
 }
 
-const Controls = ({
+const Controls = forwardRef(({
     background,
     navigatePrev,
     navigateNext,
@@ -136,8 +136,8 @@ const Controls = ({
     current,
     tracks,
     player,
-})=>(
-    <Column>
+}, ref)=>(
+    <Column ref={ref}>
         <Media media={{ url: background }}/>
         <Overlay ly="0.80" w100>
             <Row align="space-between" padding="0 3.5%">
@@ -158,7 +158,7 @@ const Controls = ({
             <Progress progress={progress}/>
         </Overlay> 
     </Column>
-)
+))
 
 const TrackList = ({ background, tracks = [], current, navigateTo })=>(
     <Column>
@@ -192,28 +192,32 @@ export const Player = ({
     ...p })=>{
     // trace('Article', blocks)
     const [w, setW] = useState(0)
-    const ref = useRef()
+    const refWidth = useRef()
+    const refPlayer = useRef()
+    const scene = useScene()
 
     const player = usePlayer()
 
     useWindow('resize', ()=>{
         // setW(ref.current.offsetWidth)
         // trace('useResize', ref.current.offsetWidth)
-        ref.current.style.setProperty('--playerw', ""+ref.current.offsetWidth)
+        refPlayer.current.style.setProperty('--playerw', ""+refWidth.current.offsetWidth)
     },null, [])
     return (
         <Overlay cover ghost>
             <Sticky>
                 <Slice className={cx('player', isPlaying&&'playing')}>
-                    <Slice.LeftSlot className="playerCont" ref={ref}>
+                    <Slice.LeftSlot ref={refPlayer}className="playerCont" 
+                        width={!scene.desktop?'100%':'4'}>
                         <div>
-                            <Visualizer
+                            { scene.desktop ? <Visualizer
                                 background={imageVisualizer}
                                 medias={medias}
                                 current={Math.max(0, current)}
                                 isPlaying={player.isPlaying}
-                            />
+                            /> : null }
                             <Controls
+                                ref={refWidth}
                                 background={imageContols}
                                 navigatePrev={navigatePrev}
                                 navigateNext={navigateNext}
@@ -223,13 +227,12 @@ export const Player = ({
                                 tracks={tracks}
                                 player={player}
                             />
-                            <TrackList 
+                            { !scene.mobile ? <TrackList 
                                 background={imageTracklist}
                                 tracks={tracks} 
                                 current={current}
                                 navigateTo={navigateTo}
-                            />
-
+                            /> : null }
                         </div>
                     </Slice.LeftSlot>
                 </Slice>

@@ -15,7 +15,7 @@ const Setup = () => {
         gutterMobile='16' 
         maxWidth={1388}
         // padding={"85"}
-        padding={scene.mobile?"":"26"}
+        padding={scene.mobile?"16px":"26"}
         columns="9"
       />
 
@@ -67,7 +67,7 @@ const Setup = () => {
         fontFamilyDefault='sans-serif'
         fontSize='40'
         lineHeight='1.2'
-        mobile={{ fontSize:'32px' }}
+        mobile={{ fontSize:'24px' }}
         fontWeight='700'
         letterSpacing='1.01px'
         fontStyle='normal'
@@ -81,7 +81,7 @@ const Setup = () => {
         fontFamilyDefault='sans-serif'
         fontSize='18'
         lineHeight='1.38'
-        mobile={{ fontSize:'16px' }}
+        mobile={{ fontSize:'14px' }}
         fontWeight='400'
         letterSpacing='1.01px'
         fontStyle='normal'
@@ -95,7 +95,7 @@ const Setup = () => {
         fontFamilyDefault='sans-serif'
         fontSize='17'
         lineHeight='1.38'
-        mobile={{ fontSize:'16px' }}
+        mobile={{ fontSize:'12px' }}
         fontWeight='400'
         letterSpacing='1.01px'
         fontStyle='normal'
@@ -109,7 +109,7 @@ const Setup = () => {
         fontFamilyDefault='sans-serif'
         fontSize='22'
         lineHeight='1.3'
-        mobile={{ fontSize:'16px' }}
+        mobile={{ fontSize:'13px' }}
         fontWeight='400'
         letterSpacing='1.01px'
         fontStyle='normal'
@@ -123,7 +123,7 @@ const Setup = () => {
         fontFamilyDefault='sans-serif'
         fontSize='13'
         lineHeight='1.23'
-        mobile={{ fontSize:'16px' }}
+        mobile={{ fontSize:'11px' }}
         fontWeight='400'
         letterSpacing='1.01px'
         fontStyle='normal'
