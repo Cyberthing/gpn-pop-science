@@ -173,7 +173,7 @@ export function App({ project, data }) {
       fade={Math.max(0, curBack)%2}
     />
     <Cover {...main.cover}/>
-    <Column w100>
+    <Column w100 padding={ !scene.desktop ? "150px 0 0 0" : null }>
       { articles.map((a, i)=><Article key={i} ref={navRefs[i]} {...a}/>) }
       <Waypoint way="backs" edge="0vh"/>
       <Player 
