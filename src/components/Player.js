@@ -38,28 +38,6 @@ export const usePlayer = ()=>useContext(PlayerContext)
 
 const useWindow = createStaticEventTargetHook(window);
 
-const Visualizer = ({ medias, current=0, isPlaying })=>{
-
-   	trace('Visualizer', medias, current)
-	const b = medias[Math.max(0, Math.min(medias.length - 1, current))]
-
-    return (
-            <FadeDrop slide={
-                <MediaBack 
-                    autoPlay={isPlaying}
-                    loop 
-                    muted 
-                    media={{ url: b }} 
-                    className={cx(
-                        "visualizer", 
-                        b.style, 
-                    )}/>
-            } 
-            id={current}
-        />    
-    )
-}
-
 const Button = ({icon, onClick, ...p})=>{
 
     const ref = useRef()
@@ -121,22 +99,88 @@ const Track = ({ index='', current, title='', duration='', onSelect, className }
         <AText noParagraph noGutter style="track" text={duration}/>
     </div>
 )
-const TrackList = ({ tracks = [], current, navigateTo })=>(
-    <div className='tracklist'>
-        { tracks.map((t, i)=><Track 
-            key={i} 
-            current={i==current} 
-            index={i+1} 
-            onSelect={()=>navigateTo(i)}
-            {...t}
-        />) }
-    </div>
-)
+
 const CurrentTrack = (p)=>(<Track {...p} className="curtrack" current={false}/>)
 
+const Visualizer = ({ background, medias, current=0, isPlaying })=>{
+
+	const b = medias[Math.max(0, Math.min(medias.length - 1, current))]
+
+    return (<Column>
+            <Media media={{ url: background }}/>
+            <Overlay left="1.5%" width="97%" top="7.2%" height="90.5%">
+                <FadeDrop slide={
+                    <MediaBack 
+                        autoPlay={isPlaying}
+                        loop 
+                        muted 
+                        media={{ url: b }} 
+                        className={cx(
+                            "visualizer", 
+                            b.style, 
+                        )}/>
+                } 
+                id={current}
+            />    
+            </Overlay>
+        </Column>
+    )
+}
+
+const Controls = ({
+    background,
+    navigatePrev,
+    navigateNext,
+    navigateTo,
+    progress,
+    current,
+    tracks,
+    player,
+})=>(
+    <Column>
+        <Media media={{ url: background }}/>
+        <Overlay ly="0.80" w100>
+            <Row align="space-between" padding="0 3.5%">
+                <Row className="btnCont">
+                    <Prev onClick={navigatePrev}/>
+                    <Play onClick={()=>player.continueOrPlay(current)}/>
+                    <Pause onClick={()=>player.pause()}/>
+                    <Stop onClick={()=>player.stop()}/>
+                    <Next onClick={navigateNext}/>
+                </Row>
+                <Eject  onClick={()=>navigateTo(-1)}/>
+            </Row>
+        </Overlay>
+        <Overlay ly="0.31" w100>
+            <CurrentTrack title={tracks[current]?.title} index={-1}/>
+        </Overlay>
+        <Overlay ly="0.56" w100>
+            <Progress progress={progress}/>
+        </Overlay> 
+    </Column>
+)
+
+const TrackList = ({ background, tracks = [], current, navigateTo })=>(
+    <Column>
+        <Media media={{ url: background }}/>
+        <Overlay ly="0.6" w100>
+            <div className='tracklist'>
+                { tracks.map((t, i)=><Track 
+                    key={i} 
+                    current={i==current} 
+                    index={i+1} 
+                    onSelect={()=>navigateTo(i)}
+                    {...t}
+                />) }
+            </div>
+        </Overlay>    
+    </Column>
+)
 
 export const Player = ({ 
-    image, 
+    imageVisualizer,
+    imageContols,
+    imageTracklist,
     medias, 
     tracks,
     current, 
@@ -163,40 +207,29 @@ export const Player = ({
                 <Slice className={cx('player', isPlaying&&'playing')}>
                     <Slice.LeftSlot className="playerCont" ref={ref}>
                         <div>
-                            <Media media={{ url: image }}/>
-                            <Overlay left="1.5%" width="97%" top="4.2%" height="51.5%">
-                                <Visualizer
-                                    medias={medias}
-                                    current={Math.max(0, current)}
-                                    isPlaying={player.isPlaying}
-                                />
-                            </Overlay>
-                            <Overlay ly="0.743" w100>
-                                <Row align="space-between" padding="0 3.5%">
-                                    <Row className="btnCont">
-                                        <Prev onClick={navigatePrev}/>
-                                        <Play onClick={()=>player.continueOrPlay(current)}/>
-                                        <Pause onClick={()=>player.pause()}/>
-                                        <Stop onClick={()=>player.stop()}/>
-                                        <Next onClick={navigateNext}/>
-                                    </Row>
-                                    <Eject  onClick={()=>navigateTo(-1)}/>
-                                </Row>
-                            </Overlay>
-                            <Overlay ly="0.643" w100>
-                                <CurrentTrack title={tracks[current]?.title} index={-1}/>
-                            </Overlay>
-                            <Overlay ly="0.69" w100>
-                                <Progress progress={progress}/>
-                            </Overlay>
-                            
-                            <Overlay ly="0.96" w100>
-                                <TrackList 
-                                    tracks={tracks} 
-                                    current={current}
-                                    navigateTo={navigateTo}
-                                />
-                            </Overlay>
+                            <Visualizer
+                                background={imageVisualizer}
+                                medias={medias}
+                                current={Math.max(0, current)}
+                                isPlaying={player.isPlaying}
+                            />
+                            <Controls
+                                background={imageContols}
+                                navigatePrev={navigatePrev}
+                                navigateNext={navigateNext}
+                                navigateTo={navigateTo}
+                                progress={progress}
+                                current={current}
+                                tracks={tracks}
+                                player={player}
+                            />
+                            <TrackList 
+                                background={imageTracklist}
+                                tracks={tracks} 
+                                current={current}
+                                navigateTo={navigateTo}
+                            />
+
                         </div>
                     </Slice.LeftSlot>
                 </Slice>

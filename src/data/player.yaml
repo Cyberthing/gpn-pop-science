@@ -1,4 +1,6 @@
-image: Player.svg
+imageVisualizer: PlayerVis.svg
+imageContols: PlayerCtl.svg
+imageTracklist: PlayerList.svg
 medias:
   - 1sm.mp4
   - 2sm.mp4
