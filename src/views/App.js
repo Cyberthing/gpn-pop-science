@@ -73,11 +73,19 @@ export function App({ project, data }) {
   },500),[player])
 
   const [curBack, _setCurBack] = useState(-1)
+  const [curProgress, setCurProgress] = useState(0)
   const setCurBack = (cback)=>{
     _setCurBack(cback)
     debouncePlay(cback)
   }
-  useRegistryEvent('backs', 'point', point=>setCurBack(point.index))
+  useRegistryEvent('backs', 'point', (point)=>{
+    // trace('point', point)
+
+    setCurProgress(point.continous-(point.continous|0))
+
+    if(curBack != point.index)
+      setCurBack(point.index)
+  },[curBack])
 
   useEffect(()=>{
     const nsw = Math.min(720, scene.width)
@@ -154,7 +162,7 @@ export function App({ project, data }) {
         // '--scrolly': scrollPos,
       }}
     >
-    <Way name="backs"/>
+    <Way name="backs" continous throttle={100}/>
     <Way name="nav"/>
     <AnalyticsAnchor id="anchor-01"/>
     <Setup/>
@@ -173,6 +181,7 @@ export function App({ project, data }) {
         tracks={tracks}
         isPlaying={player.isPlaying}
         current={curBack}
+        progress={curProgress}
         navigatePrev={navigatePrev}
         navigateTo={navigateTo}
         navigateNext={navigateNext}

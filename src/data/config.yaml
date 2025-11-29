@@ -7,4 +7,5 @@ icons:
   prev: prev.svg
   stop: stop.svg
   eject: eject.svg
+  progress: progressPin.svg
 # btnPressed: 2.svg

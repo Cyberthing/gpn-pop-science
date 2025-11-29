@@ -98,7 +98,19 @@ const Eject = (p)=>(<Button icon={'eject'} {...p}/>)
 const Equalizer = ()=>(null)
 const Volume = ()=>(null)
 const Time = ()=>(null)
-const Progress = ()=>(null)
+const Progress = ({ progress })=>{
+    const { icons=[] } = useConfig()
+   
+    return (
+        <div className='progress' style={{ '--progress': `${progress*100}%` }}>
+            <div>
+                <div className='progressPin'>
+                    <Pic src={icons.progress} noGutter/>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 const Track = ({ index='', current, title='', duration='', onSelect })=>(
     <div className={cx('trackCont', current&&'current')}
@@ -127,6 +139,7 @@ export const Player = ({
     medias, 
     tracks,
     current, 
+    progress,
     isPlaying,
     navigatePrev,
     navigateTo,
@@ -170,6 +183,9 @@ export const Player = ({
                         </Overlay>
                         <Overlay ly="0.643" w100>
                             <CurrentTrack title={tracks[current]?.title} index={-1}/>
+                        </Overlay>
+                        <Overlay ly="0.69" w100>
+                            <Progress progress={progress}/>
                         </Overlay>
                         
                         <Overlay ly="0.96" w100>
