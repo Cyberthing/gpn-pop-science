@@ -18,7 +18,7 @@ export const BackgroundFader = ({ backs, fade, current })=>{
 	//	<Credit {...b}/>
 	//</>)),[backs, scene.height/scene.width])
 
-	trace('BackgroundFader', backs, current)
+	// trace('BackgroundFader', backs, current)
 
 	const b = backs[Math.max(0, Math.min(backs.length - 1, current))]
 

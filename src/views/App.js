@@ -113,7 +113,7 @@ export function App({ project, data }) {
     duration: a.audioLength,
   }))),[articles])
   //const setRef = (i, el)=>navRefs[i].current = el
-  trace('App data', data, navRefs)
+  // trace('App data', data, navRefs)
 
   const navigateTo = useCallback((i, index)=>{
       setTimeout(()=>{

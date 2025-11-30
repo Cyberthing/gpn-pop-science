@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { registerPlayerWebComponent, VideoFormat, VideoQuality } from '@vkontakte/videoplayer';
+// import { registerPlayerWebComponent, VideoFormat, VideoQuality } from '@vkontakte/videoplayer';
 import { usePlayer } from './Player';
-registerPlayerWebComponent()
+import createStaticEventTargetHook from '@/utils/eventTargetHook';
+// registerPlayerWebComponent()
 
 // const iframe = `<iframe src="https://vk.com/video_ext.php?oid=-33119141&id=456240032&js_api=1" width="640" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>`
+const useWindow = createStaticEventTargetHook(window);
 
 const nop = ()=>{}
 
@@ -12,33 +14,21 @@ export const VKVideo = ({ src })=>{
     const player = usePlayer()
 
     const ref = useRef()
-    // const [player, setPlayer] = useState()
-    // useEffect(()=>{
-    //     const player = document.createElement('vk-video-player')
-    //     ref.current.appendChild(player)
+    const refPlayer = useRef()
+    const [w, setW] = useState(640)
 
-    //     player.initPlayer({
-    //         videos: [
-    //             {
-    //                 unitedVideoId: '33119141_456240032',
-    //                 sources: {
-    //                     [VideoFormat.MPEG]: {
-    //                         [VideoQuality.Q_720P]: src,
-    //                     },
-    //                 },
-    //                 title: 'SUM VIDEO',
-    //                 //  thumbUrl,
-    //                 // videoId: '456240032',
-    //             }
-    //         ],
-    //     })
-
-    //     return ()=>{ ref.current.removeChild(player) }
-    // },[])
+    useWindow('resize', ()=>{
+        // setW(ref.current.offsetWidth)
+        // trace('useResize', ref.current.offsetWidth)
+        // ref.current.style.setProperty('--playerw', ""+ref.current.offsetWidth)
+        setW(ref.current.offsetWidth)
+    },null, [])
 
     useEffect(()=>{
+        setW(ref.current.offsetWidth)
+        // ref.current.style.setProperty('--playerw', ""+ref.current.offsetWidth)
         // ref.current.innerHTML = iframe
-        const vkplayer = VK.VideoPlayer(ref.current);
+        const vkplayer = VK.VideoPlayer(refPlayer.current);
         // setPlayer(player)
 
         vkplayer.on('started', ()=>{
@@ -64,8 +54,8 @@ export const VKVideo = ({ src })=>{
 
     // return <VKVideoPlayer/>
     // return <div className="vkvideo" ref={ref}/>
-    return <div>
-        <iframe ref={ref} src={src} width="640" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameBorder="0" allowFullScreen></iframe>
+    return <div ref={ref}>
+        <iframe ref={refPlayer} src={src} width={`${w}`} height={`${(w/640*360)|0}`} allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameBorder="0" allowFullScreen></iframe>
     </div>
  }
 
