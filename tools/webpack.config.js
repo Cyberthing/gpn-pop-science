@@ -86,6 +86,7 @@ const configure = (config, { mode }) => {
     scripts: [
       // 'https://dc.ria.ru/ips/social-extract.js',
       // 'https://dc.ria.ru/ips/ria-topline.js',
+      'https://vk.com/js/api/videoplayer.js',
     ],
     //     headHtmlSnippet:`
     //   <script>

@@ -18,7 +18,12 @@ export const createPlayer = (tracks)=>{
          });
         curTrack.play();
     }
-    const continueOrPlay = (i)=>{
+    const resume = ()=>{
+        if(!curTrack)
+            return
+        curTrack.play();
+    }    
+    const resumeOrPlay = (i)=>{
         if(!curTrack)
             return play(i)
         curTrack.play();
@@ -39,7 +44,8 @@ export const createPlayer = (tracks)=>{
 
     return {
         play,
-        continueOrPlay,
+        resume,
+        resumeOrPlay,
         stop,
         pause,
     }

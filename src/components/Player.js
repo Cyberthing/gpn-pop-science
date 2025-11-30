@@ -143,7 +143,7 @@ const Controls = forwardRef(({
             <Row align="space-between" padding="0 3.5%">
                 <Row className="btnCont">
                     <Prev onClick={navigatePrev}/>
-                    <Play onClick={()=>player.continueOrPlay(current)}/>
+                    <Play onClick={()=>player.resumeOrPlay(current)}/>
                     <Pause onClick={()=>player.pause()}/>
                     <Stop onClick={()=>player.stop()}/>
                     <Next onClick={navigateNext}/>

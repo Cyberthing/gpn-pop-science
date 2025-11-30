@@ -199,8 +199,12 @@ export default (p)=>{
       _player.play(i)
       setIsPlaying(true)
     },
-    continueOrPlay: (i)=>{
-      _player.continueOrPlay(i)
+    resume: ()=>{
+      _player.resume()
+      setIsPlaying(true)
+    },
+    resumeOrPlay: (i)=>{
+      _player.resumeOrPlay(i)
       setIsPlaying(true)
     },
     pause(){
