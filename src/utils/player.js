@@ -4,12 +4,15 @@ import app from '@ips/app/app'
 export const createPlayer = (tracks)=>{
 
     let curTrack
+    let curTrackIndex
 
     // trace('createPlayer', tracks)
 
     const play = (i)=>{
         if(curTrack)
             curTrack.stop()
+
+        curTrackIndex = i
 
         const t = tracks[i]
         curTrack = new Howl({ 
@@ -22,10 +25,10 @@ export const createPlayer = (tracks)=>{
         if(!curTrack)
             return
         curTrack.play();
-    }    
+    }
     const resumeOrPlay = (i)=>{
         if(!curTrack)
-            return play(i)
+            return play(i < 0 ? curTrackIndex : i)
         curTrack.play();
     }
     const stop = ()=>{

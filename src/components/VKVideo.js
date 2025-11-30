@@ -52,11 +52,11 @@ export const VKVideo = ({ src })=>{
         
         vkplayer.on('paused', ()=>{
             trace('paused')
-            player.resume()
+            player.resumeOrPlay(-1)
         })
         vkplayer.on('ended', ()=>{
             trace('ended')
-            player.resume()
+            player.resumeOrPlay(-1)
         })
 
         // ref.current.appendChild(player)
