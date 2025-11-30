@@ -23,7 +23,7 @@ export const BackgroundFader = ({ backs, fade, current })=>{
 	const b = backs[Math.max(0, Math.min(backs.length - 1, current))]
 
 	return (
-    	<StickyFrame>
+    	<StickyFrame height={scene.height}>
     		<FadeDrop slide={
 				<>
 					<MediaBack 
