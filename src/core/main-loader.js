@@ -2,6 +2,7 @@ import Loadable from "@ips/app/loadable-vjs";
 // const Spinner = ()=><div>Loading....</div>
 // import Spinner from './gooey-spinner-vjs'
 import app from "@ips/app/app";
+import { loadScriptCb } from '@ips/app/utils.js'
 
 import { preloader } from "./preloader";
 import initStrapi from '@ips/strapi/client';
@@ -30,6 +31,8 @@ export default {
     },
     loader: async (container, opts) => {
       try {
+
+        await loadScriptCb('https://vk.com/js/api/videoplayer.js', ()=>{})
 
         const searchLocale = new URLSearchParams(opts.searchParams).get('l')
         trace('search locale:', searchLocale)
