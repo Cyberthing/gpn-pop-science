@@ -28,6 +28,7 @@ import MediaBack from '@/components/MediaBack';
 // import { useScrollTracker } from '@/hooks/useScrollTracker'
 import * as analytics from '@/analytics'
 import { factory } from '@/components/factory';
+import VKVideo from './VKVideo';
 
 const Quote = ({ text, desc, ava})=><Row 
         className="quoteCont"
@@ -45,12 +46,15 @@ const Quote = ({ text, desc, ava})=><Row
     </Column>
 </Row>
 
-const Illustration = ({ image, desc, style })=><Row 
+const Illustration = ({ image, vkvideo, desc, style })=><Row 
         className={cx("illCont", style)}
         useGutter
     >
     <Column className="ill">
-        <Media media={{url: image }}/>
+        { vkvideo ? 
+            <VKVideo src={vkvideo}/> :
+            <Media media={{url: image }}/>
+        }
     </Column>
     <Column>
         <AText style="illDesc" noGutter text={desc}/>

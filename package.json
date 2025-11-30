@@ -44,6 +44,7 @@
   "dependencies": {
     "@react-spring/web": "^9.7.4",
     "@uidotdev/usehooks": "^2.4.1",
+    "@vkontakte/videoplayer": "^1.1.78",
     "@webpack-cli/serve": "^1.7.0",
     "async": "^3.2.3",
     "core-js": "^3.20.2",
