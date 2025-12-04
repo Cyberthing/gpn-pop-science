@@ -204,7 +204,7 @@ export const Player = ({
         refPlayer.current.style.setProperty('--playerw', ""+refWidth.current.offsetWidth)
     },null, [])
     return (
-        <Overlay cover ghost>
+        <Overlay height="calc(100% - 64px)" ghost>
             <Sticky>
                 <Slice className={cx('player', isPlaying&&'playing')}>
                     <Slice.LeftSlot ref={refPlayer}className="playerCont" 

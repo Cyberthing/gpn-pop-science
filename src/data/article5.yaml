@@ -30,3 +30,13 @@ blocks:
   - type: text
     text: >-
       <p>Изучая пульсары, человечество готовит почву для создания технологий и понимает свое место во Вселенной. Уже сейчас пульсары помогают проверить фундаментальные законы физики, например теорию относительности. Они помогают понять жизненный цикл звезд и процессы, в которых рождаются тяжелые металлы. В будущем их биение можно использовать для навигации межпланетных кораблей.</p>
+  - type: creds
+    text: >-
+      Источники:<br/>
+      <a target="_blank" href="https://e-plus.media/specprojects/radio/">Радио «Террапия»</a><br/>
+      <a target="_blank" href="https://pubs.rsc.org/en/content/articlelanding/2024/sc/d4sc03066d">Научная работа по химии</a><br/>
+      <a target="_blank" href="https://pubs.rsc.org/en/content/articlelanding/2024/sc/d4sc03066d">Проект «SOS: Sound of survivor»</a><br/>
+      <a target="_blank" href="https://rutube.ru/feeds/roscosmos/">Соцсети Роскосмоса</a><br/>
+      <a target="_blank" href="https://itmo.ru/">Университет ИТМО</a><br/>
+      <a target="_blank" href="https://www.utmn.ru/x-bio/">ТюмГУ: Институт X-BIO</a><br/>
+      <a target="_blank" href="https://pu-ocean.ru/">Проект «Плавучий университет»</a><br/>

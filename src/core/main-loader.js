@@ -23,7 +23,7 @@ export default {
     loader: async (container, opts) => {
       try {
 
-        await loadScriptCb('https://vk.com/js/api/videoplayer.js', ()=>{})
+        await new Promise((resolve)=>loadScriptCb('https://vk.com/js/api/videoplayer.js', resolve))
 
         const searchLocale = new URLSearchParams(opts.searchParams).get('l')
         trace('search locale:', searchLocale)

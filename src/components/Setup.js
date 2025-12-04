@@ -90,6 +90,20 @@ const Setup = () => {
       />
 
       <TextStyle
+        name='articleCreds'
+        fontFamily='PT Mono'
+        fontFamilyDefault='sans-serif'
+        fontSize='13'
+        lineHeight='1.38'
+        mobile={{ fontSize:'12px' }}
+        fontWeight='400'
+        letterSpacing='1.01px'
+        fontStyle='normal'
+        color="white"
+        // textAlign="center"
+      />      
+
+      <TextStyle
         name='quoteDesc'
         fontFamily='PTRootUI'
         fontFamilyDefault='sans-serif'
