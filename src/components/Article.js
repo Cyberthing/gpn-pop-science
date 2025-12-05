@@ -38,7 +38,7 @@ const Quote = ({ text, desc, ava})=><Row
         }}
     >
     <Column>
-        <Media className="quoteAva" media={{url: ava }}/>
+        <Media className="quoteAva" res2x media={{url: ava }}/>
     </Column>
     <Column>
         <AText style="quoteDesc" noGutter text={desc}/>
@@ -53,7 +53,7 @@ const Illustration = ({ image, vkvideo, desc, style })=><Row
     <Column className="ill">
         { vkvideo ? 
             <VKVideo src={vkvideo}/> :
-            <Media media={{url: image }}/>
+            <Media res2x media={{url: image }}/>
         }
     </Column>
     <Column>

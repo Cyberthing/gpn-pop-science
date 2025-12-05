@@ -159,6 +159,11 @@ body:not(.m-ria)
 			padding-left 3.5%
 			padding-right 3.5%
 			font-size calc(var(--playerw, 560) / 560 * 14 * 1px)
+			&.trackTitle
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;			
+			
 		&.current
 			.track
 				cursor: default
