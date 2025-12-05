@@ -65,7 +65,7 @@ export function App({ project, data }) {
   const player = usePlayer()
 
   const debouncePlay = useMemo(()=>debounce((i)=>{
-    trace('playing', i)
+    // trace('playing', i)
     if(i < 0 || i > articles.length-1)
       player.stop()
     else

@@ -12,6 +12,9 @@ export const Media = forwardRef(({
   autoPlay,
   noGutter,
   h100,
+  muted = true,
+  loop = true,
+  onClick,
   ...p
 }, ref) => {
   const { mime = '', url = '' } = media;
@@ -36,8 +39,8 @@ export const Media = forwardRef(({
   ) : mt == 'video' ? (
     <Vidos
       ref={ref}
-      muted
-      loop
+      muted={muted}
+      loop={loop}
       poster={poster?.url}
       autoPlay={autoPlay}
       h100={h100}
