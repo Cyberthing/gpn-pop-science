@@ -316,6 +316,20 @@ body:not(.m-ria)
 
 		.illCont
 			flex-direction: column
+			&.round
+				.ill
+					position relative
+					padding-bottom 100%
+					// width: 100vw
+					// height: 100vw
+					border-radius: calc(var(--sx) / 2 * 1px)
+					video
+						position absolute
+						left 0
+						top 0
+						width auto
+						height 100%
+						// transform translate(-5%, -4%) scale(1.01)
 		
 .inline-ria.scene-desktop
 //html:not(.inline-ria)
