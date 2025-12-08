@@ -66,7 +66,7 @@ factory.register('text', (p)=><Column width="4"><AText style="articleBody" {...p
 factory.register('creds', (p)=><Column left="3" width="2"><AText style="articleCreds" {...p}/></Column>)
 factory.register('quote', Quote)
 factory.register('illustration', Illustration)
-factory.register('storyvideo', (p)=><Column left="1" width="3"><CircleVideo {...p}/></Column>)
+// factory.register('storyvideo', (p)=><Column left="1" width="3"><CircleVideo {...p}/></Column>)
 
 
 
