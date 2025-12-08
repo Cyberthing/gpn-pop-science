@@ -95,7 +95,7 @@ const Track = ({ index='', current, title='', duration='', onSelect, className }
         className={cx('trackCont', className, current&&'current')}
         onDoubleClick={onSelect}
     >
-        <AText noParagraph noGutter style="track" className="trackTitle" text={`${index > 0 ? index : ''} ${title}`}/>
+        <AText noParagraph noGutter style="track" className="trackTitle" text={`${index > 0 ? index : ''}. ${title}`}/>
         <AText noParagraph noGutter style="track" text={duration}/>
     </div>
 )
