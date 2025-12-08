@@ -15,7 +15,7 @@ export const VKVideo = ({ src })=>{
 
     const ref = useRef()
     const refPlayer = useRef()
-    const [w, setW] = useState(640)
+    const [w, setW] = useState()
 
     useWindow('resize', ()=>{
         // setW(ref.current.offsetWidth)
@@ -25,7 +25,10 @@ export const VKVideo = ({ src })=>{
     },null, [])
 
     useEffect(()=>{
-        setW(ref.current.offsetWidth)
+
+        setTimeout(()=>{
+            setW(ref.current.offsetWidth)
+        }, 500)
         // ref.current.style.setProperty('--playerw', ""+ref.current.offsetWidth)
         // ref.current.innerHTML = iframe
         const vkplayer = VK.VideoPlayer(refPlayer.current);
@@ -54,7 +57,7 @@ export const VKVideo = ({ src })=>{
 
     // return <VKVideoPlayer/>
     // return <div className="vkvideo" ref={ref}/>
-    return <div ref={ref}>
+    return <div ref={ref} className='vkplayer-cont'>
         <iframe ref={refPlayer} src={src} width={`${w}`} height={`${(w/640*360)|0}`} allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameBorder="0" allowFullScreen></iframe>
     </div>
  }
