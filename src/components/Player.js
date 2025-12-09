@@ -93,7 +93,7 @@ const Progress = ({ progress })=>{
 const Track = ({ index='', current, title='', duration='', onSelect, className })=>(
     <div 
         className={cx('trackCont', className, current&&'current')}
-        onDoubleClick={onSelect}
+        onClick={onSelect}
     >
         <AText noParagraph noGutter style="track" className="trackTitle" text={`${index > 0 ? `${index}.` : ''} ${title}`}/>
         <AText noParagraph noGutter style="track" text={duration}/>
@@ -198,11 +198,16 @@ export const Player = ({
 
     const player = usePlayer()
 
+    useEffect(()=>{
+        refPlayer.current.style.setProperty('--playerw', ""+refWidth.current.offsetWidth)
+    },[])
+
     useWindow('resize', ()=>{
         // setW(ref.current.offsetWidth)
         // trace('useResize', ref.current.offsetWidth)
         refPlayer.current.style.setProperty('--playerw', ""+refWidth.current.offsetWidth)
     },null, [])
+    
     return (
         <Overlay height="calc(100% - 64px)" ghost>
             <Sticky>
