@@ -174,7 +174,8 @@ export function App({ project, data }) {
     />
     <Cover {...main.cover} navigateTo={navigateTo}/>
     <Column w100 padding={ !scene.desktop ? "150px 0 0 0" : null }>
-      { articles.map((a, i)=><Article key={i} ref={navRefs[i]} {...a}/>) }
+      { articles.map((a, i)=><Article key={i} index={i+1} ref={navRefs[i]} {...a}/>) }
+      <AnalyticsAnchor id="anchor-footer"/>
       <Waypoint way="backs" edge="0vh"/>
       <Player 
         {...main.player} 

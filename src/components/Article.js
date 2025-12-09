@@ -70,7 +70,7 @@ factory.register('illustration', Illustration)
 
 
 
-export const Article = forwardRef(({ title, blocks, ...p }, ref)=>{
+export const Article = forwardRef(({ index, title, blocks, ...p }, ref)=>{
     const scene = useScene()
     // trace('Article', blocks)
     return <Slice 
@@ -78,6 +78,7 @@ export const Article = forwardRef(({ title, blocks, ...p }, ref)=>{
         className="articlePage"
         width={!scene.desktop?'5':'9'}
     >
+        <AnalyticsAnchor id={`anchor-0${index + 1}`}/>
         <Waypoint way="backs" edge="-50vh"/>
         <Slice.LeftSlot>
         </Slice.LeftSlot>

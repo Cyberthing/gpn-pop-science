@@ -13,6 +13,8 @@ import MediaBack from '@/components/MediaBack'
 export const Cover = ({ uptitle, title, titleImage, lead, msgAudio, navigateTo }) => {
 	const scene = useScene()
 
+	// trace('Cover', navigateTo)
+
 	const r = (
 		<Slice 
 			className={'coverPage'}
@@ -28,9 +30,9 @@ export const Cover = ({ uptitle, title, titleImage, lead, msgAudio, navigateTo }
 				<Column width="75%" maxWidth="610px">
 					<AText noGutter style="coverLead" text={lead}/>
 				</Column>
-				<Media className="msgAudio" media={{ url: msgAudio }}
-					onClick={()=>navigateTo(0)}
-				/>
+				<div onClick={()=>navigateTo?.(0)}>
+					<Media className="msgAudio" media={{ url: msgAudio }}/>
+				</div>
 			</Column>
 		</Slice>
 	)
