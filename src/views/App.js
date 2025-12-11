@@ -53,7 +53,12 @@ import * as analytics from '@/analytics'
  }
 
  const smoothScrollTo = ($el)=>{
-    $el.scrollIntoView({ behavior: 'smooth' })
+    window.scrollTo({
+      top: getFullOffsetTop($el) - 60,
+      left: 0,
+      behavior: "smooth",
+    });
+    // $el.scrollIntoView({ behavior: 'smooth' })
  }
 
 let renderCounter = 0
