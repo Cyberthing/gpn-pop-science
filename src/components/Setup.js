@@ -135,13 +135,13 @@ const Setup = () => {
         name='illDesc'
         fontFamily='PT Mono'
         fontFamilyDefault='sans-serif'
-        fontSize='13'
+        fontSize='14'
         lineHeight='1.23'
         mobile={{ fontSize:'11px' }}
         fontWeight='400'
         letterSpacing='1.01px'
         fontStyle='normal'
-        color={colors.green}
+        color="white"
         // textAlign="center"
       />            
 

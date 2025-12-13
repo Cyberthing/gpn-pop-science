@@ -47,7 +47,7 @@ const Quote = ({ text, desc, ava})=><Row
     </Column>
 </Row>
 
-const Illustration = ({ image, vkvideo, desc, style })=><Row 
+const Illustration = ({ image, vkvideo, desc, style })=><div 
         className={cx("illCont", style)}
         useGutter
     >
@@ -60,7 +60,7 @@ const Illustration = ({ image, vkvideo, desc, style })=><Row
     <Column>
         <AText style="illDesc" noGutter text={desc}/>
     </Column>
-</Row>
+</div>
 
 factory.register('text', (p)=><Column width="4"><AText style="articleBody" {...p}/></Column>)
 factory.register('creds', (p)=><Column left="3" width="2"><AText style="articleCreds" {...p}/></Column>)

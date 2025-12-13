@@ -98,7 +98,7 @@ body:not(.m-ria)
 			text-decoration: underline
 
 		b
-			color: colorGreen
+			color: white
 			text-decoration: none
 			font-weight: 700
 
@@ -277,22 +277,29 @@ body:not(.m-ria)
 			stroke: colorGreen;
 
 	.illCont
+		padding-left var(--grid-gutter, 16px)
+		padding-right: var(--grid-gutter, 16px)
 		gap 30px
 		margin-top 64px
 		margin-bottom 64px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
 		.ill
-			flex 0 0 60%
+			display block
+			// flex 0 0 60%
 			// width 50%
 			video
 				width: 100%;
+		.illDesc
+			max-width: 50%
 		&.big
 			flex-direction: column
 			.ill
 				// flex 0 0 100%
 				width 100%
-			.illDesc
-				max-width: 50%
 		&.round
+			width 60%
 			.ill
 				border-radius: 50%
 				overflow: hidden
@@ -324,6 +331,7 @@ body:not(.m-ria)
 		.illCont
 			flex-direction: column
 			&.round
+				width 100%
 				.ill
 					position relative
 					padding-bottom 100%
