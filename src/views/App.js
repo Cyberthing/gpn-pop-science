@@ -52,9 +52,9 @@ import * as analytics from '@/analytics'
    document.documentElement.scrollTop = ofs
  }
 
- const smoothScrollTo = ($el)=>{
+ const smoothScrollTo = ($el, offset = 0)=>{
     window.scrollTo({
-      top: getFullOffsetTop($el) - 60,
+      top: getFullOffsetTop($el) + offset,
       left: 0,
       behavior: "smooth",
     });
@@ -126,7 +126,7 @@ export function App({ project, data }) {
         analytics.innerLink?.(i)
 
         if(i == -1)
-          smoothScrollTo(refRoot.current)
+          smoothScrollTo(refRoot.current, scene.mobile? - 150 : - 60)
 
         if(!navRefs[i].current)
           return
@@ -135,7 +135,7 @@ export function App({ project, data }) {
         if(!el)
           return
 
-        smoothScrollTo(el)
+        smoothScrollTo(el, scene.mobile? - 150 : - 60)
         
         // const ofs = getFullOffsetTop(el)
         // instantScrollTo(ofs + (scene.mobile?(-100):(scene.height/2)))
