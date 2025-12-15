@@ -200,6 +200,7 @@ export default (p)=>{
   // trace('p', p)
   const [_player] = useState(()=>createPlayer(p.data.main.articles.map(a=>a.audio)))
   const [isPlaying, setIsPlaying] = useState()
+  const [progress, setProgress] = useState(0)
   const playerCtx ={
     play(i){
       _player.play(i)
@@ -220,6 +221,9 @@ export default (p)=>{
     stop(){
       _player.stop()
       setIsPlaying(false)
+    },
+    onProgress(cb){
+      _player.onProgress(cb)
     },
     isPlaying,
   }

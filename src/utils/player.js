@@ -7,6 +7,8 @@ export const createPlayer = (tracks)=>{
     let curTrackIndex
 
     // trace('createPlayer', tracks)
+    let _onProgress = ()=>{}
+    let progressInterval  = null
 
     const play = (i)=>{
         if(curTrack)
@@ -20,6 +22,18 @@ export const createPlayer = (tracks)=>{
             loop: true,
          });
         curTrack.play();
+
+        curTrack.on('play', ()=>{
+            clearInterval(progressInterval)
+            progressInterval = setInterval(()=>{
+                const currentTime = curTrack.seek() || 0; // Get the current position in seconds
+                const totalDuration = curTrack.duration(); // Get the total duration in seconds
+                _onProgress(currentTime / totalDuration)
+            }, 300)
+        })
+    }
+    const onProgress = (cb)=>{
+        _onProgress = cb
     }
     const resume = ()=>{
         if(!curTrack)
@@ -51,5 +65,6 @@ export const createPlayer = (tracks)=>{
         resumeOrPlay,
         stop,
         pause,
+        onProgress,
     }
 }

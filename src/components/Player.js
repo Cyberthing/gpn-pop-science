@@ -76,8 +76,11 @@ const Eject = (p)=>(<Button icon={'eject'} {...p}/>)
 const Equalizer = ()=>(null)
 const Volume = ()=>(null)
 const Time = ()=>(null)
-const Progress = ({ progress })=>{
+const Progress = ()=>{
+    const [progress, setProgress] = useState(0)
     const { icons=[] } = useConfig()
+    const player = usePlayer()
+    player.onProgress(setProgress)
    
     return (
         <div className='progress' style={{ '--progress': `${progress*100}%` }}>
@@ -132,7 +135,7 @@ const Controls = forwardRef(({
     navigatePrev,
     navigateNext,
     navigateTo,
-    progress,
+    // progress,
     current,
     tracks,
     player,
@@ -155,7 +158,9 @@ const Controls = forwardRef(({
             <CurrentTrack title={tracks[current]?.title} index={-1}/>
         </Overlay>
         <Overlay ly="0.56" w100>
-            <Progress progress={progress}/>
+            <Progress
+                // progress={progress}
+            />
         </Overlay> 
     </Column>
 ))
@@ -184,7 +189,7 @@ export const Player = ({
     medias, 
     tracks,
     current, 
-    progress,
+    // progress,
     isPlaying,
     navigatePrev,
     navigateTo,
@@ -227,7 +232,7 @@ export const Player = ({
                                 navigatePrev={navigatePrev}
                                 navigateNext={navigateNext}
                                 navigateTo={navigateTo}
-                                progress={progress}
+                                // progress={progress}
                                 current={current}
                                 tracks={tracks}
                                 player={player}
