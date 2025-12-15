@@ -204,7 +204,9 @@ export const Player = ({
     const player = usePlayer()
 
     useEffect(()=>{
-        refPlayer.current.style.setProperty('--playerw', ""+refWidth.current.offsetWidth)
+        setTimeout(()=>{
+            refPlayer.current.style.setProperty('--playerw', ""+refWidth.current.offsetWidth)
+        },1000)
     },[])
 
     useWindow('resize', ()=>{
