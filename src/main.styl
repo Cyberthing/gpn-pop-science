@@ -138,6 +138,10 @@ body:not(.m-ria)
 
 	.playerCont
 		padding: 0px 20px;
+		> div
+			// width calc(var(--playerw, 560) * 1px)
+			transform: scale(var(--dscale))
+			transform-origin 100% 0%
 
 	.player
 		pointer-events: none
@@ -321,7 +325,8 @@ body:not(.m-ria)
 		padding: 0px;
 	.playerCont > div
 		display: flex
-		
+		transform none
+
 .scene-mobile
 	.gpn-pop-science
 		.quoteAva 

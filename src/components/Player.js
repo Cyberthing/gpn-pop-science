@@ -205,15 +205,20 @@ export const Player = ({
 
     useEffect(()=>{
         setTimeout(()=>{
-            refPlayer.current.style.setProperty('--playerw', ""+refWidth.current.offsetWidth)
+            const pwidth = refWidth.current.offsetWidth
+            const dy = Math.min(1, scene.height/850)
+            // const pwidth = Math.min(scene.height, 650)/650 * refWidth.current.offsetWidth
+            refPlayer.current.style.setProperty('--dscale', "" + dy)
+            refPlayer.current.style.setProperty('--playerw', "" + pwidth * dy)
         },1000)
-    },[])
+    },[scene])
 
-    useWindow('resize', ()=>{
-        // setW(ref.current.offsetWidth)
-        // trace('useResize', ref.current.offsetWidth)
-        refPlayer.current.style.setProperty('--playerw', ""+refWidth.current.offsetWidth)
-    },null, [])
+    // useWindow('resize', ()=>{
+    //     const pwidth = refWidth.current.offsetWidth
+    //     const dy = Math.max(1, scene.height/650)
+    //     // const pwidth = Math.min(scene.height, 650)/650 * refWidth.current.offsetWidth
+    //     refPlayer.current.style.setProperty('--playerw', ""+pwidth * dy)
+    // },null, [scene])
     
     return (
         <Overlay height="calc(100% - 64px)" ghost>
